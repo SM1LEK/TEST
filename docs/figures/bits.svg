@@ -1,50 +1,386 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1284" viewBox="0 0 1120 1284" role="img"><title>Битовые поля • флаги и канонический unsigned LEB128</title><defs><marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#b3afb9"/></marker></defs><rect width="100%" height="100%" fill="#1f1e24"/>
-<text x="560" y="50" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="26" fill="#ececef" font-weight="700">Битовые поля • флаги и канонический unsigned LEB128</text>
-<text x="560" y="135" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="26" fill="#ececef" font-weight="700">Флаги архива</text>
-<rect x="40" y="190" width="130" height="70" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="105" y="225" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">7: 0</text>
-<rect x="170" y="190" width="130" height="70" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="235" y="225" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">6: 0</text>
-<rect x="300" y="190" width="130" height="70" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="365" y="225" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">5: 0</text>
-<rect x="430" y="190" width="130" height="70" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="495" y="225" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">4: 0</text>
-<rect x="560" y="190" width="130" height="70" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="625" y="225" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">3: 0</text>
-<rect x="690" y="190" width="130" height="70" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="755" y="225" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">2: RS</text>
-<rect x="820" y="190" width="130" height="70" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="885" y="225" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">1: rANS</text>
-<rect x="950" y="190" width="130" height="70" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="1015" y="225" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">0: LZ77</text>
-<text x="560" y="365" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="26" fill="#ececef" font-weight="700">Байт varint: старший бит C и 7 битов значения</text>
-<rect x="40" y="420" width="130" height="70" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="105" y="455" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">C</text>
-<rect x="170" y="420" width="130" height="70" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="235" y="455" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">b6</text>
-<rect x="300" y="420" width="130" height="70" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="365" y="455" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">b5</text>
-<rect x="430" y="420" width="130" height="70" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="495" y="455" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">b4</text>
-<rect x="560" y="420" width="130" height="70" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="625" y="455" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">b3</text>
-<rect x="690" y="420" width="130" height="70" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="755" y="455" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">b2</text>
-<rect x="820" y="420" width="130" height="70" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="885" y="455" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">b1</text>
-<rect x="950" y="420" width="130" height="70" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="1015" y="455" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">b0</text>
-<rect x="110" y="565" width="900" height="130" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="560" y="603.16" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">C = 1: есть следующий байт; C = 0: последний</text>
-<text x="560" y="630" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Группы идут от младшей к старшей</text>
-<text x="560" y="656.84" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">V = Σ (byteᵢ AND 127) × 2⁷ⁱ</text>
-<rect x="110" y="780" width="900" height="120" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="560" y="813.16" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">300 = 44 + 2 × 128</text>
-<text x="560" y="840" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">300 → AC 02</text>
-<text x="560" y="866.84" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">AC: C = 1, payload = 44; 02: C = 0, payload = 2</text>
-<rect x="110" y="990" width="900" height="120" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="560" y="1023.16" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Смещённые поля: N − 1, S − 1, D − 1</text>
-<text x="560" y="1050" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">0 → минимальное значение 1</text>
-<text x="560" y="1076.84" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">65535 → N или S = 65536; 255 → D = 256</text>
-<text x="560" y="1212" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="18" fill="#ececef">Varint u64: максимум 10 байт; в десятом только 00 или 01, без избыточной нулевой группы.</text>
-</svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="1104" height="1117" viewBox="8 -7 1104 1117" role="img">
+  <ns0:title>bits</ns0:title>
+  <ns0:metadata>{"source": "diagrams.drawio", "source_sha256": "d428ae0fa57a491d47f1c1137e4fb9b6a2069a481d88f80a75b10673421adad2", "diagram_id": "bits", "diagram_name": "bits", "vertex_count": 93, "edge_count": 0}</ns0:metadata>
+  <ns0:defs>
+    <ns0:marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <ns0:path d="M 0 1 L 10 5 L 0 9 Z" fill="#b3afb9"/>
+    </ns0:marker>
+  </ns0:defs>
+  <ns0:rect id="background" x="8" y="-7" width="1104" height="1117" fill="#1f1e24"/>
+  <ns0:g id="drawing">
+    <ns0:g data-vertex-id="v0">
+      <ns0:desc/>
+      <ns0:rect x="40" y="25" width="1040" height="44" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v1">
+      <ns0:desc/>
+      <ns0:rect x="40" y="90" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v2">
+      <ns0:desc/>
+      <ns0:rect x="170" y="90" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v3">
+      <ns0:desc/>
+      <ns0:rect x="300" y="90" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v4">
+      <ns0:desc/>
+      <ns0:rect x="430" y="90" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v5">
+      <ns0:desc/>
+      <ns0:rect x="560" y="90" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v6">
+      <ns0:desc/>
+      <ns0:rect x="690" y="90" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v7">
+      <ns0:desc/>
+      <ns0:rect x="820" y="90" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v8">
+      <ns0:desc/>
+      <ns0:rect x="950" y="90" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v9">
+      <ns0:desc/>
+      <ns0:rect x="40" y="165" width="1040" height="48" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v10">
+      <ns0:desc/>
+      <ns0:rect x="40" y="230" width="1040" height="44" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v11">
+      <ns0:desc/>
+      <ns0:rect x="40" y="295" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v12">
+      <ns0:desc/>
+      <ns0:rect x="170" y="295" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v13">
+      <ns0:desc/>
+      <ns0:rect x="300" y="295" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v14">
+      <ns0:desc/>
+      <ns0:rect x="430" y="295" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v15">
+      <ns0:desc/>
+      <ns0:rect x="560" y="295" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v16">
+      <ns0:desc/>
+      <ns0:rect x="690" y="295" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v17">
+      <ns0:desc/>
+      <ns0:rect x="820" y="295" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v18">
+      <ns0:desc/>
+      <ns0:rect x="950" y="295" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v19">
+      <ns0:desc/>
+      <ns0:rect x="40" y="370" width="1040" height="48" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v20">
+      <ns0:desc/>
+      <ns0:rect x="40" y="435" width="1040" height="48" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v21">
+      <ns0:desc/>
+      <ns0:rect x="40" y="500" width="1040" height="44" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v22">
+      <ns0:desc/>
+      <ns0:rect x="40" y="565" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v23">
+      <ns0:desc/>
+      <ns0:rect x="170" y="565" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v24">
+      <ns0:desc/>
+      <ns0:rect x="300" y="565" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v25">
+      <ns0:desc/>
+      <ns0:rect x="430" y="565" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v26">
+      <ns0:desc/>
+      <ns0:rect x="560" y="565" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v27">
+      <ns0:desc/>
+      <ns0:rect x="690" y="565" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v28">
+      <ns0:desc/>
+      <ns0:rect x="820" y="565" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v29">
+      <ns0:desc/>
+      <ns0:rect x="950" y="565" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v30">
+      <ns0:desc/>
+      <ns0:rect x="40" y="640" width="1040" height="48" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v31">
+      <ns0:desc/>
+      <ns0:rect x="40" y="705" width="1040" height="44" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v32">
+      <ns0:desc/>
+      <ns0:rect x="40" y="770" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v33">
+      <ns0:desc/>
+      <ns0:rect x="170" y="770" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v34">
+      <ns0:desc/>
+      <ns0:rect x="300" y="770" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v35">
+      <ns0:desc/>
+      <ns0:rect x="430" y="770" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v36">
+      <ns0:desc/>
+      <ns0:rect x="560" y="770" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v37">
+      <ns0:desc/>
+      <ns0:rect x="690" y="770" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v38">
+      <ns0:desc/>
+      <ns0:rect x="820" y="770" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v39">
+      <ns0:desc/>
+      <ns0:rect x="950" y="770" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v40">
+      <ns0:desc/>
+      <ns0:rect x="40" y="845" width="1040" height="48" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v41">
+      <ns0:desc/>
+      <ns0:rect x="40" y="910" width="1040" height="72" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v42">
+      <ns0:desc/>
+      <ns0:rect x="40" y="1003" width="330" height="75" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v43">
+      <ns0:desc/>
+      <ns0:rect x="395" y="1003" width="330" height="75" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="v44">
+      <ns0:desc/>
+      <ns0:rect x="750" y="1003" width="330" height="75" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+    </ns0:g>
+    <ns0:g data-vertex-id="t0">
+      <ns0:desc>Флаги этапов</ns0:desc>
+      <ns0:text x="560" y="58.97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Флаги этапов</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t1">
+      <ns0:desc>7: 0</ns0:desc>
+      <ns0:text x="105" y="128.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">7: 0</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t2">
+      <ns0:desc>6: 0</ns0:desc>
+      <ns0:text x="235" y="128.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">6: 0</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t3">
+      <ns0:desc>5: 0</ns0:desc>
+      <ns0:text x="365" y="128.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">5: 0</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t4">
+      <ns0:desc>4: 0</ns0:desc>
+      <ns0:text x="495" y="128.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">4: 0</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t5">
+      <ns0:desc>3: 0</ns0:desc>
+      <ns0:text x="625" y="128.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">3: 0</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t6">
+      <ns0:desc>2: RS</ns0:desc>
+      <ns0:text x="755" y="128.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">2: RS</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t7">
+      <ns0:desc>1: rANS</ns0:desc>
+      <ns0:text x="885" y="128.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">1: rANS</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t8">
+      <ns0:desc>0: LZ77</ns0:desc>
+      <ns0:text x="1015" y="128.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">0: LZ77</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t9">
+      <ns0:desc>Биты 0..=2: 1 - включён; 0 - выключен. Биты 3..=7: 0.</ns0:desc>
+      <ns0:text x="560" y="200.27" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Биты 0..=2: 1 - включён; 0 - выключен. Биты 3..=7: 0.</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t10">
+      <ns0:desc>Unsigned LEB128 (varint)</ns0:desc>
+      <ns0:text x="560" y="263.97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Unsigned LEB128 (varint)</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t11">
+      <ns0:desc>C</ns0:desc>
+      <ns0:text x="105" y="333.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">C</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t12">
+      <ns0:desc>b6</ns0:desc>
+      <ns0:text x="235" y="333.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">b6</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t13">
+      <ns0:desc>b5</ns0:desc>
+      <ns0:text x="365" y="333.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">b5</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t14">
+      <ns0:desc>b4</ns0:desc>
+      <ns0:text x="495" y="333.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">b4</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t15">
+      <ns0:desc>b3</ns0:desc>
+      <ns0:text x="625" y="333.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">b3</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t16">
+      <ns0:desc>b2</ns0:desc>
+      <ns0:text x="755" y="333.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">b2</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t17">
+      <ns0:desc>b1</ns0:desc>
+      <ns0:text x="885" y="333.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">b1</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t18">
+      <ns0:desc>b0</ns0:desc>
+      <ns0:text x="1015" y="333.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">b0</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t19">
+      <ns0:desc>C = 1: есть следующий байт; C = 0: последний. Группы от младшей к старшей.</ns0:desc>
+      <ns0:text x="560" y="405.27" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">C = 1: есть следующий байт; C = 0: последний. Группы от младшей к старшей.</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t20">
+      <ns0:desc>V = Σ_i ((b_i &amp; 0x7F) × 2^7i), i = 0..k−1</ns0:desc>
+      <ns0:text x="560" y="470.27" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">V = Σ_i ((b_i &amp; 0x7F) × 2^7i), i = 0..k−1</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t21">
+      <ns0:desc>Число символов rANS</ns0:desc>
+      <ns0:text x="560" y="533.97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Число символов rANS</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t22">
+      <ns0:desc>b7</ns0:desc>
+      <ns0:text x="105" y="603.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">b7</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t23">
+      <ns0:desc>b6</ns0:desc>
+      <ns0:text x="235" y="603.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">b6</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t24">
+      <ns0:desc>b5</ns0:desc>
+      <ns0:text x="365" y="603.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">b5</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t25">
+      <ns0:desc>b4</ns0:desc>
+      <ns0:text x="495" y="603.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">b4</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t26">
+      <ns0:desc>b3</ns0:desc>
+      <ns0:text x="625" y="603.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">b3</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t27">
+      <ns0:desc>b2</ns0:desc>
+      <ns0:text x="755" y="603.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">b2</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t28">
+      <ns0:desc>b1</ns0:desc>
+      <ns0:text x="885" y="603.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">b1</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t29">
+      <ns0:desc>b0</ns0:desc>
+      <ns0:text x="1015" y="603.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">b0</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t30">
+      <ns0:desc>D = записанное значение + 1; диапазон D: 1..=256.</ns0:desc>
+      <ns0:text x="560" y="675.27" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D = записанное значение + 1; диапазон D: 1..=256.</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t31">
+      <ns0:desc>Битовая карта rANS</ns0:desc>
+      <ns0:text x="560" y="738.97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Битовая карта rANS</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t32">
+      <ns0:desc>8j+7</ns0:desc>
+      <ns0:text x="105" y="808.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">8j+7</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t33">
+      <ns0:desc>8j+6</ns0:desc>
+      <ns0:text x="235" y="808.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">8j+6</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t34">
+      <ns0:desc>8j+5</ns0:desc>
+      <ns0:text x="365" y="808.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">8j+5</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t35">
+      <ns0:desc>8j+4</ns0:desc>
+      <ns0:text x="495" y="808.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">8j+4</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t36">
+      <ns0:desc>8j+3</ns0:desc>
+      <ns0:text x="625" y="808.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">8j+3</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t37">
+      <ns0:desc>8j+2</ns0:desc>
+      <ns0:text x="755" y="808.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">8j+2</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t38">
+      <ns0:desc>8j+1</ns0:desc>
+      <ns0:text x="885" y="808.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">8j+1</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t39">
+      <ns0:desc>8j+0</ns0:desc>
+      <ns0:text x="1015" y="808.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">8j+0</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t40">
+      <ns0:desc>Для символа s: j = floor(s / 8); бит = s mod 8. Всего 32 байта.</ns0:desc>
+      <ns0:text x="560" y="880.27" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Для символа s: j = floor(s / 8); бит = s mod 8. Всего 32 байта.</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t41">
+      <ns0:desc>Поля, записанные не натуральным кодом. Это позволяет использовать нулевое значение поля для минимального допустимого числа и вместить верхнюю границу диапазона.</ns0:desc>
+      <ns0:text x="560" y="940.6" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Поля, записанные не натуральным кодом. Это позволяет использовать нулевое значение поля для минимального</ns0:text>
+      <ns0:text x="560" y="963.64" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">допустимого числа и вместить верхнюю границу диапазона.</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t42">
+      <ns0:desc>stored_N = N − 1</ns0:desc>
+      <ns0:text x="205" y="1038.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">stored_N = N − 1</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t43">
+      <ns0:desc>N = stored_N + 1</ns0:desc>
+      <ns0:text x="205" y="1064.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">N = stored_N + 1</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t44">
+      <ns0:desc>stored_S = S − 1</ns0:desc>
+      <ns0:text x="560" y="1038.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">stored_S = S − 1</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t45">
+      <ns0:desc>S = stored_S + 1</ns0:desc>
+      <ns0:text x="560" y="1064.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">S = stored_S + 1</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t46">
+      <ns0:desc>stored_D = D − 1</ns0:desc>
+      <ns0:text x="915" y="1038.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">stored_D = D − 1</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="t47">
+      <ns0:desc>D = stored_D + 1</ns0:desc>
+      <ns0:text x="915" y="1064.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D = stored_D + 1</ns0:text>
+    </ns0:g>
+  </ns0:g>
+</ns0:svg>

@@ -1,37 +1,64 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="1134" viewBox="0 0 1240 1134" role="img"><title>CLARSv02 • физическая раскладка архива</title><defs><marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#b3afb9"/></marker></defs><rect width="100%" height="100%" fill="#1f1e24"/>
-<text x="620" y="50" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="26" fill="#ececef" font-weight="700">CLARSv02 • физическая раскладка архива</text>
-<text x="620" y="136" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="26" fill="#ececef" font-weight="700">Заголовок архива: 9 байт</text>
-<rect x="40" y="180" width="920" height="75" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="500" y="217.5" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">0…7: CLARSv02</text>
-<rect x="960" y="180" width="240" height="75" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="1080" y="217.5" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">8: флаги</text>
-<text x="620" y="351" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="26" fill="#ececef" font-weight="700">Блок без RS: 4 + S байт</text>
-<rect x="40" y="400" width="220" height="90" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="150" y="431.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">N − 1</text>
-<text x="150" y="458.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">u16 LE</text>
-<rect x="260" y="400" width="220" height="90" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="370" y="431.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">S − 1</text>
-<text x="370" y="458.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">u16 LE</text>
-<rect x="480" y="400" width="720" height="90" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="840" y="445" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Y: S байт</text>
-<text x="620" y="591" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="26" fill="#ececef" font-weight="700">Блок с RS: 12 + 48 + 12q байт; q = ceil((S + 4) / 10)</text>
-<rect x="40" y="650" width="180" height="95" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="130" y="684.08" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">H₀</text>
-<text x="130" y="710.92" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">4 байта</text>
-<rect x="220" y="650" width="180" height="95" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="310" y="684.08" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">H₁</text>
-<text x="310" y="710.92" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">4 байта</text>
-<rect x="400" y="650" width="180" height="95" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="490" y="684.08" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">H₂</text>
-<text x="490" y="710.92" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">4 байта</text>
-<rect x="580" y="650" width="260" height="95" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="710" y="684.08" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">CRC[12]</text>
-<text x="710" y="710.92" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">48 байт</text>
-<rect x="840" y="650" width="360" height="95" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="1020" y="684.08" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">D₀…D₉ | P₀ | P₁</text>
-<text x="1020" y="710.92" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">12q байт</text>
-<rect x="110" y="860" width="1020" height="110" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="620" y="901.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">RS защищает: S : u32 LE | Y | нулевое заполнение</text>
-<text x="620" y="928.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Всего 10q информационных байтов; затем 2q проверочных.</text>
-<text x="620" y="1062" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="18" fill="#ececef">S &lt; N: Y сжат. S = N: Y исходный. Сигнатура, флаги и таблица CRC32 не защищены RS.</text>
-</svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1312" height="1000" viewBox="0 0 1312 1000">
+<title>format</title>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+<path d="M 0 1 L 10 5 L 0 9 Z" fill="#b3afb9"/></marker></defs>
+<rect x="0" y="0" width="1312" height="1000" fill="#1f1e24"/>
+<g id="drawing">
+<rect x="40" y="30" width="1248" height="55" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+<text x="664" y="69" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Заголовок архива: 9 байт</text>
+<rect x="40" y="110" width="768" height="80" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+<text x="424" y="162" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">0..=7: CLARSv02</text>
+<rect x="808" y="110" width="480" height="80" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+<text x="1048" y="148" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">8: Флаги</text>
+<text x="1048" y="174" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">[0] LZ77 [1] rANS [2] RS</text>
+<rect x="40" y="225" width="1248" height="55" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+<text x="664" y="263" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Заголовок блока без RS: 4 байта</text>
+<rect x="40" y="305" width="624" height="80" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+<text x="352" y="343" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">0..=1: N - 1 (исходный размер)</text>
+<rect x="664" y="305" width="624" height="80" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+<text x="976" y="343" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">2..=3: S - 1 (сохранённый размер)</text>
+<rect x="40" y="420" width="1248" height="55" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+<text x="664" y="458" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Заголовок блока с RS: 4 x 3 = 12 байт (троирование)</text>
+<rect x="40" y="500" width="416" height="80" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+<text x="248" y="543" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Копия 1 (4 байта)</text>
+<rect x="456" y="500" width="416" height="80" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+<text x="664" y="543" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Копия 2 (4 байта)</text>
+<rect x="872" y="500" width="416" height="80" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+<text x="1080" y="543" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Копия 3 (4 байта)</text>
+<rect x="40" y="615" width="1248" height="55" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+<text x="664" y="653" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Данные блока: без RS = S байт; с RS = E(S) байт</text>
+<rect x="40" y="695" width="1248" height="55" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+<text x="664" y="733" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">E(S) = 12 * 4 + 12 * ceil((S + 4) / 10)</text>
+<rect x="40" y="785" width="1248" height="55" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+<text x="664" y="823" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Поток записей файлов внутри payload</text>
+<rect x="40" y="860" width="224" height="110" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+
+
+<path d="M 264 915 L 296 915" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="296" y="860" width="224" height="110" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+
+
+<path d="M 520 915 L 552 915" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="552" y="860" width="224" height="110" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+
+
+<path d="M 776 915 L 808 915" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="808" y="860" width="224" height="110" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+
+<path d="M 1032 915 L 1064 915" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="1064" y="860" width="224" height="110" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+
+<text x="152" y="891" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">type: 1 байт</text>
+<text x="152" y="915" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">00: конец</text>
+<text x="152" y="939" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">01: файл; 02: папка</text>
+<text x="408" y="891" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">P: varint</text>
+<text x="408" y="915" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Длина имени</text>
+<text x="408" y="939" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Имя: P байт UTF8</text>
+<text x="664" y="891" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">F: varint</text>
+<text x="664" y="915" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Размер файла</text>
+<text x="664" y="939" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">(только для файла)</text>
+<text x="920" y="903" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Содержимое</text>
+<text x="920" y="927" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">F байт</text>
+<text x="1176" y="915" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">00: конец архива</text>
+</g></svg>

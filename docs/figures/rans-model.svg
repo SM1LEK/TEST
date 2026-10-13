@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1140" viewBox="0 0 1120 1140" role="img"><title>rANS • нормализация целочисленных частот</title><defs><marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#b3afb9"/></marker></defs><rect width="100%" height="100%" fill="#1f1e24"/>
+<path d="M560 205 L560 253" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M560 401 L560 449" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M560 569 L560 617" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M560 712 L560 760" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M560 860 L560 908" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="560" y="50" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="26" fill="#ececef" font-weight="700">rANS • нормализация целочисленных частот</text>
+<path d="M 284 110 H 860 L 836 205 H 260 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+<text x="560" y="144.08" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Частоты v(s); длина n &gt; 0</text>
+<text x="560" y="170.92" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">D = число символов с v(s) &gt; 0</text>
+<rect x="260" y="253" width="600" height="148" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+<text x="560" y="286.74" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Для каждого присутствующего символа</text>
+<text x="560" y="313.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">w(s) = v(s) × (4096 − D)</text>
+<text x="560" y="340.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">f⁰(s) = 1 + floor(w(s) / n)</text>
+<text x="560" y="367.26" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">r(s) = w(s) mod n</text>
+<rect x="260" y="449" width="600" height="120" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+<text x="560" y="482.16" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Δ = 4096 − Σ f⁰(s)</text>
+<text x="560" y="509" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Сортировать: r по убыванию,</text>
+<text x="560" y="535.84" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">при равенстве — байт по возрастанию</text>
+<rect x="260" y="617" width="600" height="95" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+<text x="560" y="651.08" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Добавить 1 первым Δ символам</text>
+<text x="560" y="677.92" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">f(s) ≥ 1; Σ f(s) = 4096</text>
+<rect x="260" y="760" width="600" height="100" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+<text x="560" y="796.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">c(s) = Σ f(t), t &lt; s</text>
+<text x="560" y="823.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Интервал: [c(s), c(s) + f(s))</text>
+<path d="M 284 908 H 860 L 836 988 H 260 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+<text x="560" y="948" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Выход: частоты и начала интервалов</text>
+<text x="560" y="1068" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="18" fill="#ececef">Отсутствующие символы имеют f = 0. При n = 0 весь поток rANS — один байт 00.</text>
+</svg>

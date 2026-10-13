@@ -1,37 +1,239 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1359" viewBox="0 0 1120 1359" role="img"><title>LZ77 • кодирование блока</title><defs><marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#b3afb9"/></marker></defs><rect width="100%" height="100%" fill="#1f1e24"/>
-<path d="M560 160 L560 208" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
-<path d="M560 283 L560 331" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
-<path d="M560 419 L560 467" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
-<path d="M560 567 L560 615" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
-<path d="M560 710 L560 758" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
-<path d="M560 853 L560 901" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
-<path d="M560 996 L560 1024 L900 1024 L900 517 L780 517" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
-<path d="M340 517 L130 517 L130 1084 L560 1084 L560 1134" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
-<path d="M560 1214 L560 1269" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
-<text x="560" y="50" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="26" fill="#ececef" font-weight="700">LZ77 • кодирование блока</text>
-<rect x="340" y="110" width="440" height="50" rx="25.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="560" y="135" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Начало</text>
-<path d="M 364 208 H 780 L 756 283 H 340 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="560" y="245.5" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Вход X; 0 ≤ N ≤ 65536</text>
-<rect x="340" y="331" width="440" height="88" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="560" y="361.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Записать N как varint</text>
-<text x="560" y="388.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">p = 0; создать таблицы поиска</text>
-<path d="M 560.0 467 L 780 517.0 L 560.0 567 L 340 517.0 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="560" y="517" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">p &lt; N?</text>
-<rect x="340" y="615" width="440" height="95" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="560" y="649.08" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">limit = min(255, N − p − 1)</text>
-<text x="560" y="675.92" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Найти лучшее совпадение (l, d)</text>
-<rect x="340" y="758" width="440" height="95" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="560" y="792.08" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Записать l; при l &gt; 0 записать d</text>
-<text x="560" y="818.92" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Записать c = X[p + l]</text>
-<rect x="340" y="901" width="440" height="95" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="560" y="935.08" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Внести позиции p … p + l в словарь</text>
-<text x="560" y="961.92" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">p = p + l + 1</text>
-<path d="M 364 1134 H 780 L 756 1214 H 340 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="560" y="1160.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Выход: N и</text>
-<text x="560" y="1187.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">последовательность троек</text>
-<text x="170" y="954" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="18" fill="#ececef">Нет</text>
-<rect x="430" y="1269" width="260" height="50" rx="25.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="560" y="1294" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Конец</text>
-<text x="595" y="588" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="18" fill="#ececef">Да</text>
-</svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="1614" height="1905" viewBox="-12 -2 1614 1905" role="img">
+  <ns0:title>lz77-alg</ns0:title>
+  <ns0:metadata>{"source": "diagrams.drawio", "source_sha256": "d428ae0fa57a491d47f1c1137e4fb9b6a2069a481d88f80a75b10673421adad2", "diagram_id": "lz77-gost", "diagram_name": "lz77-alg", "vertex_count": 30, "edge_count": 30}</ns0:metadata>
+  <ns0:defs>
+    <ns0:marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <ns0:path d="M 0 1 L 10 5 L 0 9 Z" fill="#b3afb9"/>
+    </ns0:marker>
+  </ns0:defs>
+  <ns0:rect id="background" x="-12" y="-2" width="1614" height="1905" fill="#1f1e24"/>
+  <ns0:g id="drawing">
+    <ns0:path d="M 310 150 L 310 195" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e0" data-source="n3" data-target="n4"/>
+    <ns0:path d="M 310 270 L 310 320" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e1" data-source="n4" data-target="n5"/>
+    <ns0:path d="M 310 410 L 310 470" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e2" data-source="n5" data-target="n6"/>
+    <ns0:path d="M 310 575 L 310 635" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e3" data-source="n6" data-target="n7"/>
+    <ns0:path d="M 310 700 L 310 755" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e4" data-source="n7" data-target="n8"/>
+    <ns0:path d="M 310 870 L 310 930" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e5" data-source="n8" data-target="n9"/>
+    <ns0:path d="M 80 982.5 L 45 982.5 L 45 1060 L 162 1060 L 162 1095" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e6" data-source="n9" data-target="n10"/>
+    <ns0:path d="M 540 982.5 L 570 982.5 L 570 1060 L 458 1060 L 458 1095" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e7" data-source="n9" data-target="n11"/>
+    <ns0:path d="M 162.5 1190 L 162.5 1215 L 310 1215 L 310 1250" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e8" data-source="n10" data-target="n12"/>
+    <ns0:path d="M 457.5 1190 L 457.5 1215 L 310 1215 L 310 1250" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e9" data-source="n11" data-target="n12"/>
+    <ns0:path d="M 310 1335 L 310 1390" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e10" data-source="n12" data-target="n13"/>
+    <ns0:path d="M 540 1478 L 610 1478 L 610 440 L 310 440 L 310 470" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e11" data-source="n13" data-target="n6"/>
+    <ns0:path d="M 80 522.5 L 20 522.5 L 20 1610 L 310 1610 L 310 1660" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e12" data-source="n6" data-target="n14"/>
+    <ns0:path d="M 310 1730 L 310 1780" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e13" data-source="n14" data-target="n15"/>
+    <ns0:path d="M 1060 150 L 1060 195" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e14" data-source="n16" data-target="n17"/>
+    <ns0:path d="M 1060 270 L 1060 320" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e15" data-source="n17" data-target="n18"/>
+    <ns0:path d="M 1060 435 L 1060 495" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e16" data-source="n18" data-target="n19"/>
+    <ns0:path d="M 1060 600 L 1060 660" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e17" data-source="n19" data-target="n20"/>
+    <ns0:path d="M 1060 750 L 1060 810" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e18" data-source="n20" data-target="n21"/>
+    <ns0:path d="M 1060 950 L 1060 1005" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e19" data-source="n21" data-target="n22"/>
+    <ns0:path d="M 1060 1060 L 1060 1120" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e20" data-source="n22" data-target="n23"/>
+    <ns0:path d="M 1060 1225 L 1060 1290" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e21" data-source="n23" data-target="n24"/>
+    <ns0:path d="M 830 1332.5 L 795 1332.5 L 795 1172.5 L 830 1172.5" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e22" data-source="n24" data-target="n23"/>
+    <ns0:path d="M 1290 1172.5 L 1325 1172.5 L 1325 1470 L 1290 1470" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e23" data-source="n23" data-target="n25"/>
+    <ns0:path d="M 1290 1491 L 1360 1491 L 1360 465 L 1060 465 L 1060 495" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e24" data-source="n25" data-target="n19"/>
+    <ns0:path d="M 830 547.5 L 770 547.5 L 770 1525 L 1060 1525 L 1060 1560" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e25" data-source="n19" data-target="n26"/>
+    <ns0:path d="M 1060 1665 L 1060 1710" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e26" data-source="n26" data-target="n27"/>
+    <ns0:path d="M 1060 1780 L 1060 1820" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e27" data-source="n27" data-target="n28"/>
+    <ns0:path d="M 1290 880 L 1355 880 Q 1360 872 1365 880 L 1470 880" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e28" data-source="n21" data-target="n29"/>
+    <ns0:path d="M 1290 1612.5 L 1470 1612.5" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e29" data-source="n26" data-target="n30"/>
+    <ns0:g data-vertex-id="n1">
+      <ns0:desc>Кодирование</ns0:desc>
+      <ns0:text x="310" y="54.84" text-anchor="middle" font-family="Arial" font-size="26px" fill="#ececef" font-weight="bold">Кодирование</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="n2">
+      <ns0:desc>Декодирование</ns0:desc>
+      <ns0:text x="1060" y="54.84" text-anchor="middle" font-family="Arial" font-size="26px" fill="#ececef" font-weight="bold">Декодирование</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="n3">
+      <ns0:desc>Начало</ns0:desc>
+      <ns0:rect x="190" y="100" width="240" height="50" rx="12.5" ry="12.5" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+      <ns0:text x="310" y="132.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Начало</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="n4">
+      <ns0:desc>Вход: N байт
+0 &lt;= N &lt;= 65536</ns0:desc>
+      <ns0:polygon points="104,195 540,195 516,270 80,270" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+      <ns0:text x="310" y="225.9" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Вход: N байт</ns0:text>
+      <ns0:text x="310" y="254.06" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">0 &lt;= N &lt;= 65536</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="n5">
+      <ns0:desc>Записать N (varint); p = 0
+Создать пустые таблицы поиска</ns0:desc>
+      <ns0:rect x="80" y="320" width="460" height="90" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+      <ns0:text x="310" y="358.4" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Записать N (varint); p = 0</ns0:text>
+      <ns0:text x="310" y="386.56" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Создать пустые таблицы поиска</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="n6">
+      <ns0:desc>Остались байты?
+p &lt; N</ns0:desc>
+      <ns0:polygon points="310,470 540,522.5 310,575 80,522.5" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+      <ns0:text x="310" y="515.9" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Остались байты?</ns0:text>
+      <ns0:text x="310" y="544.06" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">p &lt; N</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="n7">
+      <ns0:desc>limit = min(255, N − p − 1)</ns0:desc>
+      <ns0:rect x="80" y="635" width="460" height="65" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+      <ns0:text x="310" y="674.98" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">limit = min(255, N − p − 1)</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="n8">
+      <ns0:desc>Найти самое длинное совпадение
+в окне до 4096 байт
+Получить l и d; нет совпадения: l = 0</ns0:desc>
+      <ns0:rect x="80" y="755" width="460" height="115" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+      <ns0:text x="310" y="791.82" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Найти самое длинное совпадение</ns0:text>
+      <ns0:text x="310" y="819.98" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">в окне до 4096 байт</ns0:text>
+      <ns0:text x="310" y="848.14" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Получить l и d; нет совпадения: l = 0</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="n9">
+      <ns0:desc>Есть совпадение?
+l &gt; 0</ns0:desc>
+      <ns0:polygon points="310,930 540,982.5 310,1035 80,982.5" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+      <ns0:text x="310" y="975.9" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Есть совпадение?</ns0:text>
+      <ns0:text x="310" y="1004.06" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">l &gt; 0</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="n10">
+      <ns0:desc>Записать длину 0
+Расстояние не писать</ns0:desc>
+      <ns0:polygon fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" points="59,1095 290,1095 266,1190 35,1190" /><ns0:text x="162.5" y="1136.8" text-anchor="middle" font-family="Arial" font-size="19px" fill="#ececef">Записать длину 0</ns0:text>
+      <ns0:text x="162.5" y="1161.12" text-anchor="middle" font-family="Arial" font-size="19px" fill="#ececef">Расстояние не писать</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="n11">
+      <ns0:desc>Записать l и d
+Длина - байт; d - varint</ns0:desc>
+      <ns0:polygon fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" points="354,1095 585,1095 561,1190 330,1190" /><ns0:text x="457.5" y="1136.8" text-anchor="middle" font-family="Arial" font-size="19px" fill="#ececef">Записать l и d</ns0:text>
+      <ns0:text x="457.5" y="1161.12" text-anchor="middle" font-family="Arial" font-size="19px" fill="#ececef">Длина - байт; d - varint</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="n12">
+      <ns0:desc>Записать явный байт
+c = вход[p + l]</ns0:desc>
+      <ns0:polygon fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" points="104,1250 540,1250 516,1335 80,1335" /><ns0:text x="310" y="1285.9" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Записать явный байт</ns0:text>
+      <ns0:text x="310" y="1314.06" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">c = вход[p + l]</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="n13">
+      <ns0:desc>next = p + l + 1
+Внести позиции p..=next − 1
+в таблицы поиска; p = next</ns0:desc>
+      <ns0:rect x="80" y="1390" width="460" height="110" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+      <ns0:text x="310" y="1424.32" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">next = p + l + 1</ns0:text>
+      <ns0:text x="310" y="1452.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Внести позиции p..=next − 1</ns0:text>
+      <ns0:text x="310" y="1480.64" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">в таблицы поиска; p = next</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="n14">
+      <ns0:desc>Выход: N и тройки</ns0:desc>
+      <ns0:polygon points="104,1660 540,1660 516,1730 80,1730" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+      <ns0:text x="310" y="1702.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Выход: N и тройки</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="n15">
+      <ns0:desc>Конец</ns0:desc>
+      <ns0:rect x="190" y="1780" width="240" height="50" rx="12.5" ry="12.5" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+      <ns0:text x="310" y="1812.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Конец</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="n16">
+      <ns0:desc>Начало</ns0:desc>
+      <ns0:rect x="940" y="100" width="240" height="50" rx="12.5" ry="12.5" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+      <ns0:text x="1060" y="132.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Начало</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="n17">
+      <ns0:desc>Вход: LZ77-поток</ns0:desc>
+      <ns0:polygon points="854,195 1290,195 1266,270 830,270" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+      <ns0:text x="1060" y="239.98" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Вход: LZ77-поток</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="n18">
+      <ns0:desc>Проверить размер потока
+Прочитать N: 0 &lt;= N &lt;= 65536
+R = пустой список</ns0:desc>
+      <ns0:rect x="830" y="320" width="460" height="115" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+      <ns0:text x="1060" y="356.82" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Проверить размер потока</ns0:text>
+      <ns0:text x="1060" y="384.98" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Прочитать N: 0 &lt;= N &lt;= 65536</ns0:text>
+      <ns0:text x="1060" y="413.14" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">R = пустой список</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="n19">
+      <ns0:desc>Есть ещё тройка?
+Остались байты входа</ns0:desc>
+      <ns0:polygon points="1060,495 1290,547.5 1060,600 830,547.5" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+      <ns0:text x="1060" y="541.2" text-anchor="middle" font-family="Arial" font-size="21px" fill="#ececef">Есть ещё тройка?</ns0:text>
+      <ns0:text x="1060" y="568.08" text-anchor="middle" font-family="Arial" font-size="21px" fill="#ececef">Остались байты входа</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="n20">
+      <ns0:desc>Прочитать l; если l &gt; 0, прочитать d
+Иначе d = 0; прочитать c</ns0:desc>
+      <ns0:polygon fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" points="854,660 1290,660 1266,750 830,750" /><ns0:text x="1060" y="698.4" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Прочитать l; если l &gt; 0, прочитать d</ns0:text>
+      <ns0:text x="1060" y="726.56" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Иначе d = 0; прочитать c</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="n21">
+      <ns0:desc>Тройка допустима?
+l &gt; 0: 1 &lt;= d &lt;= min(4096, len(R))
+len(R) + l + 1 &lt;= N</ns0:desc>
+      <ns0:polygon points="1060,810 1290,880 1060,950 830,880" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+      <ns0:text x="1060" y="862.14" text-anchor="middle" font-family="Arial" font-size="19px" fill="#ececef">Тройка допустима?</ns0:text>
+      <ns0:text x="1060" y="886.46" text-anchor="middle" font-family="Arial" font-size="19px" fill="#ececef">l &gt; 0: 1 &lt;= d &lt;= min(4096, len(R))</ns0:text>
+      <ns0:text x="1060" y="910.78" text-anchor="middle" font-family="Arial" font-size="19px" fill="#ececef">len(R) + l + 1 &lt;= N</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="n22">
+      <ns0:desc>j = 0</ns0:desc>
+      <ns0:rect x="830" y="1005" width="460" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+      <ns0:text x="1060" y="1039.98" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">j = 0</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="n23">
+      <ns0:desc>Нужно ещё копировать?
+j &lt; l</ns0:desc>
+      <ns0:polygon points="1060,1120 1290,1172.5 1060,1225 830,1172.5" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+      <ns0:text x="1060" y="1166.5" text-anchor="middle" font-family="Arial" font-size="20px" fill="#ececef">Нужно ещё копировать?</ns0:text>
+      <ns0:text x="1060" y="1192.1" text-anchor="middle" font-family="Arial" font-size="20px" fill="#ececef">j &lt; l</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="n24">
+      <ns0:desc>Добавить в R байт R[len(R) − d]
+j = j + 1</ns0:desc>
+      <ns0:rect x="830" y="1290" width="460" height="85" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+      <ns0:text x="1060" y="1325.9" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Добавить в R байт R[len(R) − d]</ns0:text>
+      <ns0:text x="1060" y="1354.06" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">j = j + 1</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="n25">
+      <ns0:desc>Добавить в R явный байт c</ns0:desc>
+      <ns0:rect x="830" y="1435" width="460" height="70" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+      <ns0:text x="1060" y="1477.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Добавить в R явный байт c</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="n26">
+      <ns0:desc>Длина результата верна?
+len(R) = N</ns0:desc>
+      <ns0:polygon points="1060,1560 1290,1612.5 1060,1665 830,1612.5" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+      <ns0:text x="1060" y="1606.8" text-anchor="middle" font-family="Arial" font-size="19px" fill="#ececef">Длина результата верна?</ns0:text>
+      <ns0:text x="1060" y="1631.12" text-anchor="middle" font-family="Arial" font-size="19px" fill="#ececef">len(R) = N</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="n27">
+      <ns0:desc>Выход: исходные N байт</ns0:desc>
+      <ns0:polygon points="854,1710 1290,1710 1266,1780 830,1780" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+      <ns0:text x="1060" y="1752.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Выход: исходные N байт</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="n28">
+      <ns0:desc>Конец</ns0:desc>
+      <ns0:rect x="940" y="1820" width="240" height="50" rx="12.5" ry="12.5" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+      <ns0:text x="1060" y="1852.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Конец</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="n29">
+      <ns0:desc>Ошибка</ns0:desc>
+      <ns0:rect x="1470" y="840" width="100" height="80" rx="20" ry="20" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+      <ns0:text x="1520" y="885.44" text-anchor="middle" font-family="Arial" font-size="16px" fill="#ececef">Ошибка</ns0:text>
+    </ns0:g>
+    <ns0:g data-vertex-id="n30">
+      <ns0:desc>Ошибка</ns0:desc>
+      <ns0:rect x="1470" y="1572.5" width="100" height="80" rx="20" ry="20" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
+      <ns0:text x="1520" y="1617.94" text-anchor="middle" font-family="Arial" font-size="16px" fill="#ececef">Ошибка</ns0:text>
+    </ns0:g>
+    <ns0:text x="62.5" y="970.5" text-anchor="middle" font-family="Arial" font-size="20px" fill="#ececef" data-edge-label="e6">Нет</ns0:text>
+    <ns0:text x="555" y="970.5" text-anchor="middle" font-family="Arial" font-size="20px" fill="#ececef" data-edge-label="e7">Да</ns0:text>
+    <ns0:text x="50" y="510.5" text-anchor="middle" font-family="Arial" font-size="20px" fill="#ececef" data-edge-label="e12">Нет</ns0:text>
+    <ns0:text x="1074" y="1263.5" text-anchor="start" font-family="Arial" font-size="20px" fill="#ececef" data-edge-label="e21">Да</ns0:text>
+    <ns0:text x="1307.5" y="1160.5" text-anchor="middle" font-family="Arial" font-size="20px" fill="#ececef" data-edge-label="e23">Нет</ns0:text>
+    <ns0:text x="800" y="535.5" text-anchor="middle" font-family="Arial" font-size="20px" fill="#ececef" data-edge-label="e25">Нет</ns0:text>
+    <ns0:text x="1415" y="868" text-anchor="middle" font-family="Arial" font-size="20px" fill="#ececef" data-edge-label="e28">Нет</ns0:text>
+    <ns0:text x="1415" y="1600.5" text-anchor="middle" font-family="Arial" font-size="20px" fill="#ececef" data-edge-label="e29">Нет</ns0:text>
+  <ns0:text x="340" y="607" text-anchor="middle" font-family="Arial" font-size="20px" fill="#ececef">Да</ns0:text>
+  <ns0:text x="1090" y="635" text-anchor="middle" font-family="Arial" font-size="20px" fill="#ececef">Да</ns0:text>
+  <ns0:text x="1090" y="980" text-anchor="middle" font-family="Arial" font-size="20px" fill="#ececef">Да</ns0:text>
+  <ns0:text x="1090" y="1698" text-anchor="middle" font-family="Arial" font-size="20px" fill="#ececef">Да</ns0:text>
+  </ns0:g>
+</ns0:svg>
