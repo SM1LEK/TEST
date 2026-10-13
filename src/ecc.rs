@@ -80,7 +80,7 @@ pub(crate) fn decode(input: &[u8], _original_size: usize) -> io::Result<(Vec<u8>
     }
 
     if repaired > PARITY_SHARDS as u64 {
-        return Err(invalid("RS: слишком много повреждённых фрагментов"));
+        return Err(invalid("Слишком много повреждённых фрагментов"));
     }
 
     if repaired > 0 {
