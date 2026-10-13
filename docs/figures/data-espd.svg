@@ -1,276 +1,284 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="1354" height="874" viewBox="8 8 1354 874" role="img">
-  <ns0:title>data-espd</ns0:title>
-  <ns0:metadata>{"source": "diagrams.drawio", "source_sha256": "d428ae0fa57a491d47f1c1137e4fb9b6a2069a481d88f80a75b10673421adad2", "diagram_id": "data-espd", "diagram_name": "data-espd", "vertex_count": 66, "edge_count": 8}</ns0:metadata>
-  <ns0:defs>
-    <ns0:marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
-      <ns0:path d="M 0 1 L 10 5 L 0 9 Z" fill="#b3afb9"/>
-    </ns0:marker>
-  </ns0:defs>
-  <ns0:rect id="background" x="8" y="8" width="1354" height="874" fill="#1f1e24"/>
-  <ns0:g id="drawing">
-    <ns0:path d="M 1000 385 L 870 385" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e0" stroke-dasharray="9 7" data-source="v0" data-target="v2"/>
-    <ns0:path d="M 695 554 L 695 650" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e1" data-source="v2" data-target="v13"/>
-    <ns0:path d="M 215 300 L 215 220" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e2" stroke-dasharray="9 7" data-source="v5" data-target="v6"/>
-    <ns0:path d="M 390 130 L 520 130" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e3" stroke-dasharray="9 7" data-source="v6" data-target="v8"/>
-    <ns0:path d="M 870 130 L 1000 130" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e4" stroke-dasharray="9 7" data-source="v8" data-target="v10"/>
-    <ns0:path d="M 390 440 L 455 440 L 455 610 L 607.5 610 L 607.5 650" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e5" stroke-dasharray="9 7" data-source="v4" data-target="v13"/>
-    <ns0:path d="M 870 750 L 1000 750" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e6" data-source="v12" data-target="v14"/>
-    <ns0:path d="M 215 530 L 215 650" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e7" stroke-dasharray="9 7" data-source="v4" data-target="v17"/>
-    <ns0:g data-vertex-id="v0">
-      <ns0:desc/>
-      <ns0:rect x="1000" y="300" width="330" height="170" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-    </ns0:g>
-    <ns0:g data-vertex-id="v1">
-      <ns0:desc/>
-      <ns0:rect x="1000" y="300" width="330" height="42" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-    </ns0:g>
-    <ns0:g data-vertex-id="v2">
-      <ns0:desc/>
-      <ns0:rect x="520" y="300" width="350" height="254" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-    </ns0:g>
-    <ns0:g data-vertex-id="v3">
-      <ns0:desc/>
-      <ns0:rect x="520" y="300" width="350" height="42" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-    </ns0:g>
-    <ns0:g data-vertex-id="v4">
-      <ns0:desc/>
-      <ns0:rect x="40" y="300" width="350" height="230" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-    </ns0:g>
-    <ns0:g data-vertex-id="v5">
-      <ns0:desc/>
-      <ns0:rect x="40" y="300" width="350" height="42" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-    </ns0:g>
-    <ns0:g data-vertex-id="v6">
-      <ns0:desc/>
-      <ns0:rect x="40" y="40" width="350" height="180" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-    </ns0:g>
-    <ns0:g data-vertex-id="v7">
-      <ns0:desc/>
-      <ns0:rect x="40" y="40" width="350" height="42" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-    </ns0:g>
-    <ns0:g data-vertex-id="v8">
-      <ns0:desc/>
-      <ns0:rect x="520" y="40" width="350" height="180" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-    </ns0:g>
-    <ns0:g data-vertex-id="v9">
-      <ns0:desc/>
-      <ns0:rect x="520" y="40" width="350" height="42" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-    </ns0:g>
-    <ns0:g data-vertex-id="v10">
-      <ns0:desc/>
-      <ns0:rect x="1000" y="40" width="330" height="180" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-    </ns0:g>
-    <ns0:g data-vertex-id="v11">
-      <ns0:desc/>
-      <ns0:rect x="1000" y="40" width="330" height="42" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-    </ns0:g>
-    <ns0:g data-vertex-id="v12">
-      <ns0:desc/>
-      <ns0:rect x="520" y="650" width="350" height="200" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-    </ns0:g>
-    <ns0:g data-vertex-id="v13">
-      <ns0:desc/>
-      <ns0:rect x="520" y="650" width="350" height="42" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-    </ns0:g>
-    <ns0:g data-vertex-id="v14">
-      <ns0:desc/>
-      <ns0:rect x="1000" y="650" width="330" height="200" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-    </ns0:g>
-    <ns0:g data-vertex-id="v15">
-      <ns0:desc/>
-      <ns0:rect x="1000" y="650" width="330" height="42" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-    </ns0:g>
-    <ns0:g data-vertex-id="v16">
-      <ns0:desc/>
-      <ns0:rect x="40" y="650" width="350" height="200" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-    </ns0:g>
-    <ns0:g data-vertex-id="v17">
-      <ns0:desc/>
-      <ns0:rect x="40" y="650" width="350" height="42" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-    </ns0:g>
-    <ns0:g data-vertex-id="t0">
-      <ns0:desc>EncodingOptions</ns0:desc>
-      <ns0:text x="1165" y="327.12" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">EncodingOptions</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t1">
-      <ns0:desc>lz77 : bool</ns0:desc>
-      <ns0:text x="1020" y="376.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">lz77 : bool</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t2">
-      <ns0:desc>rans : bool</ns0:desc>
-      <ns0:text x="1020" y="406.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">rans : bool</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t3">
-      <ns0:desc>protected : bool</ns0:desc>
-      <ns0:text x="1020" y="436.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">protected : bool</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t4">
-      <ns0:desc>BlockWriter&lt;W&gt;</ns0:desc>
-      <ns0:text x="695" y="327.12" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">BlockWriter&lt;W&gt;</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t5">
-      <ns0:desc>output : W</ns0:desc>
-      <ns0:text x="540" y="376.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">output : W</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t6">
-      <ns0:desc>options : EncodingOptions</ns0:desc>
-      <ns0:text x="540" y="406.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">options : EncodingOptions</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t7">
-      <ns0:desc>sequence : u64</ns0:desc>
-      <ns0:text x="540" y="436.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">sequence : u64</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t8">
-      <ns0:desc>buffer : Vec&lt;u8&gt;</ns0:desc>
-      <ns0:text x="540" y="466.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">buffer : Vec&lt;u8&gt;</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t9">
-      <ns0:desc>pending : Vec&lt;Vec&lt;u8&gt;&gt;</ns0:desc>
-      <ns0:text x="540" y="496.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">pending : Vec&lt;Vec&lt;u8&gt;&gt;</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t10">
-      <ns0:desc>executor : Executor</ns0:desc>
-      <ns0:text x="540" y="526.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">executor : Executor</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t11">
-      <ns0:desc>Архивные записи</ns0:desc>
-      <ns0:text x="215" y="327.12" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Архивные записи</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t12">
-      <ns0:desc>type : u8</ns0:desc>
-      <ns0:text x="60" y="376.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">type : u8</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t13">
-      <ns0:desc>name_length : varint</ns0:desc>
-      <ns0:text x="60" y="406.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">name_length : varint</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t14">
-      <ns0:desc>name : UTF-8</ns0:desc>
-      <ns0:text x="60" y="436.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">name : UTF-8</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t15">
-      <ns0:desc>file_size : varint</ns0:desc>
-      <ns0:text x="60" y="466.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">file_size : varint</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t16">
-      <ns0:desc>content : file bytes</ns0:desc>
-      <ns0:text x="60" y="496.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">content : file bytes</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t17">
-      <ns0:desc>LZ77 stream</ns0:desc>
-      <ns0:text x="215" y="67.12" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">LZ77 stream</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t18">
-      <ns0:desc>original_size : varint</ns0:desc>
-      <ns0:text x="60" y="116.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">original_size : varint</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t19">
-      <ns0:desc>tuple[length, distance, byte]</ns0:desc>
-      <ns0:text x="60" y="146.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">tuple[length, distance, byte]</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t20">
-      <ns0:desc>distance при length &gt; 0</ns0:desc>
-      <ns0:text x="60" y="176.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">distance при length &gt; 0</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t21">
-      <ns0:desc>rANS stream</ns0:desc>
-      <ns0:text x="695" y="67.12" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">rANS stream</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t22">
-      <ns0:desc>size : varint</ns0:desc>
-      <ns0:text x="540" y="116.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">size : varint</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t23">
-      <ns0:desc>model : alphabet + freq</ns0:desc>
-      <ns0:text x="540" y="146.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">model : alphabet + freq</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t24">
-      <ns0:desc>state : u32 LE</ns0:desc>
-      <ns0:text x="540" y="176.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">state : u32 LE</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t25">
-      <ns0:desc>renorm_bytes : bytes</ns0:desc>
-      <ns0:text x="540" y="206.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">renorm_bytes : bytes</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t26">
-      <ns0:desc>RS erasure (10+2)</ns0:desc>
-      <ns0:text x="1165" y="67.12" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">RS erasure (10+2)</ns0:text></ns0:g>
-    <ns0:g data-vertex-id="t27">
-      <ns0:desc>data : 10 shards по q байт</ns0:desc>
-      <ns0:text x="1020" y="116.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">data : 10 shards по q байт</ns0:text></ns0:g>
-    <ns0:g data-vertex-id="t28">
-      <ns0:desc>parity : 2 shards по q байт</ns0:desc>
-      <ns0:text x="1020" y="146.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">parity : 2 shards по q байт</ns0:text></ns0:g>
-    <ns0:g data-vertex-id="t29">
-      <ns0:desc>CRC32[12] : 48 байт</ns0:desc>
-      <ns0:text x="1020" y="176.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">CRC32[12] : 48 байт</ns0:text></ns0:g>
-    <ns0:g data-vertex-id="t30">
-      <ns0:desc>Заголовок блока (поля потока)</ns0:desc>
-      <ns0:text x="695" y="677.12" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Заголовок блока (поля потока)</ns0:text></ns0:g>
-    <ns0:g data-vertex-id="t31">
-      <ns0:desc>original_size_minus_1 : u16 LE</ns0:desc>
-      <ns0:text x="540" y="726.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">original_size_minus_1 : u16 LE</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t32">
-      <ns0:desc>stored_size_minus_1 : u16 LE</ns0:desc>
-      <ns0:text x="540" y="756.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">stored_size_minus_1 : u16 LE</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t33">
-      <ns0:desc>3 копии при protected</ns0:desc>
-      <ns0:text x="540" y="786.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">3 копии при protected</ns0:text></ns0:g>
-    <ns0:g data-vertex-id="t34">
-      <ns0:desc>CRC заголовка отсутствует</ns0:desc>
-      <ns0:text x="540" y="816.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">CRC заголовка отсутствует</ns0:text></ns0:g>
-    <ns0:g data-vertex-id="t35">
-      <ns0:desc>StoredBlock / DecodedBlock</ns0:desc>
-      <ns0:text x="1165" y="677.12" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">StoredBlock / DecodedBlock</ns0:text></ns0:g>
-    <ns0:g data-vertex-id="t36">
-      <ns0:desc>payload : Vec&lt;u8&gt;</ns0:desc>
-      <ns0:text x="1020" y="726.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">payload : Vec&lt;u8&gt;</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t37">
-      <ns0:desc>original_size, stored_size</ns0:desc>
-      <ns0:text x="1020" y="756.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">original_size, stored_size</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t38">
-      <ns0:desc>compressed, corrected_shards</ns0:desc>
-      <ns0:text x="1020" y="786.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">compressed, corrected_shards</ns0:text></ns0:g>
-    <ns0:g data-vertex-id="t39">
-      <ns0:desc>data : Vec&lt;u8&gt;</ns0:desc>
-      <ns0:text x="1020" y="816.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">data : Vec&lt;u8&gt;</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t40">
-      <ns0:desc>Names</ns0:desc>
-      <ns0:text x="215" y="677.12" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Names</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t41">
-      <ns0:desc>entries : HashSet</ns0:desc>
-      <ns0:text x="60" y="726.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">entries : HashSet</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t42">
-      <ns0:desc>directories : HashSet</ns0:desc>
-      <ns0:text x="60" y="756.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">directories : HashSet</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t43">
-      <ns0:desc>проверка путей</ns0:desc>
-      <ns0:text x="60" y="786.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">проверка путей</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t44">
-      <ns0:desc>settings</ns0:desc>
-      <ns0:text x="889" y="371.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">settings</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t45">
-      <ns0:desc>payload</ns0:desc>
-      <ns0:text x="236" y="261.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">payload</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t46">
-      <ns0:desc>header + payload</ns0:desc>
-      <ns0:text x="719" y="600.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">header + payload</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="t47">
-      <ns0:desc>check</ns0:desc>
-      <ns0:text x="236" y="591.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">check</ns0:text>
-    </ns0:g>
-  </ns0:g>
-</ns0:svg>
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1354" height="870" viewBox="8 8 1354 870" role="img">
+  <title>data-espd</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 Z" fill="#b3afb9" />
+    </marker>
+  </defs>
+  <rect id="background" x="8" y="8.0" width="1354" height="870.0" fill="#1f1e24" />
+  <g id="drawing">
+    <path d="M 1000 385 L 870 385" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e0" stroke-dasharray="9 7" data-source="v0" data-target="v2" />
+    <path d="M 695 554 L 695 650" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e1" data-source="v2" data-target="v13" />
+    <path d="M 215 300 L 215 220" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e2" stroke-dasharray="9 7" data-source="v5" data-target="v6" />
+    <path d="M 390 130 L 520 130" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e3" stroke-dasharray="9 7" data-source="v6" data-target="v8" />
+    <path d="M 870 130 L 1000 130" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e4" stroke-dasharray="9 7" data-source="v8" data-target="v10" />
+    <path d="M 390 440 L 455 440 L 455 610 L 607.5 610 L 607.5 650" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e5" stroke-dasharray="9 7" data-source="v4" data-target="v13" />
+    <path d="M 870 750 L 1000 750" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e6" data-source="v12" data-target="v14" />
+    <path d="M 215 530 L 215 650" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e7" stroke-dasharray="9 7" data-source="v4" data-target="v17" />
+    <g data-vertex-id="v0">
+      <desc />
+      <rect x="1000" y="300" width="330" height="170" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    </g>
+    <g data-vertex-id="v1">
+      <desc />
+      <rect x="1000" y="300" width="330" height="42" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    </g>
+    <g data-vertex-id="v2">
+      <desc />
+      <rect x="520" y="300" width="350" height="254" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    </g>
+    <g data-vertex-id="v3">
+      <desc />
+      <rect x="520" y="300" width="350" height="42" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    </g>
+    <g data-vertex-id="v4">
+      <desc />
+      <rect x="40" y="300" width="350" height="230" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    </g>
+    <g data-vertex-id="v5">
+      <desc />
+      <rect x="40" y="300" width="350" height="42" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    </g>
+    <g data-vertex-id="v6">
+      <desc />
+      <rect x="40" y="40" width="350" height="180" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    </g>
+    <g data-vertex-id="v7">
+      <desc />
+      <rect x="40" y="40" width="350" height="42" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    </g>
+    <g data-vertex-id="v8">
+      <desc />
+      <rect x="520" y="40" width="350" height="180" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    </g>
+    <g data-vertex-id="v9">
+      <desc />
+      <rect x="520" y="40" width="350" height="42" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    </g>
+    <g data-vertex-id="v10">
+      <desc />
+      <rect x="1000" y="40" width="330" height="180" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    </g>
+    <g data-vertex-id="v11">
+      <desc />
+      <rect x="1000" y="40" width="330" height="42" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    </g>
+    <g data-vertex-id="v12">
+      <desc />
+      <rect x="520" y="650" width="350" height="200" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    </g>
+    <g data-vertex-id="v13">
+      <desc />
+      <rect x="520" y="650" width="350" height="42" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    </g>
+    <g data-vertex-id="v14">
+      <desc />
+      <rect x="1000" y="650" width="330" height="200" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    </g>
+    <g data-vertex-id="v15">
+      <desc />
+      <rect x="1000" y="650" width="330" height="42" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    </g>
+    <g data-vertex-id="v16">
+      <desc />
+      <rect x="40" y="650" width="350" height="200" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    </g>
+    <g data-vertex-id="v17">
+      <desc />
+      <rect x="40" y="650" width="350" height="42" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    </g>
+    <g data-vertex-id="t0">
+      <desc>EncodingOptions</desc>
+      <text x="1165" y="327.12" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">EncodingOptions</text>
+    </g>
+    <g data-vertex-id="t1">
+      <desc>lz77 : bool</desc>
+      <text x="1020" y="376.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">lz77 : bool</text>
+    </g>
+    <g data-vertex-id="t2">
+      <desc>rans : bool</desc>
+      <text x="1020" y="406.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">rans : bool</text>
+    </g>
+    <g data-vertex-id="t3">
+      <desc>protected : bool</desc>
+      <text x="1020" y="436.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">protected : bool</text>
+    </g>
+    <g data-vertex-id="t4">
+      <desc>BlockWriter&lt;W&gt;</desc>
+      <text x="695" y="327.12" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">BlockWriter&lt;W&gt;</text>
+    </g>
+    <g data-vertex-id="t5">
+      <desc>output : W</desc>
+      <text x="540" y="376.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">output : W</text>
+    </g>
+    <g data-vertex-id="t6">
+      <desc>options : EncodingOptions</desc>
+      <text x="540" y="406.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">options : EncodingOptions</text>
+    </g>
+    <g data-vertex-id="t7">
+      <desc>sequence : u64</desc>
+      <text x="540" y="436.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">sequence : u64</text>
+    </g>
+    <g data-vertex-id="t8">
+      <desc>buffer : Vec&lt;u8&gt;</desc>
+      <text x="540" y="466.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">buffer : Vec&lt;u8&gt;</text>
+    </g>
+    <g data-vertex-id="t9">
+      <desc>pending : Vec&lt;Vec&lt;u8&gt;&gt;</desc>
+      <text x="540" y="496.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">pending : Vec&lt;Vec&lt;u8&gt;&gt;</text>
+    </g>
+    <g data-vertex-id="t10">
+      <desc>executor : Executor</desc>
+      <text x="540" y="526.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">executor : Executor</text>
+    </g>
+    <g data-vertex-id="t11">
+      <desc>Архивные записи</desc>
+      <text x="215" y="327.12" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Архивные записи</text>
+    </g>
+    <g data-vertex-id="t12">
+      <desc>type : u8</desc>
+      <text x="60" y="376.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">type : u8</text>
+    </g>
+    <g data-vertex-id="t13">
+      <desc>name_length : varint</desc>
+      <text x="60" y="406.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">name_length : varint</text>
+    </g>
+    <g data-vertex-id="t14">
+      <desc>name : UTF-8</desc>
+      <text x="60" y="436.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">name : UTF-8</text>
+    </g>
+    <g data-vertex-id="t15">
+      <desc>file_size : varint</desc>
+      <text x="60" y="466.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">file_size : varint</text>
+    </g>
+    <g data-vertex-id="t16">
+      <desc>content : file bytes</desc>
+      <text x="60" y="496.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">content : file bytes</text>
+    </g>
+    <g data-vertex-id="t17">
+      <desc>LZ77 stream</desc>
+      <text x="215" y="67.12" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">LZ77 stream</text>
+    </g>
+    <g data-vertex-id="t18">
+      <desc>original_size : varint</desc>
+      <text x="60" y="116.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">original_size : varint</text>
+    </g>
+    <g data-vertex-id="t19">
+      <desc>tuple[length, distance, byte]</desc>
+      <text x="60" y="146.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">tuple[length, distance, byte]</text>
+    </g>
+    <g data-vertex-id="t20">
+      <desc>distance при length &gt; 0</desc>
+      <text x="60" y="176.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">distance при length &gt; 0</text>
+    </g>
+    <g data-vertex-id="t21">
+      <desc>rANS stream</desc>
+      <text x="695" y="67.12" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">rANS stream</text>
+    </g>
+    <g data-vertex-id="t22">
+      <desc>size : varint</desc>
+      <text x="540" y="116.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">size : varint</text>
+    </g>
+    <g data-vertex-id="t23">
+      <desc>model : alphabet + freq</desc>
+      <text x="540" y="146.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">model : alphabet + freq</text>
+    </g>
+    <g data-vertex-id="t24">
+      <desc>state : u32 LE</desc>
+      <text x="540" y="176.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">state : u32 LE</text>
+    </g>
+    <g data-vertex-id="t25">
+      <desc>renorm_bytes : bytes</desc>
+      <text x="540" y="206.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">renorm_bytes : bytes</text>
+    </g>
+    <g data-vertex-id="t26">
+      <desc>RS erasure (10+2)</desc>
+      <text x="1165" y="67.12" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">RS erasure (10+2)</text>
+    </g>
+    <g data-vertex-id="t27">
+      <desc>data : 10 shards по q байт</desc>
+      <text x="1020" y="116.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">data : 10 shards по q байт</text>
+    </g>
+    <g data-vertex-id="t28">
+      <desc>parity : 2 shards по q байт</desc>
+      <text x="1020" y="146.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">parity : 2 shards по q байт</text>
+    </g>
+    <g data-vertex-id="t29">
+      <desc>CRC32[12] : 48 байт</desc>
+      <text x="1020" y="176.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">CRC32[12] : 48 байт</text>
+    </g>
+    <g data-vertex-id="t30">
+      <desc>Заголовок блока (поля потока)</desc>
+      <text x="695" y="677.12" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Заголовок блока (поля потока)</text>
+    </g>
+    <g data-vertex-id="t31">
+      <desc>original_size_minus_1 : u16 LE</desc>
+      <text x="540" y="726.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">original_size_minus_1 : u16 LE</text>
+    </g>
+    <g data-vertex-id="t32">
+      <desc>stored_size_minus_1 : u16 LE</desc>
+      <text x="540" y="756.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">stored_size_minus_1 : u16 LE</text>
+    </g>
+    <g data-vertex-id="t33">
+      <desc>3 копии при protected</desc>
+      <text x="540" y="786.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">3 копии при protected</text>
+    </g>
+    <g data-vertex-id="t34">
+      <desc>CRC заголовка отсутствует</desc>
+      <text x="540" y="816.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">CRC заголовка отсутствует</text>
+    </g>
+    <g data-vertex-id="t35">
+      <desc>StoredBlock / DecodedBlock</desc>
+      <text x="1165" y="677.12" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">StoredBlock / DecodedBlock</text>
+    </g>
+    <g data-vertex-id="t36">
+      <desc>payload : Vec&lt;u8&gt;</desc>
+      <text x="1020" y="726.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">payload : Vec&lt;u8&gt;</text>
+    </g>
+    <g data-vertex-id="t37">
+      <desc>original_size, stored_size</desc>
+      <text x="1020" y="756.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">original_size, stored_size</text>
+    </g>
+    <g data-vertex-id="t38">
+      <desc>compressed, corrected_shards</desc>
+      <text x="1020" y="786.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">compressed, corrected_shards</text>
+    </g>
+    <g data-vertex-id="t39">
+      <desc>data : Vec&lt;u8&gt;</desc>
+      <text x="1020" y="816.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">data : Vec&lt;u8&gt;</text>
+    </g>
+    <g data-vertex-id="t40">
+      <desc>Names</desc>
+      <text x="215" y="677.12" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Names</text>
+    </g>
+    <g data-vertex-id="t41">
+      <desc>entries : HashSet</desc>
+      <text x="60" y="726.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">entries : HashSet</text>
+    </g>
+    <g data-vertex-id="t42">
+      <desc>directories : HashSet</desc>
+      <text x="60" y="756.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">directories : HashSet</text>
+    </g>
+    <g data-vertex-id="t43">
+      <desc>проверка путей</desc>
+      <text x="60" y="786.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">проверка путей</text>
+    </g>
+    <g data-vertex-id="t44">
+      <desc>settings</desc>
+      <text x="889" y="371.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">settings</text>
+    </g>
+    <g data-vertex-id="t45">
+      <desc>payload</desc>
+      <text x="236" y="261.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">payload</text>
+    </g>
+    <g data-vertex-id="t46">
+      <desc>header + payload</desc>
+      <text x="719" y="600.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">header + payload</text>
+    </g>
+    <g data-vertex-id="t47">
+      <desc>check</desc>
+      <text x="236" y="591.27" text-anchor="start" font-family="Arial" font-size="18px" fill="#ececef">check</text>
+    </g>
+  </g>
+</svg>

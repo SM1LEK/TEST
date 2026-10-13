@@ -1,27 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="480" viewBox="0 0 900 480">
-<title>triplication</title>
-<defs><marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
-<path d="M 0 1 L 10 5 L 0 9 Z" fill="#b3afb9"/></marker></defs>
-<rect x="0" y="0" width="900" height="480" fill="#1f1e24"/>
-<g id="drawing">
-<text x="450" y="30" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Троирование заголовков блоков</text>
-<rect x="275" y="60" width="350" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="450" y="97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Заголовок (4 байта): N-1 | S-1</text>
-<path d="M 350 120 L 165 170" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
-<path d="M 450 120 L 450 170" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
-<path d="M 550 120 L 735 170" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
-<rect x="40" y="170" width="250" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="165" y="207" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Копия 1</text>
-<rect x="325" y="170" width="250" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="450" y="207" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Копия 2</text>
-<rect x="610" y="170" width="250" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="735" y="207" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Копия 3</text>
-<path d="M 165 230 L 350 290" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
-<path d="M 450 230 L 450 290" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
-<path d="M 735 230 L 550 290" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
-<rect x="300" y="290" width="300" height="160" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="450" y="360" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Побайтовое</text>
-<text x="450" y="386" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">голосование</text>
-<text x="450" y="412" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">(2 из 3)</text>
-</g></svg>
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="433" viewBox="0 45 900 433">
+  <title>triplication</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 Z" fill="#b3afb9" />
+    </marker>
+  </defs>
+  <rect x="0" y="45" width="900" height="433.0" fill="#1f1e24" />
+  <g id="drawing">
+    <rect x="275" y="60" width="350" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    <text x="450" y="97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Заголовок (4 байта): N-1 | S-1</text>
+    <path d="M 350 120 L 165 170" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)" />
+    <path d="M 450 120 L 450 170" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)" />
+    <path d="M 550 120 L 735 170" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)" />
+    <rect x="40" y="170" width="250" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    <text x="165" y="207" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Копия 1</text>
+    <rect x="325" y="170" width="250" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    <text x="450" y="207" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Копия 2</text>
+    <rect x="610" y="170" width="250" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    <text x="735" y="207" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Копия 3</text>
+    <path d="M 165 230 L 350 290" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)" />
+    <path d="M 450 230 L 450 290" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)" />
+    <path d="M 735 230 L 550 290" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)" />
+    <rect x="300" y="290" width="300" height="160" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    <text x="450" y="360" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Побайтовое</text>
+    <text x="450" y="386" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">голосование</text>
+    <text x="450" y="412" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">(2 из 3)</text>
+  </g>
+</svg>

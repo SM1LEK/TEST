@@ -1,41 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="460" viewBox="0 0 1100 460">
-<title>reed-solomon</title>
-<defs><marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
-<path d="M 0 1 L 10 5 L 0 9 Z" fill="#b3afb9"/></marker></defs>
-<rect x="0" y="0" width="1100" height="460" fill="#1f1e24"/>
-<g id="drawing">
-<text x="550" y="30" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Reed-Solomon Erasure (10+2)</text>
-<rect x="40" y="60" width="80" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="80" y="97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D0</text>
-<rect x="125" y="60" width="80" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="165" y="97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D1</text>
-<rect x="210" y="60" width="80" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="250" y="97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D2</text>
-<rect x="295" y="60" width="80" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="335" y="97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D3</text>
-<rect x="380" y="60" width="80" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="420" y="97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D4</text>
-<rect x="465" y="60" width="80" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="505" y="97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D5</text>
-<rect x="550" y="60" width="80" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="590" y="97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D6</text>
-<rect x="635" y="60" width="80" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="675" y="97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D7</text>
-<rect x="720" y="60" width="80" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="760" y="97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D8</text>
-<rect x="805" y="60" width="80" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="845" y="97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D9</text>
-<rect x="890" y="60" width="80" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="930" y="97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">P0</text>
-<rect x="975" y="60" width="80" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="1015" y="97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">P1</text>
-<text x="550" y="155" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D0..D9 = data shards | P0, P1 = parity shards</text>
-<rect x="40" y="190" width="1040" height="55" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="560" y="225" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">CRC32 таблица: 12 x u32 LE = 48 байт</text>
-<rect x="40" y="270" width="1040" height="55" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="560" y="305" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Тела фрагментов: 12 x shard_size байт</text>
-<text x="550" y="370" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">shard_size = ceil((original_len + 4) / 10)</text>
-<text x="550" y="400" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">E(S) = 48 + 12 * shard_size</text>
-<text x="550" y="440" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Восстановление: до 2 стёртых фрагментов</text>
-</g></svg>
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="353" viewBox="0 0 1100 353">
+  <title>reed-solomon</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 Z" fill="#b3afb9" />
+    </marker>
+  </defs>
+  <rect x="0" y="0.0" width="1100" height="353.0" fill="#1f1e24" />
+  <g id="drawing">
+    <rect x="40" y="60" width="80" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    <text x="80" y="97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D0</text>
+    <rect x="125" y="60" width="80" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    <text x="165" y="97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D1</text>
+    <rect x="210" y="60" width="80" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    <text x="250" y="97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D2</text>
+    <rect x="295" y="60" width="80" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    <text x="335" y="97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D3</text>
+    <rect x="380" y="60" width="80" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    <text x="420" y="97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D4</text>
+    <rect x="465" y="60" width="80" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    <text x="505" y="97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D5</text>
+    <rect x="550" y="60" width="80" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    <text x="590" y="97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D6</text>
+    <rect x="635" y="60" width="80" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    <text x="675" y="97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D7</text>
+    <rect x="720" y="60" width="80" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    <text x="760" y="97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D8</text>
+    <rect x="805" y="60" width="80" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    <text x="845" y="97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D9</text>
+    <rect x="890" y="60" width="80" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    <text x="930" y="97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">P0</text>
+    <rect x="975" y="60" width="80" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    <text x="1015" y="97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">P1</text>
+    <rect x="40" y="190" width="1040" height="55" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    <text x="560" y="225" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">CRC32 таблица: 12 x u32 LE = 48 байт</text>
+    <rect x="40" y="270" width="1040" height="55" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    <text x="560" y="305" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Тела фрагментов: 12 x shard_size байт</text>
+  </g>
+</svg>

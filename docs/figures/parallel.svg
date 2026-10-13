@@ -1,36 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1214" viewBox="0 0 1120 1214" role="img"><title>Параллельная обработка • порядок блоков сохраняется</title><defs><marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#b3afb9"/></marker></defs><rect width="100%" height="100%" fill="#1f1e24"/>
-<path d="M560 375 L560 430 L200 430 L200 490" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
-<path d="M560 375 L560 430 L560 430 L560 490" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
-<path d="M560 375 L560 430 L920 430 L920 490" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
-<path d="M200 605 L200 700 L560 700 L560 760" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
-<path d="M560 605 L560 700 L560 700 L560 760" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
-<path d="M920 605 L920 700 L560 700 L560 760" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
-<path d="M560 210 L560 275" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
-<path d="M560 865 L560 950" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
-<text x="560" y="50" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="26" fill="#ececef" font-weight="700">Параллельная обработка • порядок блоков сохраняется</text>
-<path d="M 304 110 H 840 L 816 210 H 280 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="560" y="146.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Последовательный поток записей</text>
-<text x="560" y="173.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Блоки X₀, X₁, X₂, …</text>
-<rect x="280" y="275" width="560" height="100" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="560" y="311.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Партия B блоков</text>
-<text x="560" y="338.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">B = 1 при T = 1; иначе B = max(4, 2T)</text>
-<rect x="40" y="490" width="320" height="115" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="200" y="520.66" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Задание 0</text>
-<text x="200" y="547.5" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Собственный словарь</text>
-<text x="200" y="574.34" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">и модель частот</text>
-<rect x="400" y="490" width="320" height="115" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="560" y="520.66" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Задание 1</text>
-<text x="560" y="547.5" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Собственный словарь</text>
-<text x="560" y="574.34" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">и модель частот</text>
-<rect x="760" y="490" width="320" height="115" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="920" y="520.66" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Задание 2</text>
-<text x="920" y="547.5" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Собственный словарь</text>
-<text x="920" y="574.34" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">и модель частот</text>
-<rect x="280" y="760" width="560" height="105" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="560" y="799.08" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Собрать результаты в исходном порядке</text>
-<text x="560" y="825.92" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Записать Y₀, Y₁, Y₂, …</text>
-<path d="M 304 950 H 840 L 816 1050 H 280 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="560" y="986.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Поток блоков</text>
-<text x="560" y="1013.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Порядок не зависит от T</text>
-<text x="560" y="1142" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="18" fill="#ececef">1 ≤ T ≤ 64; пул Rayon локальный, создаётся лениво и переиспользуется. Чтение партий последовательно.</text>
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="990" viewBox="0 80 1120 990" role="img">
+  <title>Параллельная обработка • порядок блоков сохраняется</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#b3afb9" />
+    </marker>
+  </defs>
+  <rect width="100%" height="990.0" fill="#1f1e24" y="80" />
+  <path d="M560 375 L560 430 L200 430 L200 490" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
+  <path d="M560 375 L560 430 L560 430 L560 490" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
+  <path d="M560 375 L560 430 L920 430 L920 490" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
+  <path d="M200 605 L200 700 L560 700 L560 760" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
+  <path d="M560 605 L560 700 L560 700 L560 760" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
+  <path d="M920 605 L920 700 L560 700 L560 760" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
+  <path d="M560 210 L560 275" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
+  <path d="M560 865 L560 950" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
+  <path d="M 304 110 H 840 L 816 210 H 280 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="560" y="146.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Последовательный поток записей</text>
+  <text x="560" y="173.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Блоки X₀, X₁, X₂, …</text>
+  <rect x="280" y="275" width="560" height="100" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="560" y="311.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Партия B блоков</text>
+  <text x="560" y="338.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">B = 1 при T = 1; иначе B = max(4, 2T)</text>
+  <rect x="40" y="490" width="320" height="115" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="200" y="520.66" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Задание 0</text>
+  <text x="200" y="547.5" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Собственный словарь</text>
+  <text x="200" y="574.34" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">и модель частот</text>
+  <rect x="400" y="490" width="320" height="115" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="560" y="520.66" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Задание 1</text>
+  <text x="560" y="547.5" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Собственный словарь</text>
+  <text x="560" y="574.34" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">и модель частот</text>
+  <rect x="760" y="490" width="320" height="115" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="920" y="520.66" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Задание 2</text>
+  <text x="920" y="547.5" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Собственный словарь</text>
+  <text x="920" y="574.34" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">и модель частот</text>
+  <rect x="280" y="760" width="560" height="105" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="560" y="799.08" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Собрать результаты в исходном порядке</text>
+  <text x="560" y="825.92" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Записать Y₀, Y₁, Y₂, …</text>
+  <path d="M 304 950 H 840 L 816 1050 H 280 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="560" y="986.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Поток блоков</text>
+  <text x="560" y="1013.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Порядок не зависит от T</text>
 </svg>

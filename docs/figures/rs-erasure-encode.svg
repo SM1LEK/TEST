@@ -1,27 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1082" viewBox="0 0 1120 1082" role="img"><title>RS(12,10) • кодирование сохранённого payload</title><defs><marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#b3afb9"/></marker></defs><rect width="100%" height="100%" fill="#1f1e24"/>
-<path d="M560 190 L560 238" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
-<path d="M560 358 L560 406" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
-<path d="M560 496 L560 544" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
-<path d="M560 644 L560 692" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
-<path d="M560 782 L560 830" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
-<text x="560" y="50" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="26" fill="#ececef" font-weight="700">RS(12,10) • кодирование сохранённого payload</text>
-<path d="M 284 110 H 860 L 836 190 H 260 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="560" y="150" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Вход Y; S байт</text>
-<rect x="260" y="238" width="600" height="120" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="560" y="271.16" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Добавить S : u32 LE перед Y</text>
-<text x="560" y="298" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">q = ceil((S + 4) / 10)</text>
-<text x="560" y="324.84" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Дополнить нулями до 10q байт</text>
-<rect x="260" y="406" width="600" height="90" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="560" y="437.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Разбить на D₀ … D₉</text>
-<text x="560" y="464.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">10 равных фрагментов по q байт</text>
-<rect x="260" y="544" width="600" height="100" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="560" y="580.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Для каждой позиции j = 0 … q − 1</text>
-<text x="560" y="607.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Вычислить P₀[j], P₁[j] = Gₚ × D[j]</text>
-<rect x="260" y="692" width="600" height="90" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="560" y="723.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Вычислить CRC32 каждого</text>
-<text x="560" y="750.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">из 12 фрагментов</text>
-<path d="M 284 830 H 860 L 836 930 H 260 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="560" y="866.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Выход: CRC[12] | D₀ … D₉ | P₀ | P₁</text>
-<text x="560" y="893.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">E(S) = 48 + 12q байт</text>
-<text x="560" y="1010" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="18" fill="#ececef">Четыре байта S и заполнение находятся внутри RS. Таблица CRC32 — снаружи.</text>
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="870" viewBox="0 80 1120 870" role="img">
+  <title>RS(12,10) • кодирование сохранённого payload</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#b3afb9" />
+    </marker>
+  </defs>
+  <rect width="100%" height="870.0" fill="#1f1e24" y="80" />
+  <path d="M560 190 L560 238" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
+  <path d="M560 358 L560 406" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
+  <path d="M560 496 L560 544" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
+  <path d="M560 644 L560 692" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
+  <path d="M560 782 L560 830" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
+  <path d="M 284 110 H 860 L 836 190 H 260 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="560" y="150" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Вход Y; S байт</text>
+  <rect x="260" y="238" width="600" height="120" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="560" y="271.16" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Добавить S : u32 LE перед Y</text>
+  <text x="560" y="298" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">q = ceil((S + 4) / 10)</text>
+  <text x="560" y="324.84" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Дополнить нулями до 10q байт</text>
+  <rect x="260" y="406" width="600" height="90" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="560" y="437.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Разбить на D₀ … D₉</text>
+  <text x="560" y="464.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">10 равных фрагментов по q байт</text>
+  <rect x="260" y="544" width="600" height="100" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="560" y="580.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Для каждой позиции j = 0 … q − 1</text>
+  <text x="560" y="607.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Вычислить P₀[j], P₁[j] = Gₚ × D[j]</text>
+  <rect x="260" y="692" width="600" height="90" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="560" y="723.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Вычислить CRC32 каждого</text>
+  <text x="560" y="750.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">из 12 фрагментов</text>
+  <path d="M 284 830 H 860 L 836 930 H 260 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="560" y="866.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Выход: CRC[12] | D₀ … D₉ | P₀ | P₁</text>
+  <text x="560" y="893.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">E(S) = 48 + 12q байт</text>
 </svg>

@@ -1,91 +1,82 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="1104" height="719" viewBox="8 8 1104 719" role="img">
-  <ns0:title>rans</ns0:title>
-  <ns0:metadata>{"source": "diagrams.drawio", "source_sha256": "d428ae0fa57a491d47f1c1137e4fb9b6a2069a481d88f80a75b10673421adad2", "diagram_id": "rans", "diagram_name": "rans", "vertex_count": 14, "edge_count": 6}</ns0:metadata>
-  <ns0:defs>
-    <ns0:marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
-      <ns0:path d="M 0 1 L 10 5 L 0 9 Z" fill="#b3afb9"/>
-    </ns0:marker>
-  </ns0:defs>
-  <ns0:rect id="background" x="8" y="8" width="1104" height="719" fill="#1f1e24"/>
-  <ns0:g id="drawing">
-    <ns0:path d="M 290 272 L 290 310" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e0" data-source="n5" data-target="n7"/>
-    <ns0:path d="M 290 372 L 290 410" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e1" data-source="n7" data-target="n9"/>
-    <ns0:path d="M 290 472 L 290 510" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e2" data-source="n9" data-target="n11"/>
-    <ns0:path d="M 830 272 L 830 310" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e3" data-source="n6" data-target="n8"/>
-    <ns0:path d="M 830 372 L 830 410" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e4" data-source="n8" data-target="n10"/>
-    <ns0:path d="M 830 472 L 830 510" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e5" data-source="n10" data-target="n12"/>
-    <ns0:g data-vertex-id="n1">
-      <ns0:desc>A: 0..=2047; f(A) = 2048</ns0:desc>
-      <ns0:rect x="40" y="40" width="520" height="70" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-      <ns0:text x="300" y="82.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A: 0..=2047; f(A) = 2048</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="n2">
-      <ns0:desc>B: 2048..=4095; f(B) = 2048</ns0:desc>
-      <ns0:rect x="560" y="40" width="520" height="70" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-      <ns0:text x="820" y="82.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">B: 2048..=4095; f(B) = 2048</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="n3">
-      <ns0:desc>Кодирование</ns0:desc>
-      <ns0:text x="275" y="170.84" text-anchor="middle" font-family="Arial" font-size="26px" fill="#ececef" font-weight="bold">Кодирование</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="n4">
-      <ns0:desc>Декодирование</ns0:desc>
-      <ns0:text x="845" y="170.84" text-anchor="middle" font-family="Arial" font-size="26px" fill="#ececef" font-weight="bold">Декодирование</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="n5">
-      <ns0:desc>B: 8388608 =&gt; 16779264</ns0:desc>
-      <ns0:rect x="40" y="210" width="500" height="62" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-      <ns0:text x="290" y="248.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">B: 8388608 =&gt; 16779264</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="n6">
-      <ns0:desc>A: 134238208 =&gt; 67119104</ns0:desc>
-      <ns0:rect x="580" y="210" width="500" height="62" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-      <ns0:text x="830" y="248.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A: 134238208 =&gt; 67119104</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="n7">
-      <ns0:desc>A: 16779264 =&gt; 33558528</ns0:desc>
-      <ns0:rect x="40" y="310" width="500" height="62" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-      <ns0:text x="290" y="348.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A: 16779264 =&gt; 33558528</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="n8">
-      <ns0:desc>B: 67119104 =&gt; 33558528</ns0:desc>
-      <ns0:rect x="580" y="310" width="500" height="62" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-      <ns0:text x="830" y="348.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">B: 67119104 =&gt; 33558528</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="n9">
-      <ns0:desc>B: 33558528 =&gt; 67119104</ns0:desc>
-      <ns0:rect x="40" y="410" width="500" height="62" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-      <ns0:text x="290" y="448.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">B: 33558528 =&gt; 67119104</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="n10">
-      <ns0:desc>A: 33558528 =&gt; 16779264</ns0:desc>
-      <ns0:rect x="580" y="410" width="500" height="62" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-      <ns0:text x="830" y="448.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A: 33558528 =&gt; 16779264</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="n11">
-      <ns0:desc>A: 67119104 =&gt; 134238208</ns0:desc>
-      <ns0:rect x="40" y="510" width="500" height="62" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-      <ns0:text x="290" y="548.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A: 67119104 =&gt; 134238208</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="n12">
-      <ns0:desc>B: 16779264 =&gt; 8388608</ns0:desc>
-      <ns0:rect x="580" y="510" width="500" height="62" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-      <ns0:text x="830" y="548.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">B: 16779264 =&gt; 8388608</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="n13">
-      <ns0:desc>x = floor(x / f) × 4096
-+ (x mod f) + c</ns0:desc>
-      <ns0:rect x="40" y="615" width="500" height="80" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-      <ns0:text x="290" y="648.4" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">x = floor(x / f) × 4096</ns0:text>
-      <ns0:text x="290" y="676.56" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">+ (x mod f) + c</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="n14">
-      <ns0:desc>x = f × floor(x / 4096)
-+ (x mod 4096) − c</ns0:desc>
-      <ns0:rect x="580" y="615" width="500" height="80" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-      <ns0:text x="830" y="648.4" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">x = f × floor(x / 4096)</ns0:text>
-      <ns0:text x="830" y="676.56" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">+ (x mod 4096) − c</ns0:text>
-    </ns0:g>
-  </ns0:g>
-</ns0:svg>
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1104" height="712" viewBox="8 8 1104 712" role="img">
+  <title>rans</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 Z" fill="#b3afb9" />
+    </marker>
+  </defs>
+  <rect id="background" x="8" y="8.0" width="1104" height="712.0" fill="#1f1e24" />
+  <g id="drawing">
+    <path d="M 290 272 L 290 310" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e0" data-source="n5" data-target="n7" />
+    <path d="M 290 372 L 290 410" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e1" data-source="n7" data-target="n9" />
+    <path d="M 290 472 L 290 510" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e2" data-source="n9" data-target="n11" />
+    <path d="M 830 272 L 830 310" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e3" data-source="n6" data-target="n8" />
+    <path d="M 830 372 L 830 410" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e4" data-source="n8" data-target="n10" />
+    <path d="M 830 472 L 830 510" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e5" data-source="n10" data-target="n12" />
+    <g data-vertex-id="n1">
+      <desc>A: 0..=2047; f(A) = 2048</desc>
+      <rect x="40" y="40" width="520" height="70" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="300" y="82.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A: 0x000…0x7FF; f(A)=0x800</text>
+    </g>
+    <g data-vertex-id="n2">
+      <desc>B: 2048..=4095; f(B) = 2048</desc>
+      <rect x="560" y="40" width="520" height="70" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="820" y="82.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">B: 0x800…0xFFF; f(B)=0x800</text>
+    </g>
+    <g data-vertex-id="n5">
+      <desc>B: 8388608 =&gt; 16779264</desc>
+      <rect x="40" y="210" width="500" height="62" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="290" y="248.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">B: 0x00800000 → 0x01000800</text>
+    </g>
+    <g data-vertex-id="n6">
+      <desc>A: 134238208 =&gt; 67119104</desc>
+      <rect x="580" y="210" width="500" height="62" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="830" y="248.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A: 0x08005000 → 0x04002800</text>
+    </g>
+    <g data-vertex-id="n7">
+      <desc>A: 16779264 =&gt; 33558528</desc>
+      <rect x="40" y="310" width="500" height="62" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="290" y="348.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A: 0x01000800 → 0x02001000</text>
+    </g>
+    <g data-vertex-id="n8">
+      <desc>B: 67119104 =&gt; 33558528</desc>
+      <rect x="580" y="310" width="500" height="62" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="830" y="348.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">B: 0x04002800 → 0x02001000</text>
+    </g>
+    <g data-vertex-id="n9">
+      <desc>B: 33558528 =&gt; 67119104</desc>
+      <rect x="40" y="410" width="500" height="62" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="290" y="448.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">B: 0x02001000 → 0x04002800</text>
+    </g>
+    <g data-vertex-id="n10">
+      <desc>A: 33558528 =&gt; 16779264</desc>
+      <rect x="580" y="410" width="500" height="62" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="830" y="448.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A: 0x02001000 → 0x01000800</text>
+    </g>
+    <g data-vertex-id="n11">
+      <desc>A: 67119104 =&gt; 134238208</desc>
+      <rect x="40" y="510" width="500" height="62" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="290" y="548.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A: 0x04002800 → 0x08005000</text>
+    </g>
+    <g data-vertex-id="n12">
+      <desc>B: 16779264 =&gt; 8388608</desc>
+      <rect x="580" y="510" width="500" height="62" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="830" y="548.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">B: 0x01000800 → 0x00800000</text>
+    </g>
+    <g data-vertex-id="n13">
+      <desc>x = floor(x / f) × 4096
++ (x mod f) + c</desc>
+      <rect x="40" y="615" width="500" height="80" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="290" y="648.4" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">x = floor(x / f) × 0x1000</text>
+      <text x="290" y="676.56" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">+ (x mod f) + c</text>
+    </g>
+    <g data-vertex-id="n14">
+      <desc>x = f × floor(x / 4096)
++ (x mod 4096) − c</desc>
+      <rect x="580" y="615" width="500" height="80" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="830" y="648.4" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">x = f × floor(x / 0x1000)</text>
+      <text x="830" y="676.56" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">+ (x mod 0x1000) − c</text>
+    </g>
+  </g>
+</svg>

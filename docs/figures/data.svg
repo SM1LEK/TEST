@@ -1,42 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1384" height="1274" viewBox="0 0 1384 1274">
-<title>data</title>
-<defs><marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
-<path d="M 0 1 L 10 5 L 0 9 Z" fill="#b3afb9"/></marker></defs>
-<rect x="0" y="0" width="1384" height="1274" fill="#1f1e24"/>
-<g id="drawing">
-<polygon points="429,40 875,40 851,120 405,120" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="640" y="73" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Исходный блок</text>
-<text x="640" y="99" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">1..=65536 байт</text>
-<path d="M 640 120 L 640 185" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
-<rect x="405" y="185" width="470" height="85" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="640" y="221" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Поиск и запись троек LZ77</text>
-<text x="640" y="247" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Таблицы позиций</text>
-<path d="M 640 270 L 640 330" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
-<polygon points="429,330 875,330 851,395 405,395" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="640" y="370" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Байты после LZ77</text>
-<path d="M 640 395 L 640 455" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
-<rect x="405" y="455" width="470" height="80" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="640" y="488" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Подсчёт и нормализация rANS</text>
-<text x="640" y="514" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Сумма частот: 4096</text>
-<path d="M 640 535 L 640 595" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
-<rect x="405" y="595" width="470" height="80" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="640" y="628" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Кодирование rANS</text>
-<text x="640" y="654" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Переходы состояния</text>
-<path d="M 640 675 L 640 740" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
-<polygon points="429,740 875,740 851,810 405,810" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="640" y="782" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Сжатый поток и модель</text>
-<path d="M 640 810 L 640 870" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
-<rect x="405" y="870" width="470" height="110" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="640" y="904" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Выбор: S &lt; N</text>
-<text x="640" y="930" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Троирование заголовка</text>
-<text x="640" y="956" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">(3 копии при RS)</text>
-<path d="M 640 980 L 640 1040" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
-<rect x="405" y="1040" width="470" height="80" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="640" y="1073" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Reed-Solomon erasure (10+2)</text>
-<text x="640" y="1099" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Отключённые этапы пропускаются</text>
-<path d="M 640 1120 L 640 1170" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
-<path d="M 405 1190 C 405 1163 875 1163 875 1190 L 875 1230 C 875 1257 405 1257 405 1230 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<path d="M 405 1190 C 405 1210 875 1210 875 1190" fill="none" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="640" y="1238" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Блок в архиве</text>
-</g></svg>
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1384" height="1279" viewBox="0 0 1384 1278.6">
+  <title>data</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 Z" fill="#b3afb9" />
+    </marker>
+  </defs>
+  <rect x="0" y="0.0" width="1384" height="1278.6" fill="#1f1e24" />
+  <g id="drawing">
+    <polygon points="429,40 875,40 851,120 405,120" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    <text x="640" y="73" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Исходный блок</text>
+    <text x="640" y="99" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">1..=65536 байт</text>
+    <path d="M 640 120 L 640 185" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)" />
+    <rect x="405" y="185" width="470" height="85" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    <text x="640" y="221" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Поиск и запись троек LZ77</text>
+    <text x="640" y="247" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Таблицы позиций</text>
+    <path d="M 640 270 L 640 330" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)" />
+    <polygon points="429,330 875,330 851,395 405,395" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    <text x="640" y="370" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Байты после LZ77</text>
+    <path d="M 640 395 L 640 455" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)" />
+    <rect x="405" y="455" width="470" height="80" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    <text x="640" y="488" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Подсчёт и нормализация rANS</text>
+    <text x="640" y="514" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Сумма частот: 4096</text>
+    <path d="M 640 535 L 640 595" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)" />
+    <rect x="405" y="595" width="470" height="80" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    <text x="640" y="628" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Кодирование rANS</text>
+    <text x="640" y="654" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Переходы состояния</text>
+    <path d="M 640 675 L 640 740" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)" />
+    <polygon points="429,740 875,740 851,810 405,810" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    <text x="640" y="782" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Сжатый поток и модель</text>
+    <path d="M 640 810 L 640 870" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)" />
+    <rect x="405" y="870" width="470" height="110" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    <text x="640" y="904" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Выбор: S &lt; N</text>
+    <text x="640" y="930" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Троирование заголовка</text>
+    <text x="640" y="956" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">(3 копии при RS)</text>
+    <path d="M 640 980 L 640 1040" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)" />
+    <rect x="405" y="1040" width="470" height="80" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    <text x="640" y="1073" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Reed-Solomon erasure (10+2)</text>
+    <text x="640" y="1099" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Отключённые этапы пропускаются</text>
+    <path d="M 640 1120 L 640 1170" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)" />
+    <path d="M 405 1190 C 405 1163 875 1163 875 1190 L 875 1230 C 875 1257 405 1257 405 1230 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+    <path d="M 405 1190 C 405 1210 875 1210 875 1190" fill="none" stroke="#b3afb9" stroke-width="1.5" />
+    <text x="640" y="1238" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Блок в архиве</text>
+  </g>
+</svg>

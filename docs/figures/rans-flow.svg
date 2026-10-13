@@ -1,129 +1,120 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="1184" height="1135" viewBox="48 -2 1184 1135" role="img">
-  <ns0:title>rans-flow</ns0:title>
-  <ns0:metadata>{"source": "diagrams.drawio", "source_sha256": "d428ae0fa57a491d47f1c1137e4fb9b6a2069a481d88f80a75b10673421adad2", "diagram_id": "rans-flow", "diagram_name": "rans-flow", "vertex_count": 12, "edge_count": 8}</ns0:metadata>
-  <ns0:defs>
-    <ns0:marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
-      <ns0:path d="M 0 1 L 10 5 L 0 9 Z" fill="#b3afb9"/>
-    </ns0:marker>
-  </ns0:defs>
-  <ns0:rect id="background" x="48" y="-2" width="1184" height="1135" fill="#1f1e24"/>
-  <ns0:g id="drawing">
-    <ns0:path d="M 310 260 L 310 310" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e0" data-source="n2" data-target="n3"/>
-    <ns0:path d="M 310 470 L 310 520" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e1" data-source="n3" data-target="n4"/>
-    <ns0:path d="M 310 680 L 310 730" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e2" data-source="n4" data-target="n5"/>
-    <ns0:path d="M 310 890 L 310 940" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e3" data-source="n5" data-target="n6"/>
-    <ns0:path d="M 970 260 L 970 310" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e4" data-source="n8" data-target="n9"/>
-    <ns0:path d="M 970 470 L 970 520" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e5" data-source="n9" data-target="n10"/>
-    <ns0:path d="M 970 680 L 970 730" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e6" data-source="n10" data-target="n11"/>
-    <ns0:path d="M 970 890 L 970 940" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e7" data-source="n11" data-target="n12"/>
-    <ns0:g data-vertex-id="n1">
-      <ns0:desc>Кодирование</ns0:desc>
-      <ns0:text x="305" y="54.84" text-anchor="middle" font-family="Arial" font-size="26px" fill="#ececef" font-weight="bold">Кодирование</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="n2">
-      <ns0:desc>Построить модель
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1184" height="1053" viewBox="48 75 1184 1053" role="img">
+  <title>rans-flow</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 Z" fill="#b3afb9" />
+    </marker>
+  </defs>
+  <rect id="background" x="48" y="75" width="1184" height="1053.0" fill="#1f1e24" />
+  <g id="drawing">
+    <path d="M 310 260 L 310 310" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e0" data-source="n2" data-target="n3" />
+    <path d="M 310 470 L 310 520" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e1" data-source="n3" data-target="n4" />
+    <path d="M 310 680 L 310 730" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e2" data-source="n4" data-target="n5" />
+    <path d="M 310 890 L 310 940" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e3" data-source="n5" data-target="n6" />
+    <path d="M 970 260 L 970 310" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e4" data-source="n8" data-target="n9" />
+    <path d="M 970 470 L 970 520" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e5" data-source="n9" data-target="n10" />
+    <path d="M 970 680 L 970 730" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e6" data-source="n10" data-target="n11" />
+    <path d="M 970 890 L 970 940" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e7" data-source="n11" data-target="n12" />
+    <g data-vertex-id="n2">
+      <desc>Построить модель
 Подсчитать и нормализовать частоты.
 Найти начала интервалов c(s).
-Начальное состояние x = L.</ns0:desc>
-      <ns0:rect x="80" y="100" width="460" height="160" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-      <ns0:text x="310" y="145.24" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Построить модель</ns0:text>
-      <ns0:text x="310" y="173.4" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Подсчитать и нормализовать частоты.</ns0:text>
-      <ns0:text x="310" y="201.56" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Найти начала интервалов c(s).</ns0:text>
-      <ns0:text x="310" y="229.72" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Начальное состояние x = L.</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="n3">
-      <ns0:desc>Взять символ с конца
+Начальное состояние x = L.</desc>
+      <rect x="80" y="100" width="460" height="160" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="310" y="145.24" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Построить модель</text>
+      <text x="310" y="173.4" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Подсчитать и нормализовать частоты.</text>
+      <text x="310" y="201.56" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Найти начала интервалов c(s).</text>
+      <text x="310" y="229.72" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Начальное состояние x = L.</text>
+    </g>
+    <g data-vertex-id="n3">
+      <desc>Взять символ с конца
 Обрабатывать вход справа налево.
-Для символа взять f(s) и c(s).</ns0:desc>
-      <ns0:rect x="80" y="310" width="460" height="160" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-      <ns0:text x="310" y="369.32" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Взять символ с конца</ns0:text>
-      <ns0:text x="310" y="397.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Обрабатывать вход справа налево.</ns0:text>
-      <ns0:text x="310" y="425.64" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Для символа взять f(s) и c(s).</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="n4">
-      <ns0:desc>Перенормировать состояние
+Для символа взять f(s) и c(s).</desc>
+      <rect x="80" y="310" width="460" height="160" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="310" y="369.32" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Взять символ с конца</text>
+      <text x="310" y="397.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Обрабатывать вход справа налево.</text>
+      <text x="310" y="425.64" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Для символа взять f(s) и c(s).</text>
+    </g>
+    <g data-vertex-id="n4">
+      <desc>Перенормировать состояние
 Пока x &gt;= 524288 × f(s):
-выдать x mod 256; x = floor(x / 256).</ns0:desc>
-      <ns0:rect x="80" y="520" width="460" height="160" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-      <ns0:text x="310" y="579.32" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Перенормировать состояние</ns0:text>
-      <ns0:text x="310" y="607.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Пока x &gt;= 524288 × f(s):</ns0:text>
-      <ns0:text x="310" y="635.64" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">выдать x mod 256; x = floor(x / 256).</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="n5">
-      <ns0:desc>Закодировать символ
+выдать x mod 256; x = floor(x / 256).</desc>
+      <rect x="80" y="520" width="460" height="160" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="310" y="579.32" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Перенормировать состояние</text>
+      <text x="310" y="607.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Пока x &gt;= 524288 × f(s):</text>
+      <text x="310" y="635.64" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">выдать x mod 256; x = floor(x / 256).</text>
+    </g>
+    <g data-vertex-id="n5">
+      <desc>Закодировать символ
 x = floor(x / f(s)) × 4096
 + (x mod f(s)) + c(s)
-Повторять шаги 2–4 для всего входа.</ns0:desc>
-      <ns0:rect x="80" y="730" width="460" height="160" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-      <ns0:text x="310" y="775.24" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Закодировать символ</ns0:text>
-      <ns0:text x="310" y="803.4" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">x = floor(x / f(s)) × 4096</ns0:text>
-      <ns0:text x="310" y="831.56" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">+ (x mod f(s)) + c(s)</ns0:text>
-      <ns0:text x="310" y="859.72" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Повторять шаги 2–4 для всего входа.</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="n6">
-      <ns0:desc>Записать выходной поток
+Повторять шаги 2–4 для всего входа.</desc>
+      <rect x="80" y="730" width="460" height="160" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="310" y="775.24" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Закодировать символ</text>
+      <text x="310" y="803.4" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">x = floor(x / f(s)) × 4096</text>
+      <text x="310" y="831.56" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">+ (x mod f(s)) + c(s)</text>
+      <text x="310" y="859.72" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Повторять шаги 2–4 для всего входа.</text>
+    </g>
+    <g data-vertex-id="n6">
+      <desc>Записать выходной поток
 Длина, модель, конечное x (LE).
-Выданные байты - в обратном порядке.</ns0:desc>
-      <ns0:rect x="80" y="940" width="460" height="160" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-      <ns0:text x="310" y="999.32" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Записать выходной поток</ns0:text>
-      <ns0:text x="310" y="1027.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Длина, модель, конечное x (LE).</ns0:text>
-      <ns0:text x="310" y="1055.64" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Выданные байты - в обратном порядке.</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="n7">
-      <ns0:desc>Декодирование</ns0:desc>
-      <ns0:text x="965" y="54.84" text-anchor="middle" font-family="Arial" font-size="26px" fill="#ececef" font-weight="bold">Декодирование</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="n8">
-      <ns0:desc>Прочитать модель и состояние
+Выданные байты - в обратном порядке.</desc>
+      <rect x="80" y="940" width="460" height="160" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="310" y="999.32" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Записать выходной поток</text>
+      <text x="310" y="1027.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Длина, модель, конечное x (LE).</text>
+      <text x="310" y="1055.64" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Выданные байты - в обратном порядке.</text>
+    </g>
+    <g data-vertex-id="n8">
+      <desc>Прочитать модель и состояние
 Восстановить f(s), c(s) и состояние x.
-Построить таблицу на 4096 ячеек.</ns0:desc>
-      <ns0:rect x="740" y="100" width="460" height="160" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-      <ns0:text x="970" y="159.32" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Прочитать модель и состояние</ns0:text>
-      <ns0:text x="970" y="187.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Восстановить f(s), c(s) и состояние x.</ns0:text>
-      <ns0:text x="970" y="215.64" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Построить таблицу на 4096 ячеек.</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="n9">
-      <ns0:desc>Найти и вывести символ
+Построить таблицу на 4096 ячеек.</desc>
+      <rect x="740" y="100" width="460" height="160" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="970" y="159.32" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Прочитать модель и состояние</text>
+      <text x="970" y="187.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Восстановить f(s), c(s) и состояние x.</text>
+      <text x="970" y="215.64" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Построить таблицу на 4096 ячеек.</text>
+    </g>
+    <g data-vertex-id="n9">
+      <desc>Найти и вывести символ
 q = x mod 4096.
 Выбрать s: c(s) &lt;= q &lt; c(s) + f(s).
-Добавить s к результату.</ns0:desc>
-      <ns0:rect x="740" y="310" width="460" height="160" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-      <ns0:text x="970" y="355.24" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Найти и вывести символ</ns0:text>
-      <ns0:text x="970" y="383.4" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">q = x mod 4096.</ns0:text>
-      <ns0:text x="970" y="411.56" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Выбрать s: c(s) &lt;= q &lt; c(s) + f(s).</ns0:text>
-      <ns0:text x="970" y="439.72" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Добавить s к результату.</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="n10">
-      <ns0:desc>Обратить переход
+Добавить s к результату.</desc>
+      <rect x="740" y="310" width="460" height="160" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="970" y="355.24" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Найти и вывести символ</text>
+      <text x="970" y="383.4" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">q = x mod 4096.</text>
+      <text x="970" y="411.56" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Выбрать s: c(s) &lt;= q &lt; c(s) + f(s).</text>
+      <text x="970" y="439.72" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Добавить s к результату.</text>
+    </g>
+    <g data-vertex-id="n10">
+      <desc>Обратить переход
 x = f(s) × floor(x / 4096)
-+ q − c(s)</ns0:desc>
-      <ns0:rect x="740" y="520" width="460" height="160" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-      <ns0:text x="970" y="579.32" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Обратить переход</ns0:text>
-      <ns0:text x="970" y="607.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">x = f(s) × floor(x / 4096)</ns0:text>
-      <ns0:text x="970" y="635.64" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">+ q − c(s)</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="n11">
-      <ns0:desc>Перенормировать состояние
++ q − c(s)</desc>
+      <rect x="740" y="520" width="460" height="160" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="970" y="579.32" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Обратить переход</text>
+      <text x="970" y="607.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">x = f(s) × floor(x / 4096)</text>
+      <text x="970" y="635.64" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">+ q − c(s)</text>
+    </g>
+    <g data-vertex-id="n11">
+      <desc>Перенормировать состояние
 Пока x &lt; L: прочитать байт b;
 x = 256 × x + b.
-Повторять шаги 2–4 до длины N.</ns0:desc>
-      <ns0:rect x="740" y="730" width="460" height="160" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-      <ns0:text x="970" y="775.24" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Перенормировать состояние</ns0:text>
-      <ns0:text x="970" y="803.4" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Пока x &lt; L: прочитать байт b;</ns0:text>
-      <ns0:text x="970" y="831.56" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">x = 256 × x + b.</ns0:text>
-      <ns0:text x="970" y="859.72" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Повторять шаги 2–4 до длины N.</ns0:text>
-    </ns0:g>
-    <ns0:g data-vertex-id="n12">
-      <ns0:desc>Завершить поток
+Повторять шаги 2–4 до длины N.</desc>
+      <rect x="740" y="730" width="460" height="160" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="970" y="775.24" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Перенормировать состояние</text>
+      <text x="970" y="803.4" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Пока x &lt; L: прочитать байт b;</text>
+      <text x="970" y="831.56" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">x = 256 × x + b.</text>
+      <text x="970" y="859.72" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Повторять шаги 2–4 до длины N.</text>
+    </g>
+    <g data-vertex-id="n12">
+      <desc>Завершить поток
 Проверить x = L.
 Все входные байты должны быть
-прочитаны.</ns0:desc>
-      <ns0:rect x="740" y="940" width="460" height="160" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-      <ns0:text x="970" y="985.24" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Завершить поток</ns0:text>
-      <ns0:text x="970" y="1013.4" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Проверить x = L.</ns0:text>
-      <ns0:text x="970" y="1041.56" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Все входные байты должны быть</ns0:text>
-      <ns0:text x="970" y="1069.72" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">прочитаны.</ns0:text>
-    </ns0:g>
-  </ns0:g>
-</ns0:svg>
+прочитаны.</desc>
+      <rect x="740" y="940" width="460" height="160" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="970" y="985.24" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Завершить поток</text>
+      <text x="970" y="1013.4" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Проверить x = L.</text>
+      <text x="970" y="1041.56" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Все входные байты должны быть</text>
+      <text x="970" y="1069.72" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">прочитаны.</text>
+    </g>
+  </g>
+</svg>

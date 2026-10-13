@@ -1,59 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1244" viewBox="0 0 1120 1244" role="img"><title>LZ77 • ABABABA: восстановление по расстоянию 2</title><defs><marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#b3afb9"/></marker></defs><rect width="100%" height="100%" fill="#1f1e24"/>
-<path d="M358 322 L762 322" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
-<path d="M358 412 L762 412" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
-<path d="M358 502 L762 502" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
-<path d="M358 592 L762 592" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
-<text x="560" y="50" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="26" fill="#ececef" font-weight="700">LZ77 • ABABABA: восстановление по расстоянию 2</text>
-<rect x="40" y="130" width="148" height="82" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="114" y="157.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">0</text>
-<text x="114" y="184.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">A</text>
-<rect x="188" y="130" width="148" height="82" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="262" y="157.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">1</text>
-<text x="262" y="184.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">B</text>
-<rect x="336" y="130" width="148" height="82" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="410" y="157.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">2</text>
-<text x="410" y="184.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">A</text>
-<rect x="484" y="130" width="148" height="82" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="558" y="157.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">3</text>
-<text x="558" y="184.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">B</text>
-<rect x="632" y="130" width="148" height="82" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="706" y="157.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">4</text>
-<text x="706" y="184.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">A</text>
-<rect x="780" y="130" width="148" height="82" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="854" y="157.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">5</text>
-<text x="854" y="184.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">B</text>
-<rect x="928" y="130" width="148" height="82" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="1002" y="157.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">6</text>
-<text x="1002" y="184.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">A</text>
-<path d="M 134 290 H 370 L 346 354 H 110 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="240" y="322" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">R[0] = A</text>
-<path d="M 774 290 H 1010 L 986 354 H 750 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="880" y="322" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Позиция 2: A</text>
-<text x="560" y="300" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="18" fill="#ececef">j = 0</text>
-<path d="M 134 380 H 370 L 346 444 H 110 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="240" y="412" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">R[1] = B</text>
-<path d="M 774 380 H 1010 L 986 444 H 750 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="880" y="412" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Позиция 3: B</text>
-<text x="560" y="390" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="18" fill="#ececef">j = 1</text>
-<path d="M 134 470 H 370 L 346 534 H 110 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="240" y="502" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">R[2] = A</text>
-<path d="M 774 470 H 1010 L 986 534 H 750 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="880" y="502" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Позиция 4: A</text>
-<text x="560" y="480" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="18" fill="#ececef">j = 2</text>
-<path d="M 134 560 H 370 L 346 624 H 110 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="240" y="592" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">R[3] = B</text>
-<path d="M 774 560 H 1010 L 986 624 H 750 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="880" y="592" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Позиция 5: B</text>
-<text x="560" y="570" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="18" fill="#ececef">j = 3</text>
-<rect x="270" y="690" width="580" height="218" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="560" y="731.9" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">R = AB</text>
-<text x="560" y="758.74" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">j = 0: R[0] = A → ABA</text>
-<text x="560" y="785.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">j = 1: R[1] = B → ABAB</text>
-<text x="560" y="812.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">j = 2: R[2] = A → ABABA</text>
-<text x="560" y="839.26" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">j = 3: R[3] = B → ABABAB</text>
-<text x="560" y="866.1" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Литерал A → ABABABA</text>
-<path d="M 94 980 H 1050 L 1026 1080 H 70 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5"/>
-<text x="560" y="1016.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Тройки (l, d, c): (0, 0, A), (0, 0, B), (4, 2, A)</text>
-<text x="560" y="1043.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Поток: 07 | 00 41 | 00 42 | 04 02 41</text>
-<text x="560" y="1172" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="18" fill="#ececef">Для j ≥ d используются уже добавленные байты. Копирование выполняется последовательно.</text>
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="853" viewBox="0 80 1120 853" role="img">
+  <title>LZ77 • ABABABA: восстановление по расстоянию 2</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#b3afb9" />
+    </marker>
+  </defs>
+  <rect width="100%" height="853.0" fill="#1f1e24" y="80" />
+  <path d="M358 322 L762 322" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
+  <path d="M358 412 L762 412" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
+  <path d="M358 502 L762 502" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
+  <path d="M358 592 L762 592" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
+  <rect x="40" y="130" width="148" height="82" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="114" y="157.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">0x00</text>
+  <text x="114" y="184.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">A</text>
+  <rect x="188" y="130" width="148" height="82" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="262" y="157.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">0x01</text>
+  <text x="262" y="184.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">B</text>
+  <rect x="336" y="130" width="148" height="82" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="410" y="157.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">0x02</text>
+  <text x="410" y="184.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">A</text>
+  <rect x="484" y="130" width="148" height="82" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="558" y="157.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">0x03</text>
+  <text x="558" y="184.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">B</text>
+  <rect x="632" y="130" width="148" height="82" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="706" y="157.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">0x04</text>
+  <text x="706" y="184.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">A</text>
+  <rect x="780" y="130" width="148" height="82" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="854" y="157.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">0x05</text>
+  <text x="854" y="184.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">B</text>
+  <rect x="928" y="130" width="148" height="82" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="1002" y="157.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">0x06</text>
+  <text x="1002" y="184.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">A</text>
+  <path d="M 134 290 H 370 L 346 354 H 110 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="240" y="322" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">R[0x00] = A</text>
+  <path d="M 774 290 H 1010 L 986 354 H 750 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="880" y="322" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Позиция 0x02: A</text>
+  <text x="560" y="300" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="18" fill="#ececef">j=0x00</text>
+  <path d="M 134 380 H 370 L 346 444 H 110 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="240" y="412" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">R[0x01] = B</text>
+  <path d="M 774 380 H 1010 L 986 444 H 750 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="880" y="412" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Позиция 0x03: B</text>
+  <text x="560" y="390" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="18" fill="#ececef">j=0x01</text>
+  <path d="M 134 470 H 370 L 346 534 H 110 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="240" y="502" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">R[0x02] = A</text>
+  <path d="M 774 470 H 1010 L 986 534 H 750 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="880" y="502" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Позиция 0x04: A</text>
+  <text x="560" y="480" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="18" fill="#ececef">j=0x02</text>
+  <path d="M 134 560 H 370 L 346 624 H 110 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="240" y="592" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">R[0x03] = B</text>
+  <path d="M 774 560 H 1010 L 986 624 H 750 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="880" y="592" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Позиция 0x05: B</text>
+  <text x="560" y="570" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="18" fill="#ececef">j=0x03</text>
+  <rect x="270" y="690" width="580" height="218" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="560" y="731.9" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">R = AB</text>
+  <text x="560" y="758.74" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">j = 0x00: R[0x00] = A → ABA</text>
+  <text x="560" y="785.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">j = 0x01: R[0x01] = B → ABAB</text>
+  <text x="560" y="812.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">j = 0x02: R[0x02] = A → ABABA</text>
+  <text x="560" y="839.26" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">j = 0x03: R[0x03] = B → ABABAB</text>
+  <text x="560" y="866.1" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Литерал A → ABABABA</text>
 </svg>
