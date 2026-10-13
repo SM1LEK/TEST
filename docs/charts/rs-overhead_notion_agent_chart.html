@@ -1,0 +1,1260 @@
+<style>
+	:root {
+		color-scheme: light dark;
+		--bg-base: transparent;
+		--bg-muted: #f6f5f4;
+		--bg-elevated: #ffffff;
+		--content-primary: #191918;
+		--content-secondary: #615d59;
+		--content-tertiary: #78736f;
+		--border-primary: rgba(25, 25, 24, 0.12);
+		--border-strong: rgba(25, 25, 24, 0.2);
+		--grid: rgba(25, 25, 24, 0.08);
+		--shadow-elevated: 0 4px 12px rgba(25, 25, 24, 0.1);
+		--blue: #7fb4ec;
+		--yellow: #eac26b;
+		--green: #72bc8f;
+		--purple: #bf8eda;
+		--orange: #eda86e;
+		--pink: #df84a8;
+		--teal: #4fb9c9;
+		--red: #e97366;
+		--brown: #bd9576;
+		--neutral: #a39e98;
+		--text: var(--content-primary);
+		--muted: var(--content-secondary);
+		--border: var(--border-primary);
+		--surface: var(--bg-muted);
+		--tooltip-bg: var(--bg-elevated);
+		--aqua: var(--teal);
+		--magenta: var(--pink);
+		--violet: var(--purple);
+		--canvas: var(--bg-base);
+	}
+	@media (prefers-color-scheme: dark) {
+		:root {
+			--bg-muted: #31302e;
+			--bg-elevated: #31302e;
+			--content-primary: #f6f5f4;
+			--content-secondary: #a39e98;
+			--content-tertiary: #78736f;
+			--border-primary: rgba(255, 255, 255, 0.14);
+			--border-strong: rgba(255, 255, 255, 0.22);
+			--grid: rgba(255, 255, 255, 0.09);
+			--shadow-elevated: 0 6px 16px rgba(0, 0, 0, 0.32);
+			--neutral: #78736f;
+		}
+	}
+	* {
+		box-sizing: border-box;
+	}
+	html,
+	body {
+		margin: 0;
+		padding: 0;
+		overflow-x: clip;
+		background: var(--canvas);
+	}
+	body {
+		inline-size: 100%;
+		max-inline-size: none;
+		padding-block: 16px 4px;
+		color: var(--text);
+		font: 450 14px/20px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+			Arial, sans-serif;
+	}
+	.chart-figure[data-layout="report"] {
+		padding: 8px clamp(12px, 3vw, 32px) 20px;
+	}
+	.chart-figure[data-layout="report"] .figure-header {
+		display: block;
+		margin-block-end: 20px;
+	}
+	.chart-figure[data-layout="report"] .figure-title {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.chart-figure[data-layout="report"] .figure-aside {
+		max-inline-size: none;
+		margin-block-start: 4px;
+		text-align: start;
+	}
+	.figure-header {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+		gap: 16px;
+		inline-size: 100%;
+		margin-block-end: 12px;
+	}
+	.figure-title {
+		color: var(--content-primary);
+		font-size: 14px;
+		font-weight: 550;
+		line-height: 20px;
+	}
+	.panel-title {
+		font-size: 13px;
+		font-weight: 550;
+		line-height: 18px;
+		margin-block-end: 8px;
+		color: var(--content-primary);
+	}
+	.panel-aside {
+		color: var(--content-tertiary);
+		font-size: 12px;
+		line-height: 16px;
+		margin-block: -4px 12px;
+	}
+	.panel + .panel {
+		margin-block-start: 24px;
+	}
+	.figure-aside {
+		flex: 0 1 auto;
+		max-inline-size: 50%;
+		color: var(--content-tertiary);
+		font-size: 12px;
+		line-height: 16px;
+		text-align: end;
+	}
+	.legend {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 12px;
+		margin: 0 0 12px;
+		font-size: 12px;
+		line-height: 16px;
+		color: var(--muted);
+	}
+	.key-sq {
+		display: inline-block;
+		inline-size: 10px;
+		block-size: 10px;
+		border-radius: 2px;
+		background: var(--neutral);
+		margin-inline-end: 6px;
+		vertical-align: middle;
+	}
+	.key-line {
+		display: inline-block;
+		inline-size: 14px;
+		border-top: 2px solid var(--neutral);
+		margin-inline-end: 6px;
+		vertical-align: middle;
+	}
+	.key-line[data-dash="dashed"] {
+		border-top-style: dashed;
+	}
+	.chart-wrap,
+	.plot {
+		position: relative;
+		inline-size: 100%;
+		max-inline-size: none;
+	}
+	.chart-wrap {
+		height: 300px;
+	}
+	.chart-wrap > canvas,
+	.chart-wrap > svg,
+	.plot > svg {
+		display: block;
+		inline-size: 100% !important;
+		max-inline-size: none;
+	}
+	.axis-line {
+		stroke: var(--border);
+		stroke-width: 1;
+	}
+	.grid-line,
+	.guide {
+		stroke: var(--grid);
+		stroke-width: 1;
+	}
+	.guide {
+		stroke: var(--border-strong);
+	}
+	.tick-text,
+	.x-text {
+		fill: var(--muted);
+		font-size: 12px;
+	}
+	.x-text {
+		text-anchor: middle;
+	}
+	.data-mark {
+		outline: none;
+	}
+	.data-mark:focus-visible {
+		outline: 2px solid var(--blue);
+		outline-offset: -2px;
+	}
+	.chart-tooltip {
+		position: absolute;
+		z-index: 1;
+		max-inline-size: min(320px, calc(100% - 8px));
+		padding: 8px;
+		border: 1px solid var(--border-strong);
+		border-radius: 8px;
+		background: var(--tooltip-bg);
+		box-shadow: var(--shadow-elevated);
+		color: var(--text);
+		font-size: 12px;
+		line-height: 16px;
+		pointer-events: none;
+		visibility: hidden;
+		opacity: 0;
+		transition: opacity 120ms cubic-bezier(0.33, 1, 0.68, 1);
+	}
+	.chart-tooltip[data-visible="true"] {
+		visibility: visible;
+		opacity: 1;
+	}
+	.tip-title {
+		margin-block-end: 6px;
+		font-size: 13px;
+		font-weight: 550;
+		line-height: 18px;
+	}
+	.tip-row {
+		display: grid;
+		grid-template-columns: 8px minmax(0, 1fr) auto;
+		align-items: center;
+		column-gap: 8px;
+		min-inline-size: 160px;
+	}
+	.tip-key {
+		inline-size: 8px;
+		block-size: 8px;
+		border-radius: 1px;
+	}
+	.tip-label,
+	.tip-value,
+	.tip-extra {
+		color: var(--content-secondary);
+	}
+	.tip-title,
+	.tip-label,
+	.tip-extra {
+		min-inline-size: 0;
+		overflow-wrap: anywhere;
+		white-space: normal;
+	}
+	.tip-value {
+		white-space: nowrap;
+		font-variant-numeric: tabular-nums;
+		font-weight: 550;
+		text-align: end;
+	}
+	.tip-extra {
+		margin-block-start: 8px;
+		padding-block-start: 6px;
+		border-block-start: 1px solid var(--border);
+	}
+	@media (prefers-reduced-motion: reduce) {
+		.chart-tooltip {
+			transition: none;
+		}
+	}
+	@media (max-width: 520px) {
+		.figure-header {
+			display: block;
+		}
+		.figure-aside {
+			max-inline-size: none;
+			margin-block-start: 2px;
+			text-align: start;
+		}
+	}
+	.legend-toggle {
+		display: inline-flex;
+		align-items: center;
+		padding: 2px 6px;
+		border: 0;
+		border-radius: 6px;
+		background: transparent;
+		color: var(--muted);
+		font: inherit;
+		font-size: 12px;
+		line-height: 16px;
+		cursor: pointer;
+	}
+	.legend-toggle:hover {
+		background: var(--bg-muted);
+	}
+	.legend-toggle[aria-pressed="false"] {
+		opacity: 0.45;
+	}
+	.legend-toggle:focus-visible {
+		outline: 2px solid var(--blue);
+		outline-offset: 1px;
+	}
+	.view-toggle {
+		font: inherit;
+		font-size: 12px;
+		line-height: 16px;
+		padding: 4px 10px;
+		border: 0.5px solid var(--border-strong);
+		border-radius: 6px;
+		background: transparent;
+		color: var(--muted);
+		cursor: pointer;
+	}
+	.view-toggle[aria-pressed="true"] {
+		background: var(--bg-muted);
+		color: var(--content-primary);
+		font-weight: 550;
+	}
+	.sr-only {
+		position: absolute;
+		inline-size: 1px;
+		block-size: 1px;
+		overflow: hidden;
+		clip-path: inset(50%);
+		contain: strict;
+		white-space: nowrap;
+	}
+	table.sr-only {
+		display: block;
+	}
+</style>
+<div class="chart-figure" data-layout="inline">
+<p class="sr-only">Дополнительные байты RS: S = 1 байт: 67; S = 64 байт: 76</p>
+<div class="figure-header">
+	<div class="figure-title">RS: ступени расходов при границах фрагментов</div>
+	<div class="figure-aside">Дополнительные байты блока при S от 1 до 64; расчёт по формату, не измерение</div>
+</div>
+<div class="chart-wrap" style="height: 270px;">
+<canvas id="canonicalPanel0" data-series-legend="false" role="img" aria-label="RS: ступени расходов при границах фрагментов. Дополнительные байты блока при S от 1 до 64; расчёт по формату, не измерение. Дополнительные байты RS: S = 1 байт: 67; S = 64 байт: 76">Дополнительные байты RS: S = 1 байт: 67; S = 64 байт: 76</canvas>
+<div class="chart-tooltip" role="tooltip" aria-hidden="true"></div></div><table class="sr-only">
+	<caption>RS: ступени расходов при границах фрагментов</caption>
+	<tr><th>Observation</th><th>Дополнительные байты RS</th></tr>
+	<tr><td>S = 1 байт</td><td data-observation-key="S = 1 байт" data-series-key="Дополнительные байты RS" data-raw-value="67" data-value-kind="number">67</td></tr>
+	<tr><td>S = 2 байт</td><td data-observation-key="S = 2 байт" data-series-key="Дополнительные байты RS" data-raw-value="66" data-value-kind="number">66</td></tr>
+	<tr><td>S = 3 байт</td><td data-observation-key="S = 3 байт" data-series-key="Дополнительные байты RS" data-raw-value="65" data-value-kind="number">65</td></tr>
+	<tr><td>S = 4 байт</td><td data-observation-key="S = 4 байт" data-series-key="Дополнительные байты RS" data-raw-value="64" data-value-kind="number">64</td></tr>
+	<tr><td>S = 5 байт</td><td data-observation-key="S = 5 байт" data-series-key="Дополнительные байты RS" data-raw-value="63" data-value-kind="number">63</td></tr>
+	<tr><td>S = 6 байт</td><td data-observation-key="S = 6 байт" data-series-key="Дополнительные байты RS" data-raw-value="62" data-value-kind="number">62</td></tr>
+	<tr><td>S = 7 байт</td><td data-observation-key="S = 7 байт" data-series-key="Дополнительные байты RS" data-raw-value="73" data-value-kind="number">73</td></tr>
+	<tr><td>S = 8 байт</td><td data-observation-key="S = 8 байт" data-series-key="Дополнительные байты RS" data-raw-value="72" data-value-kind="number">72</td></tr>
+	<tr><td>S = 9 байт</td><td data-observation-key="S = 9 байт" data-series-key="Дополнительные байты RS" data-raw-value="71" data-value-kind="number">71</td></tr>
+	<tr><td>S = 10 байт</td><td data-observation-key="S = 10 байт" data-series-key="Дополнительные байты RS" data-raw-value="70" data-value-kind="number">70</td></tr>
+	<tr><td>S = 11 байт</td><td data-observation-key="S = 11 байт" data-series-key="Дополнительные байты RS" data-raw-value="69" data-value-kind="number">69</td></tr>
+	<tr><td>S = 12 байт</td><td data-observation-key="S = 12 байт" data-series-key="Дополнительные байты RS" data-raw-value="68" data-value-kind="number">68</td></tr>
+	<tr><td>S = 13 байт</td><td data-observation-key="S = 13 байт" data-series-key="Дополнительные байты RS" data-raw-value="67" data-value-kind="number">67</td></tr>
+	<tr><td>S = 14 байт</td><td data-observation-key="S = 14 байт" data-series-key="Дополнительные байты RS" data-raw-value="66" data-value-kind="number">66</td></tr>
+	<tr><td>S = 15 байт</td><td data-observation-key="S = 15 байт" data-series-key="Дополнительные байты RS" data-raw-value="65" data-value-kind="number">65</td></tr>
+	<tr><td>S = 16 байт</td><td data-observation-key="S = 16 байт" data-series-key="Дополнительные байты RS" data-raw-value="64" data-value-kind="number">64</td></tr>
+	<tr><td>S = 17 байт</td><td data-observation-key="S = 17 байт" data-series-key="Дополнительные байты RS" data-raw-value="75" data-value-kind="number">75</td></tr>
+	<tr><td>S = 18 байт</td><td data-observation-key="S = 18 байт" data-series-key="Дополнительные байты RS" data-raw-value="74" data-value-kind="number">74</td></tr>
+	<tr><td>S = 19 байт</td><td data-observation-key="S = 19 байт" data-series-key="Дополнительные байты RS" data-raw-value="73" data-value-kind="number">73</td></tr>
+	<tr><td>S = 20 байт</td><td data-observation-key="S = 20 байт" data-series-key="Дополнительные байты RS" data-raw-value="72" data-value-kind="number">72</td></tr>
+	<tr><td>S = 21 байт</td><td data-observation-key="S = 21 байт" data-series-key="Дополнительные байты RS" data-raw-value="71" data-value-kind="number">71</td></tr>
+	<tr><td>S = 22 байт</td><td data-observation-key="S = 22 байт" data-series-key="Дополнительные байты RS" data-raw-value="70" data-value-kind="number">70</td></tr>
+	<tr><td>S = 23 байт</td><td data-observation-key="S = 23 байт" data-series-key="Дополнительные байты RS" data-raw-value="69" data-value-kind="number">69</td></tr>
+	<tr><td>S = 24 байт</td><td data-observation-key="S = 24 байт" data-series-key="Дополнительные байты RS" data-raw-value="68" data-value-kind="number">68</td></tr>
+	<tr><td>S = 25 байт</td><td data-observation-key="S = 25 байт" data-series-key="Дополнительные байты RS" data-raw-value="67" data-value-kind="number">67</td></tr>
+	<tr><td>S = 26 байт</td><td data-observation-key="S = 26 байт" data-series-key="Дополнительные байты RS" data-raw-value="66" data-value-kind="number">66</td></tr>
+	<tr><td>S = 27 байт</td><td data-observation-key="S = 27 байт" data-series-key="Дополнительные байты RS" data-raw-value="77" data-value-kind="number">77</td></tr>
+	<tr><td>S = 28 байт</td><td data-observation-key="S = 28 байт" data-series-key="Дополнительные байты RS" data-raw-value="76" data-value-kind="number">76</td></tr>
+	<tr><td>S = 29 байт</td><td data-observation-key="S = 29 байт" data-series-key="Дополнительные байты RS" data-raw-value="75" data-value-kind="number">75</td></tr>
+	<tr><td>S = 30 байт</td><td data-observation-key="S = 30 байт" data-series-key="Дополнительные байты RS" data-raw-value="74" data-value-kind="number">74</td></tr>
+	<tr><td>S = 31 байт</td><td data-observation-key="S = 31 байт" data-series-key="Дополнительные байты RS" data-raw-value="73" data-value-kind="number">73</td></tr>
+	<tr><td>S = 32 байт</td><td data-observation-key="S = 32 байт" data-series-key="Дополнительные байты RS" data-raw-value="72" data-value-kind="number">72</td></tr>
+	<tr><td>S = 33 байт</td><td data-observation-key="S = 33 байт" data-series-key="Дополнительные байты RS" data-raw-value="71" data-value-kind="number">71</td></tr>
+	<tr><td>S = 34 байт</td><td data-observation-key="S = 34 байт" data-series-key="Дополнительные байты RS" data-raw-value="70" data-value-kind="number">70</td></tr>
+	<tr><td>S = 35 байт</td><td data-observation-key="S = 35 байт" data-series-key="Дополнительные байты RS" data-raw-value="69" data-value-kind="number">69</td></tr>
+	<tr><td>S = 36 байт</td><td data-observation-key="S = 36 байт" data-series-key="Дополнительные байты RS" data-raw-value="68" data-value-kind="number">68</td></tr>
+	<tr><td>S = 37 байт</td><td data-observation-key="S = 37 байт" data-series-key="Дополнительные байты RS" data-raw-value="79" data-value-kind="number">79</td></tr>
+	<tr><td>S = 38 байт</td><td data-observation-key="S = 38 байт" data-series-key="Дополнительные байты RS" data-raw-value="78" data-value-kind="number">78</td></tr>
+	<tr><td>S = 39 байт</td><td data-observation-key="S = 39 байт" data-series-key="Дополнительные байты RS" data-raw-value="77" data-value-kind="number">77</td></tr>
+	<tr><td>S = 40 байт</td><td data-observation-key="S = 40 байт" data-series-key="Дополнительные байты RS" data-raw-value="76" data-value-kind="number">76</td></tr>
+	<tr><td>S = 41 байт</td><td data-observation-key="S = 41 байт" data-series-key="Дополнительные байты RS" data-raw-value="75" data-value-kind="number">75</td></tr>
+	<tr><td>S = 42 байт</td><td data-observation-key="S = 42 байт" data-series-key="Дополнительные байты RS" data-raw-value="74" data-value-kind="number">74</td></tr>
+	<tr><td>S = 43 байт</td><td data-observation-key="S = 43 байт" data-series-key="Дополнительные байты RS" data-raw-value="73" data-value-kind="number">73</td></tr>
+	<tr><td>S = 44 байт</td><td data-observation-key="S = 44 байт" data-series-key="Дополнительные байты RS" data-raw-value="72" data-value-kind="number">72</td></tr>
+	<tr><td>S = 45 байт</td><td data-observation-key="S = 45 байт" data-series-key="Дополнительные байты RS" data-raw-value="71" data-value-kind="number">71</td></tr>
+	<tr><td>S = 46 байт</td><td data-observation-key="S = 46 байт" data-series-key="Дополнительные байты RS" data-raw-value="70" data-value-kind="number">70</td></tr>
+	<tr><td>S = 47 байт</td><td data-observation-key="S = 47 байт" data-series-key="Дополнительные байты RS" data-raw-value="81" data-value-kind="number">81</td></tr>
+	<tr><td>S = 48 байт</td><td data-observation-key="S = 48 байт" data-series-key="Дополнительные байты RS" data-raw-value="80" data-value-kind="number">80</td></tr>
+	<tr><td>S = 49 байт</td><td data-observation-key="S = 49 байт" data-series-key="Дополнительные байты RS" data-raw-value="79" data-value-kind="number">79</td></tr>
+	<tr><td>S = 50 байт</td><td data-observation-key="S = 50 байт" data-series-key="Дополнительные байты RS" data-raw-value="78" data-value-kind="number">78</td></tr>
+	<tr><td>S = 51 байт</td><td data-observation-key="S = 51 байт" data-series-key="Дополнительные байты RS" data-raw-value="77" data-value-kind="number">77</td></tr>
+	<tr><td>S = 52 байт</td><td data-observation-key="S = 52 байт" data-series-key="Дополнительные байты RS" data-raw-value="76" data-value-kind="number">76</td></tr>
+	<tr><td>S = 53 байт</td><td data-observation-key="S = 53 байт" data-series-key="Дополнительные байты RS" data-raw-value="75" data-value-kind="number">75</td></tr>
+	<tr><td>S = 54 байт</td><td data-observation-key="S = 54 байт" data-series-key="Дополнительные байты RS" data-raw-value="74" data-value-kind="number">74</td></tr>
+	<tr><td>S = 55 байт</td><td data-observation-key="S = 55 байт" data-series-key="Дополнительные байты RS" data-raw-value="73" data-value-kind="number">73</td></tr>
+	<tr><td>S = 56 байт</td><td data-observation-key="S = 56 байт" data-series-key="Дополнительные байты RS" data-raw-value="72" data-value-kind="number">72</td></tr>
+	<tr><td>S = 57 байт</td><td data-observation-key="S = 57 байт" data-series-key="Дополнительные байты RS" data-raw-value="83" data-value-kind="number">83</td></tr>
+	<tr><td>S = 58 байт</td><td data-observation-key="S = 58 байт" data-series-key="Дополнительные байты RS" data-raw-value="82" data-value-kind="number">82</td></tr>
+	<tr><td>S = 59 байт</td><td data-observation-key="S = 59 байт" data-series-key="Дополнительные байты RS" data-raw-value="81" data-value-kind="number">81</td></tr>
+	<tr><td>S = 60 байт</td><td data-observation-key="S = 60 байт" data-series-key="Дополнительные байты RS" data-raw-value="80" data-value-kind="number">80</td></tr>
+	<tr><td>S = 61 байт</td><td data-observation-key="S = 61 байт" data-series-key="Дополнительные байты RS" data-raw-value="79" data-value-kind="number">79</td></tr>
+	<tr><td>S = 62 байт</td><td data-observation-key="S = 62 байт" data-series-key="Дополнительные байты RS" data-raw-value="78" data-value-kind="number">78</td></tr>
+	<tr><td>S = 63 байт</td><td data-observation-key="S = 63 байт" data-series-key="Дополнительные байты RS" data-raw-value="77" data-value-kind="number">77</td></tr>
+	<tr><td>S = 64 байт</td><td data-observation-key="S = 64 байт" data-series-key="Дополнительные байты RS" data-raw-value="76" data-value-kind="number">76</td></tr>
+</table>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+	;(() => {
+		"use strict"
+		if (typeof Chart === "undefined") {
+			for (const wrap of document.querySelectorAll(".chart-wrap")) {
+				wrap.textContent = "Chart could not be rendered."
+			}
+			return
+		}
+const InlineChartRuntime = (() => {
+	if (typeof Chart !== "undefined" && Chart.defaults?.datasets?.line) {
+		Chart.defaults.datasets.line.clip = 8
+	}
+	const strip = n => n.toFixed(2).replace(/0+$/, "").replace(/\.$/, "")
+	const compact = v => {
+		const a = Math.abs(v)
+		if (a >= 1e12) return strip(a / 1e12) + "T"
+		if (a >= 1e9) return strip(a / 1e9) + "B"
+		if (a >= 1e6) return strip(a / 1e6) + "M"
+		if (a >= 1e3) return strip(a / 1e3) + "K"
+		return strip(a)
+	}
+	const currency = v => {
+		const a = Math.abs(v)
+		if (a === 0 || a >= 1) return compact(a)
+		return a.toLocaleString("en-US", { maximumSignificantDigits: 3 })
+	}
+	const formatValue = (v, kind) => {
+		if (v === null || v === undefined) return "Not available"
+		if (typeof v !== "number" || !Number.isFinite(v)) {
+			throw new Error("Non-finite chart value")
+		}
+		switch (kind) {
+			case "currency":
+				return (v < 0 ? "-" : "") + "$" + currency(v)
+			case "count":
+				return Math.round(v).toLocaleString("en-US")
+			case "countCompact":
+			case "numberCompact":
+				return (v < 0 ? "-" : "") + compact(v)
+			case "percent":
+				return strip(v) + "%"
+			case "percentagePoint":
+				return strip(v) + " percentage points"
+			case "ratio":
+				return strip(v) + "×"
+			case "durationMs":
+				return Math.abs(v) < 1000 ? strip(v) + " ms" : strip(v / 1000) + " s"
+			case "number":
+				return Number(strip(v)).toLocaleString("en-US", {
+					maximumFractionDigits: 2,
+				})
+			default:
+				throw new Error("Unknown chart value kind: " + kind)
+		}
+	}
+	const axisRange = (lo, hi, opts) => {
+		const o = opts || {}
+		if (!Number.isFinite(lo) || !Number.isFinite(hi) || lo > hi) {
+			throw new Error("Axis range requires finite ordered values")
+		}
+		const target = o.target === undefined ? 5 : o.target
+		if (!Number.isInteger(target) || target < 4 || target > 6) {
+			throw new Error("Axis target must be an integer from 4 through 6")
+		}
+		const observedLo = lo
+		const observedHi = hi
+		if (Number.isFinite(o.floor) && o.floor > observedLo) {
+			throw new Error("Axis floor excludes observed values")
+		}
+		if (Number.isFinite(o.cap) && o.cap < observedHi) {
+			throw new Error("Axis cap excludes observed values")
+		}
+		if (o.zero) {
+			lo = Math.min(0, lo)
+			hi = Math.max(0, hi)
+		}
+		if (Number.isFinite(o.floor)) lo = o.floor
+		if (hi === lo) {
+			const pad = Math.abs(lo) * 0.06 || 1
+			if (Number.isFinite(o.cap)) lo -= pad
+			else hi += pad
+		}
+		const zeroIsUpperBound = o.zero && observedHi < 0
+		const paddedHi = zeroIsUpperBound ? hi : hi + (hi - lo) * 0.06
+		const span = paddedHi - lo || 1
+		const exponent = Math.floor(Math.log10(span))
+		const candidates = []
+		for (let power = exponent - 3; power <= exponent + 1; power += 1) {
+			for (const multiplier of [1, 2, 2.5, 5]) {
+				const step = Number((multiplier * 10 ** power).toPrecision(12))
+				let min
+				let max
+				if (Number.isFinite(o.floor)) {
+					min = o.floor
+					max = Number.isFinite(o.cap)
+						? o.cap
+						: Number(
+								(
+									min +
+									Math.ceil((paddedHi - min) / step - 1e-9) * step
+								).toPrecision(12),
+							)
+				} else if (Number.isFinite(o.cap)) {
+					max = o.cap
+					min = Number(
+						(max - Math.ceil((max - lo) / step - 1e-9) * step).toPrecision(12),
+					)
+				} else {
+					min = Number((Math.floor(lo / step + 1e-9) * step).toPrecision(12))
+					max = Number(
+						(
+							min +
+							Math.ceil((paddedHi - min) / step - 1e-9) * step
+						).toPrecision(12),
+					)
+				}
+				if (
+					o.tight === true &&
+					observedLo < 0 &&
+					observedHi > 0 &&
+					!Number.isFinite(o.floor) &&
+					!Number.isFinite(o.cap)
+				) {
+					const pad = (observedHi - observedLo) * 0.06
+					const tightMin = observedLo - pad
+					const tightMax = observedHi + pad
+					const ticks =
+						Math.floor(tightMax / step + 1e-9) -
+						Math.ceil(tightMin / step - 1e-9) +
+						1
+					if (ticks >= 4 && ticks <= 6) {
+						candidates.push({
+							min: tightMin,
+							max: tightMax,
+							step,
+							includeBounds: false,
+							score: Math.abs(ticks - target) * 0.1 + (2 * pad) / span,
+						})
+					}
+				}
+				const intervals = (max - min) / step
+				const tickCount = Math.round(intervals) + 1
+				if (
+					Math.abs(intervals - Math.round(intervals)) < 1e-9 &&
+					tickCount >= 4 &&
+					tickCount <= 6 &&
+					min <= observedLo &&
+					max >= observedHi
+				) {
+					candidates.push({
+						min,
+						max,
+						step,
+						score:
+							Math.abs(tickCount - target) * 0.1 +
+							(max - min - (observedHi - observedLo)) / span,
+					})
+				}
+			}
+		}
+		candidates.sort((a, b) => a.score - b.score || a.step - b.step)
+		const range = candidates[0]
+		if (!range) {
+			throw new Error("Axis range cannot produce 4-6 aligned ticks")
+		}
+		if (o.zero && observedLo >= 0 && range.min < 0) {
+			throw new Error(
+				"Axis cap cannot preserve a zero baseline with 4-6 aligned ticks",
+			)
+		}
+		if (range.includeBounds === false) {
+			return {
+				min: range.min,
+				max: range.max,
+				step: range.step,
+				includeBounds: false,
+			}
+		}
+		return { min: range.min, max: range.max, step: range.step }
+	}
+	const barPath = (x, w, y, y0, r) =>
+		y0 - y < 8
+			? "M " + x + " " + y0 + " V " + y + " H " + (x + w) + " V " + y0 + " Z"
+			: "M " +
+				x +
+				" " +
+				y0 +
+				" V " +
+				(y + r) +
+				" Q " +
+				x +
+				" " +
+				y +
+				", " +
+				(x + r) +
+				" " +
+				y +
+				" H " +
+				(x + w - r) +
+				" Q " +
+				(x + w) +
+				" " +
+				y +
+				", " +
+				(x + w) +
+				" " +
+				(y + r) +
+				" V " +
+				y0 +
+				" Z"
+	const lineLayout = (P, n) => {
+		const inset = 8
+		const left = P.left + inset
+		const right = P.left + P.width - inset
+		const xFor = i =>
+			n === 1 ? (left + right) / 2 : left + ((right - left) / (n - 1)) * i
+		const labelXFor = i =>
+			i === 0 ? P.left : i === n - 1 ? P.left + P.width : xFor(i)
+		const labelAnchorFor = i =>
+			i === 0 ? "start" : i === n - 1 ? "end" : "middle"
+		return { xFor, labelXFor, labelAnchorFor }
+	}
+	const cssVar = name =>
+		getComputedStyle(document.documentElement).getPropertyValue(name).trim()
+	const buildTooltip = (tip, title, rows) => {
+		tip.textContent = ""
+		const addDiv = (className, text) => {
+			const node = document.createElement("div")
+			node.className = className
+			node.textContent = text
+			tip.appendChild(node)
+			return node
+		}
+		addDiv("tip-title", title)
+		for (const item of rows) {
+			if (Object.prototype.hasOwnProperty.call(item, "extra")) {
+				addDiv("tip-extra", item.extra)
+				continue
+			}
+			const row = addDiv("tip-row", "")
+			const key = document.createElement("span")
+			key.className = "tip-key"
+			key.dataset.mark = item.mark || "square"
+			key.style.background = item.color
+			const label = document.createElement("span")
+			label.className = "tip-label"
+			label.textContent = item.label
+			const value = document.createElement("span")
+			value.className = "tip-value"
+			value.textContent = item.value
+			row.append(key, label, value)
+		}
+	}
+	const positionTooltip = (tip, container, x, y) => {
+		const left = Math.max(
+			4,
+			Math.min(x + 10, container.clientWidth - tip.offsetWidth - 4),
+		)
+		const above = y - tip.offsetHeight - 10
+		// A below-pointer tooltip can otherwise enlarge an auto-sized artifact.
+		const top = Math.max(
+			4,
+			Math.min(
+				above >= 4 ? above : y + 10,
+				container.clientHeight - tip.offsetHeight - 4,
+			),
+		)
+		tip.style.left = left + "px"
+		tip.style.top = top + "px"
+	}
+	const createAuditRetry = (host, maxRetries, delays, onFinalFail) => {
+		let retries = 0
+		let pending = false
+		let timer = 0
+		const schedule = (delay, action) => {
+			pending = true
+			timer = globalThis.setTimeout(() => {
+				pending = false
+				if (host?.isConnected === false || host?.dataset?.auditFailed) return
+				action()
+			}, delay)
+		}
+		const reset = () => {
+			if (timer) globalThis.clearTimeout(timer)
+			retries = 0
+			pending = false
+			timer = 0
+		}
+		const fail = (reason, onRetry) => {
+			if (host?.dataset?.auditFailed || pending) return false
+			if (retries < maxRetries) {
+				const delay = delays[Math.min(retries, delays.length - 1)] || 0
+				retries += 1
+				schedule(delay, onRetry)
+				return false
+			}
+			onFinalFail(reason)
+			return false
+		}
+		const runAll = action => {
+			let index = 0
+			const next = () => {
+				if (index >= maxRetries) return
+				const delay = delays[Math.min(index, delays.length - 1)] || 0
+				index += 1
+				schedule(delay, () => {
+					action()
+					next()
+				})
+			}
+			next()
+		}
+		return { fail, reset, runAll }
+	}
+	const createTooltip =
+		(formatTitle, contextLabel = "") =>
+		context => {
+			const { chart, tooltip } = context
+			const container = chart.canvas.parentElement
+			const tip = container.querySelector(".chart-tooltip")
+			if (!tooltip || tooltip.opacity === 0) {
+				tip.dataset.visible = "false"
+				tip.setAttribute("aria-hidden", "true")
+				return
+			}
+			const rows = tooltip.dataPoints.flatMap(point => {
+				const isLine = (point.dataset.type ?? chart.config.type) === "line"
+				const rawColor = isLine
+					? point.dataset.borderColor
+					: point.dataset.backgroundColor
+				const color = Array.isArray(rawColor)
+					? rawColor[point.dataIndex]
+					: rawColor
+				let mark = "square"
+				if (isLine) mark = "line"
+				if (point.dataset.borderDash) mark = "dashed"
+				const isXY =
+					point.raw !== null &&
+					typeof point.raw === "object" &&
+					Object.prototype.hasOwnProperty.call(point.raw, "y")
+				const row = {
+					color,
+					mark,
+					label: point.dataset.label,
+					value: formatValue(
+						isXY ? point.raw.y : point.raw,
+						point.dataset.valueKind,
+					),
+				}
+				if (isXY && typeof point.dataset.xSeriesKey === "string") {
+					return [
+						{
+							color,
+							mark,
+							label: point.dataset.xSeriesKey,
+							value: formatValue(point.raw.x, point.dataset.xValueKind),
+						},
+						row,
+					]
+				}
+				return [row]
+			})
+			if (contextLabel !== "") rows.push({ extra: contextLabel })
+			const pointLabel =
+				chart.data.labels?.[tooltip.dataPoints[0]?.dataIndex] ?? ""
+			buildTooltip(tip, formatTitle(tooltip.title[0] || pointLabel), rows)
+			tip.dataset.visible = "true"
+			tip.setAttribute("aria-hidden", "false")
+			positionTooltip(
+				tip,
+				container,
+				chart.canvas.offsetLeft + tooltip.caretX,
+				chart.canvas.offsetTop + tooltip.caretY,
+			)
+		}
+	const crosshair = {
+		id: "crosshair",
+		beforeDatasetsDraw: chart => {
+			const active = chart.tooltip?.getActiveElements?.() ?? []
+			if (!active.length) return
+			const x = active[0].element.x
+			const area = chart.chartArea
+			const ctx = chart.ctx
+			ctx.save()
+			ctx.beginPath()
+			ctx.moveTo(x, area.top)
+			ctx.lineTo(x, area.bottom)
+			ctx.lineWidth = 1
+			ctx.strokeStyle = cssVar("--border-strong") || "rgba(25,25,24,0.2)"
+			ctx.stroke()
+			ctx.restore()
+		},
+	}
+	const stabilizationCleanup = new WeakMap()
+	const createChartAudit = spec => {
+		let retry
+		const unsafeReason = chart => {
+			const kinds = [
+				...new Set(chart.data.datasets.map(dataset => dataset.valueKind)),
+			]
+			if (kinds.length !== 1 || !kinds[0]) {
+				return "every dataset must declare one shared valueKind"
+			}
+			if (spec.valueKind && kinds[0] !== spec.valueKind) {
+				return "axis expects valueKind " + spec.valueKind + ", got " + kinds[0]
+			}
+			for (const dataset of chart.data.datasets) {
+				for (const value of dataset.data) {
+					const parts =
+						value !== null &&
+						typeof value === "object" &&
+						Object.prototype.hasOwnProperty.call(value, "x") &&
+						Object.prototype.hasOwnProperty.call(value, "y")
+							? [value.x, value.y]
+							: Array.isArray(value)
+								? value
+								: [value]
+					for (const part of parts) {
+						if (part === null) continue
+						if (typeof part !== "number" || !Number.isFinite(part)) {
+							return "non-finite data value; missing must be null"
+						}
+					}
+				}
+			}
+			const axisName = spec.valueAxis || "y"
+			if (!chart.scales[axisName]) return "missing value axis " + axisName
+			return ""
+		}
+		const policyReason = chart => {
+			const kind = chart.data.datasets[0]?.valueKind
+			const axis = chart.scales[spec.valueAxis || "y"]
+			if (axis.ticks.length < 4 || axis.ticks.length > 6) {
+				return "value axis needs 4-6 ticks, has " + axis.ticks.length
+			}
+			if (
+				["count", "currency", "number"].includes(kind) &&
+				Math.max(Math.abs(axis.min), Math.abs(axis.max)) >= 10000
+			) {
+				for (const tick of axis.ticks) {
+					if (/[\d,]{5}/.test(String(tick.label).split(".")[0])) {
+						return (
+							"axis ticks must use compact formatting above 10K, found " +
+							tick.label
+						)
+					}
+				}
+			}
+			if (chart.options.animation !== false) return "animation must be false"
+			if (chart.options.plugins?.tooltip?.enabled !== false) {
+				return "canvas tooltip must be disabled (use the external tooltip)"
+			}
+			if (chart.config.type === "bar") {
+				const meta = chart.getDatasetMeta(0)
+				for (const element of meta.data) {
+					const thickness =
+						chart.options.indexAxis === "y" ? element.height : element.width
+					if (thickness > 64) return "bar thickness exceeds the 64px cap"
+				}
+			}
+			return ""
+		}
+		return {
+			id: "audit",
+			afterDestroy: chart => {
+				retry?.reset()
+				stabilizationCleanup.get(chart)?.()
+				stabilizationCleanup.delete(chart)
+			},
+			afterUpdate: chart => {
+				const host = chart.canvas.parentElement
+				if (!host || host.dataset.auditFailed) return
+				if (!retry) {
+					retry = createAuditRetry(host, 2, [100, 500], reason => {
+						host.dataset.auditFailed = "true"
+						host.dataset.auditReason = reason
+						host.textContent = "Chart failed validation: " + reason
+					})
+				}
+				const unsafe = unsafeReason(chart)
+				const policy = unsafe ? "" : policyReason(chart)
+				if (policy) host.dataset.auditPolicy = policy
+				else delete host.dataset.auditPolicy
+				if (unsafe) {
+					retry.fail(unsafe, () => {
+						if (!chart.canvas?.isConnected || host.dataset.auditFailed) return
+						chart.resize()
+						chart.update("none")
+					})
+					return
+				}
+				retry.reset()
+			},
+		}
+	}
+	const stabilize = chart => {
+		stabilizationCleanup.get(chart)?.()
+		let frame = 0
+		const host = chart.canvas.parentElement
+		const retry = createAuditRetry(host, 2, [100, 500], () => {})
+		const redraw = () => {
+			frame = 0
+			if (chart.canvas === null || !host.isConnected) return
+			chart.draw()
+			const canvas = chart.canvas
+			canvas.style.opacity = canvas.style.opacity === "0.999" ? "1" : "0.999"
+		}
+		const scheduleRedraw = () => {
+			if (frame) cancelAnimationFrame(frame)
+			frame = requestAnimationFrame(() => {
+				frame = requestAnimationFrame(redraw)
+			})
+		}
+		const settle = () => {
+			scheduleRedraw()
+			retry.runAll(redraw)
+		}
+		const observer =
+			typeof ResizeObserver === "undefined"
+				? undefined
+				: new ResizeObserver(scheduleRedraw)
+		observer?.observe(host)
+		stabilizationCleanup.set(chart, () => {
+			if (frame) cancelAnimationFrame(frame)
+			retry.reset()
+			observer?.disconnect()
+			window.removeEventListener("load", settle)
+			window.removeEventListener("resize", scheduleRedraw)
+		})
+		if (document.readyState === "complete") settle()
+		else window.addEventListener("load", settle, { once: true })
+		window.addEventListener("resize", scheduleRedraw)
+		return chart
+	}
+	const createLegendToggles = (chart, legendEl) => {
+		chart.data.datasets.forEach((dataset, index) => {
+			const button = document.createElement("button")
+			button.type = "button"
+			button.className = "legend-toggle"
+			button.setAttribute("aria-pressed", "true")
+			const isLine = chart.config.type === "line"
+			const key = document.createElement("span")
+			key.className = isLine ? "key-line" : "key-sq"
+			if (dataset.borderDash) key.dataset.dash = "dashed"
+			const color = dataset.borderColor || dataset.backgroundColor
+			if (isLine) key.style.borderTopColor = color
+			else key.style.background = color
+			const label = document.createElement("span")
+			label.textContent = dataset.label
+			button.append(key, label)
+			button.addEventListener("click", () => {
+				const visible = chart.data.datasets.map((value, datasetIndex) =>
+					chart.isDatasetVisible(datasetIndex),
+				)
+				visible[index] = !visible[index]
+				if (!visible.some(Boolean)) return
+				chart.setDatasetVisibility(index, visible[index])
+				button.setAttribute("aria-pressed", String(visible[index]))
+				chart.update("none")
+			})
+			legendEl.appendChild(button)
+		})
+	}
+	const SVGNS = "http://www.w3.org/2000/svg"
+	const el = (tag, attrs, parent) => {
+		const node = document.createElementNS(SVGNS, tag)
+		for (const key in attrs) node.setAttribute(key, attrs[key])
+		if (parent) parent.appendChild(node)
+		return node
+	}
+	const attachTooltip = (plot, onLineIndex) => {
+		const tip = plot.querySelector(".chart-tooltip")
+		const guide = plot.querySelector(".guide")
+		const hide = () => {
+			tip.dataset.visible = "false"
+			tip.setAttribute("aria-hidden", "true")
+			if (guide) guide.setAttribute("visibility", "hidden")
+		}
+		const show = (mark, clientX, clientY) => {
+			const bounds = plot.getBoundingClientRect()
+			let title = mark.dataset.heading
+			let rows = [
+				{
+					color: "var(" + mark.dataset.color + ")",
+					mark: mark.dataset.mark || "square",
+					label: mark.dataset.label,
+					value: mark.dataset.value,
+				},
+			]
+			if (mark.dataset.extra) rows.push({ extra: mark.dataset.extra })
+			if (mark.dataset.kind === "line" && onLineIndex) {
+				const detail = onLineIndex(Number(mark.dataset.index), guide)
+				if (Array.isArray(detail)) rows = detail
+				else if (detail) {
+					title = detail.title || title
+					rows = detail.rows || rows
+				}
+			}
+			buildTooltip(tip, title, rows)
+			tip.dataset.visible = "true"
+			tip.setAttribute("aria-hidden", "false")
+			positionTooltip(tip, plot, clientX - bounds.left, clientY - bounds.top)
+		}
+		plot.addEventListener("pointermove", event => {
+			const mark = event.target.closest
+				? event.target.closest(".data-mark")
+				: null
+			if (mark) show(mark, event.clientX, event.clientY)
+			else hide()
+		})
+		plot.addEventListener("pointerleave", hide)
+		plot.addEventListener("focusin", event => {
+			const mark = event.target.closest(".data-mark")
+			if (!mark) return
+			const bounds = mark.getBoundingClientRect()
+			show(mark, bounds.left + bounds.width / 2, bounds.top)
+		})
+		plot.addEventListener("focusout", hide)
+	}
+	const svgAuditRetries = new WeakMap()
+	const svgAudit = (plot, expectedMarks, rerender) => {
+		let retry = svgAuditRetries.get(plot)
+		if (!retry) {
+			retry = createAuditRetry(plot, 2, [100, 500], reason => {
+				plot.dataset.auditFailed = "true"
+				plot.dataset.auditReason = reason
+				plot.textContent = "Chart failed validation: " + reason
+			})
+			svgAuditRetries.set(plot, retry)
+		}
+		const fail = reason => retry.fail(reason, rerender)
+		const svgNode = plot.querySelector("svg")
+		if (!svgNode) return fail("missing svg")
+		const marks = svgNode.querySelectorAll(".data-mark").length
+		if (marks !== expectedMarks) {
+			return fail("expected " + expectedMarks + " marks, found " + marks)
+		}
+		const rect = svgNode.getBoundingClientRect()
+		const viewBox = (svgNode.getAttribute("viewBox") || "")
+			.split(/[\s,]+/)
+			.map(Number)
+		if (rect.width > 0 && viewBox.length === 4 && viewBox[2] > 0) {
+			const scale = rect.width / viewBox[2]
+			for (const text of svgNode.querySelectorAll("text")) {
+				const fontSize = parseFloat(getComputedStyle(text).fontSize || "12")
+				if (fontSize * scale < 11) {
+					return fail("effective text size below 11px after viewBox scaling")
+				}
+			}
+			for (const text of svgNode.querySelectorAll("text")) {
+				try {
+					const box = text.getBBox()
+					if (box.x < -1 || box.x + box.width > viewBox[2] + 1) {
+						return fail("text clips at the plot edge: " + text.textContent)
+					}
+				} catch (error) {
+					if (error instanceof TypeError || error instanceof DOMException) break
+					throw error
+				}
+			}
+			const labels = [...svgNode.querySelectorAll(".x-text")]
+			for (let index = 1; index < labels.length; index += 1) {
+				try {
+					const previous = labels[index - 1].getBBox()
+					const current = labels[index].getBBox()
+					if (
+						previous.x + previous.width > current.x &&
+						current.x + current.width > previous.x
+					) {
+						return fail("category labels overlap")
+					}
+				} catch (error) {
+					if (error instanceof TypeError || error instanceof DOMException) break
+					throw error
+				}
+			}
+		}
+		retry.reset()
+		delete plot.dataset.auditRetries
+		delete plot.dataset.auditRetryPending
+		return true
+	}
+	const chartJs = {
+		createTooltip,
+		crosshair,
+		createAudit: createChartAudit,
+		stabilize,
+		createLegendToggles,
+	}
+	const svg = { el, attachTooltip, audit: svgAudit }
+	return {
+		formatValue,
+		axisRange,
+		barPath,
+		lineLayout,
+		cssVar,
+		buildTooltip,
+		positionTooltip,
+		createAuditRetry,
+		chartJs,
+		svg,
+	}
+})()
+
+		const muted = InlineChartRuntime.cssVar("--muted") || "#615d59"
+		const grid = InlineChartRuntime.cssVar("--grid") || "rgba(25,25,24,0.08)"
+		const border = InlineChartRuntime.cssVar("--border") || "rgba(25,25,24,0.12)"
+		const lineCategoryAxis = labels => ({
+			grid: { display: false },
+			ticks: { color: muted, autoSkip: false, maxRotation: 0, callback: value => labels[value] },
+			afterBuildTicks: scale => {
+				const context = scale.chart.ctx
+				context.save()
+				context.font = "12px " + Chart.defaults.font.family
+				const widest = Math.max(...labels.flat().map(label => context.measureText(label).width))
+				context.restore()
+				const measuredBudget = Math.max(2, Math.floor((scale.maxWidth - widest) / (widest + 18)) + 1)
+				const budget = scale.chart.width < 500 ? Math.min(4, measuredBudget) : measuredBudget
+				if (scale.ticks.length <= budget) return
+				const ticks = scale.ticks
+				const interval = Math.ceil(ticks.length / budget)
+				// Keep the latest date and a fixed cadence instead of distorting
+				// intervals to show both endpoints.
+				scale.ticks = ticks.filter(
+					(_tick, index) => (ticks.length - 1 - index) % interval === 0,
+				)
+			},
+		})
+		const valueRange = (values, options, kind) => {
+			const lo = Math.min(...values)
+			const hi = Math.max(...values)
+			const range = InlineChartRuntime.axisRange(lo, hi, options)
+			if (kind === "percent" && lo >= 0 && hi <= 100 && range.max > 100) {
+				return InlineChartRuntime.axisRange(lo, hi, { ...options, cap: 100 })
+			}
+			return range
+		}
+		const valueAxis = (range, kind, options = {}) => {
+			if (range.scale === "logarithmic") {
+				return {
+					type: "logarithmic",
+					min: range.min,
+					max: range.max,
+					afterBuildTicks: scale => {
+						scale.ticks = scale.ticks.filter(tick => {
+							const exponent = Math.log10(tick.value)
+							return Math.abs(exponent - Math.round(exponent)) < 1e-9
+						})
+					},
+					ticks: {
+						color: muted,
+						callback: value => {
+							const exponent = Math.log10(value)
+							return Math.abs(exponent - Math.round(exponent)) < 1e-9
+								? InlineChartRuntime.formatValue(value, kind)
+								: ""
+						},
+					},
+					grid: { color: grid },
+					...options,
+				}
+			}
+			return {
+				min: range.min,
+				max: range.max,
+				afterBuildTicks: scale => {
+					if (range.includeBounds !== false) return
+					// Chart.js can re-space an explicit step between non-grid bounds.
+					// Keep the chosen interior ticks and the full signed data domain.
+					const first = Math.ceil(range.min / range.step - 1e-9)
+					const last = Math.floor(range.max / range.step + 1e-9)
+					scale.ticks = Array.from(
+						{ length: last - first + 1 },
+						(_value, index) => ({
+							value: Number(
+								((first + index) * range.step).toPrecision(12),
+							),
+						}),
+					)
+				},
+				ticks: {
+					stepSize: range.step,
+					includeBounds: range.includeBounds ?? true,
+					color: muted,
+					callback: value => InlineChartRuntime.formatValue(value, kind),
+				},
+				grid: { color: context => context.tick.value === 0 ? border : grid },
+				...options,
+			}
+		}
+		const groupedBarLayout = spec => ({
+			id: "groupedBarLayout",
+			beforeDatasetsUpdate: chart => {
+				if (spec.mode !== "grouped" || spec.series.length < 2) return
+				const scale = chart.scales[spec.orientation === "horizontal" ? "y" : "x"]
+				const lane = Math.abs(scale.getPixelForValue(1) - scale.getPixelForValue(0))
+				// A fixed thickness sets both the slot and the painted width, unlike a cap.
+				const thickness = Math.min(spec.maxBarThickness, lane * 0.72 / chart.getVisibleDatasetCount())
+				for (const dataset of chart.data.datasets) dataset.barThickness = thickness
+			},
+		})
+		const horizontalCategoryLayout = tickLabels => ({
+			id: "horizontalCategoryLayout",
+			beforeLayout: chart => {
+				if (chart.options.indexAxis !== "y") return
+				const context = chart.ctx
+				const font = Chart.defaults.font
+				context.save()
+				context.font = "12px " + font.family
+				const budget = Math.min(220, Math.max(80, chart.width * 0.4))
+				const labels = tickLabels.map(label => {
+					const lines = []
+					let line = ""
+					for (const word of String(label).split(/\s+/)) {
+						if (line && context.measureText(line + " " + word).width > budget) { lines.push(line); line = "" }
+						for (const character of Array.from((line ? " " : "") + word)) {
+							if (line && context.measureText(line + character).width > budget) { lines.push(line); line = "" }
+							line += character
+						}
+					}
+					if (line) lines.push(line)
+					return lines
+				})
+				context.restore()
+				chart.options.scales.y.ticks.font = { size: 12, family: font.family, lineHeight: 1.2 }
+				chart.options.scales.y.ticks.callback = value => labels[value]
+				const linesPerRow = Math.max(...labels.map(lines => lines.length))
+				chart.canvas.parentElement.style.height = Math.max(260, labels.length * (linesPerRow * 14.4 + 14) + 40) + "px"
+			},
+		})
+		const commonChartOptions = (options, context) => ({
+			responsive: true,
+			maintainAspectRatio: false,
+			animation: false,
+			plugins: {
+				legend: { display: false },
+				tooltip: { enabled: false, external: InlineChartRuntime.chartJs.createTooltip(value => value, context) },
+			},
+			...options,
+		})
+		const hueTokens = {"blue":"#7fb4ec","yellow":"#eac26b","green":"#72bc8f","purple":"#bf8eda","orange":"#eda86e","pink":"#df84a8","teal":"#4fb9c9","brown":"#bd9576","neutral":"#a39e98","red":"#e97366"}
+		const resolveHue = hue => InlineChartRuntime.cssVar("--" + hue) || hueTokens[hue]
+{const chartOptions = options => commonChartOptions(options, "Дополнительные байты блока при S от 1 до 64; расчёт по формату, не измерение");
+
+		const panel = {"labels":["S = 1 байт","S = 2 байт","S = 3 байт","S = 4 байт","S = 5 байт","S = 6 байт","S = 7 байт","S = 8 байт","S = 9 байт","S = 10 байт","S = 11 байт","S = 12 байт","S = 13 байт","S = 14 байт","S = 15 байт","S = 16 байт","S = 17 байт","S = 18 байт","S = 19 байт","S = 20 байт","S = 21 байт","S = 22 байт","S = 23 байт","S = 24 байт","S = 25 байт","S = 26 байт","S = 27 байт","S = 28 байт","S = 29 байт","S = 30 байт","S = 31 байт","S = 32 байт","S = 33 байт","S = 34 байт","S = 35 байт","S = 36 байт","S = 37 байт","S = 38 байт","S = 39 байт","S = 40 байт","S = 41 байт","S = 42 байт","S = 43 байт","S = 44 байт","S = 45 байт","S = 46 байт","S = 47 байт","S = 48 байт","S = 49 байт","S = 50 байт","S = 51 байт","S = 52 байт","S = 53 байт","S = 54 байт","S = 55 байт","S = 56 байт","S = 57 байт","S = 58 байт","S = 59 байт","S = 60 байт","S = 61 байт","S = 62 байт","S = 63 байт","S = 64 байт"],"tickLabels":["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64"],"axis":{"zero":true,"tight":true},"fill":"quiet","valueKind":"number","tickKind":"number","series":[{"label":"Дополнительные байты RS","valueKind":"number","data":[67,66,65,64,63,62,73,72,71,70,69,68,67,66,65,64,75,74,73,72,71,70,69,68,67,66,77,76,75,74,73,72,71,70,69,68,79,78,77,76,75,74,73,72,71,70,81,80,79,78,77,76,75,74,73,72,83,82,81,80,79,78,77,76],"colorToken":"--neutral","colorFallback":"#a39e98"}]}
+		const values = panel.series.flatMap(item => item.data).filter(value => value !== null)
+		if (panel.axis.referenceLine) values.push(panel.axis.referenceLine.value)
+		const range = valueRange(values, panel.axis, panel.valueKind)
+		const area = panel.fill === "quiet"
+		const datasets = panel.series.map(item => { const color = InlineChartRuntime.cssVar(item.colorToken) || item.colorFallback; return { label: item.label, valueKind: item.valueKind, data: item.data, borderColor: color, fill: area, backgroundColor: area ? color + "2e" : "transparent", borderWidth: 2, tension: 0, pointRadius: 3, pointHoverRadius: 5, pointBackgroundColor: color, pointBorderColor: color, clip: 8 } })
+		if (panel.axis.referenceLine) datasets.push({ label: panel.axis.referenceLine.label, valueKind: panel.valueKind, auxiliary: true, data: panel.labels.map(() => panel.axis.referenceLine.value), borderColor: muted, backgroundColor: "transparent", borderWidth: 1.5, borderDash: [5, 4], fill: false, tension: 0, pointRadius: 0, pointHoverRadius: 0, clip: 8 })
+		const chart = new Chart(document.getElementById("canonicalPanel0"), {
+			type: "line",
+			plugins: [InlineChartRuntime.chartJs.crosshair, InlineChartRuntime.chartJs.createAudit({ valueAxis: "y", valueKind: panel.valueKind })],
+			data: { labels: panel.labels, datasets },
+			options: chartOptions({ interaction: { mode: "index", intersect: false, axis: "x" }, scales: { x: lineCategoryAxis(panel.tickLabels), y: valueAxis(range, panel.tickKind) } }),
+		})
+		InlineChartRuntime.chartJs.stabilize(chart)
+}
+	})()
+</script>
