@@ -1,34 +1,47 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="765" viewBox="0 80 1120 765" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1530.0" viewBox="0 160 1120 1530" role="img">
   <title>rANS • модель BANAN и интервалы символов</title>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
       <path d="M 0 0 L 10 5 L 0 10 Z" fill="#b3afb9" />
     </marker>
   </defs>
-  <rect width="100%" height="765.0" fill="#1f1e24" y="80" />
-  <path d="M560 210 L560 275" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
-  <path d="M 194 110 H 950 L 926 210 H 170 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="560" y="146.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Вход: BANAN; n=0x05; D=0x03</text>
-  <text x="560" y="173.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">v(A)=0x02; v(B)=0x01; v(N)=0x02</text>
-  <rect x="170" y="275" width="780" height="145" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="560" y="307.24" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">M=0x1000; M−D=0xFFD</text>
-  <text x="560" y="334.08" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">f⁰=(0x666, 0x333, 0x666); Σ=0xFFF</text>
-  <text x="560" y="360.92" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Наибольший остаток у B: добавить 0x01</text>
-  <text x="560" y="387.76" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">f=(0x666, 0x334, 0x666)</text>
-  <rect x="40" y="520" width="416" height="108" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="248" y="547.16" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">A</text>
-  <text x="248" y="574" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">[0x000, 0x666)</text>
-  <text x="248" y="600.84" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">f=0x666</text>
-  <rect x="456" y="520" width="208" height="108" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="560" y="547.16" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">B</text>
-  <text x="560" y="574" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">[0x666, 0x99A)</text>
-  <text x="560" y="600.84" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">f=0x334</text>
-  <rect x="664" y="520" width="416" height="108" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="872" y="547.16" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">N</text>
-  <text x="872" y="574" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">[0x99A, 0x1000)</text>
-  <text x="872" y="600.84" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">f=0x666</text>
-  <rect x="240" y="725" width="640" height="95" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="560" y="759.08" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">q = x mod 0x1000</text>
-  <text x="560" y="785.92" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Выбрать s: c(s) ≤ q &lt; c(s) + f(s)</text>
+  <rect width="100%" height="1530.0" fill="#1f1e24" y="160.0" />
+  <path d="M560 210 L560 275" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" transform="scale(1,2)" />
+  <path d="M 194 110 H 950 L 926 210 H 170 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" transform="scale(1,2)" />
+  <text x="560" y="281.06" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Вход: BANAN; n=05₁₆; D=03₁₆</text>
+  <text x="560" y="308.56" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">₁₀: Вход: BANAN; n=5; D=3</text>
+  <text x="560" y="334.73999999999995" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">v(A)=02₁₆; v(B)=01₁₆; v(N)=02₁₆</text>
+  <text x="560" y="362.23999999999995" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">₁₀: v(A)=2; v(B)=1; v(N)=2</text>
+  <rect x="170" y="550.0" width="780" height="290.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="560" y="602.38" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">M=2¹²; M−D=FFD₁₆</text>
+  <text x="560" y="629.88" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">₁₀: M=4 096; M−D=4 093</text>
+  <text x="560" y="656.06" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">f⁰=(666₁₆, 333₁₆, 666₁₆); Σ=FFF₁₆</text>
+  <text x="560" y="683.56" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">₁₀: f⁰=(1 638, 819, 1 638); Σ=4 095</text>
+  <text x="560" y="709.74" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Наибольший остаток у B: добавить 01₁₆</text>
+  <text x="560" y="737.24" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">₁₀: Наибольший остаток у B: добавить 1</text>
+  <text x="560" y="763.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">f=(666₁₆, 334₁₆, 666₁₆)</text>
+  <text x="560" y="790.92" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">₁₀: f=(1 638, 820, 1 638)</text>
+  <rect x="40" y="1040.0" width="416" height="216.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="248" y="1094.32" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">A</text>
+  <text x="248" y="1135.9" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">[000₁₆, 666₁₆)</text>
+  <text x="248" y="1163.4" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">₁₀: [0, 1 638)</text>
+  <text x="248" y="1189.5800000000002" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">f=666₁₆</text>
+  <text x="248" y="1217.0800000000002" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">₁₀: f=1 638</text>
+  <rect x="456" y="1040.0" width="208" height="216.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="560" y="1094.32" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">B</text>
+  <text x="560" y="1135.9" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">[666₁₆, 99A₁₆)</text>
+  <text x="560" y="1163.4" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">₁₀: [1 638, 2 458)</text>
+  <text x="560" y="1189.5800000000002" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">f=334₁₆</text>
+  <text x="560" y="1217.0800000000002" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">₁₀: f=820</text>
+  <rect x="664" y="1040.0" width="416" height="216.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="872" y="1094.32" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">N</text>
+  <text x="872" y="1135.9" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">[99A₁₆, 2¹²)</text>
+  <text x="872" y="1163.4" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">₁₀: [2 458, 4 096)</text>
+  <text x="872" y="1189.5800000000002" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">f=666₁₆</text>
+  <text x="872" y="1217.0800000000002" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">₁₀: f=1 638</text>
+  <rect x="240" y="1450.0" width="640" height="190.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="560" y="1506.0600000000002" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">q = x mod 2¹²</text>
+  <text x="560" y="1533.5600000000002" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">₁₀: q = x mod 4 096</text>
+  <text x="560" y="1571.84" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Выбрать s: c(s) ≤ q &lt; c(s) + f(s)</text>
 </svg>

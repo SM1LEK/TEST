@@ -1,82 +1,95 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1104" height="712" viewBox="8 8 1104 712" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="1104" height="1424.0" viewBox="8 16 1104 1424" role="img">
   <title>rans</title>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
       <path d="M 0 1 L 10 5 L 0 9 Z" fill="#b3afb9" />
     </marker>
   </defs>
-  <rect id="background" x="8" y="8.0" width="1104" height="712.0" fill="#1f1e24" />
+  <rect id="background" x="8" y="16.0" width="1104" height="1424.0" fill="#1f1e24" />
   <g id="drawing">
-    <path d="M 290 272 L 290 310" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e0" data-source="n5" data-target="n7" />
-    <path d="M 290 372 L 290 410" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e1" data-source="n7" data-target="n9" />
-    <path d="M 290 472 L 290 510" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e2" data-source="n9" data-target="n11" />
-    <path d="M 830 272 L 830 310" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e3" data-source="n6" data-target="n8" />
-    <path d="M 830 372 L 830 410" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e4" data-source="n8" data-target="n10" />
-    <path d="M 830 472 L 830 510" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e5" data-source="n10" data-target="n12" />
+    <path d="M 290 272 L 290 310" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e0" data-source="n5" data-target="n7" transform="scale(1,2)" />
+    <path d="M 290 372 L 290 410" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e1" data-source="n7" data-target="n9" transform="scale(1,2)" />
+    <path d="M 290 472 L 290 510" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e2" data-source="n9" data-target="n11" transform="scale(1,2)" />
+    <path d="M 830 272 L 830 310" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e3" data-source="n6" data-target="n8" transform="scale(1,2)" />
+    <path d="M 830 372 L 830 410" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e4" data-source="n8" data-target="n10" transform="scale(1,2)" />
+    <path d="M 830 472 L 830 510" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e5" data-source="n10" data-target="n12" transform="scale(1,2)" />
     <g data-vertex-id="n1">
       <desc>A: 0..=2047; f(A) = 2048</desc>
-      <rect x="40" y="40" width="520" height="70" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="300" y="82.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A: 0x000…0x7FF; f(A)=0x800</text>
+      <rect x="40" y="80.0" width="520" height="140.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="300" y="152.86" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A: 000₁₆…7FF₁₆; f(A)=2¹¹</text>
+    <text x="300" y="180.36" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">₁₀: A: 0…2 047; f(A)=2 048</text>
     </g>
     <g data-vertex-id="n2">
       <desc>B: 2048..=4095; f(B) = 2048</desc>
-      <rect x="560" y="40" width="520" height="70" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="820" y="82.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">B: 0x800…0xFFF; f(B)=0x800</text>
+      <rect x="560" y="80.0" width="520" height="140.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="820" y="152.86" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">B: 800₁₆…FFF₁₆; f(B)=2¹¹</text>
+    <text x="820" y="180.36" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">₁₀: B: 2 048…4 095; f(B)=2 048</text>
     </g>
     <g data-vertex-id="n5">
       <desc>B: 8388608 =&gt; 16779264</desc>
-      <rect x="40" y="210" width="500" height="62" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="290" y="248.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">B: 0x00800000 → 0x01000800</text>
+      <rect x="40" y="420.0" width="500" height="124.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="290" y="484.85999999999996" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">B: 0080 0000₁₆ → 0100 0800₁₆</text>
+    <text x="290" y="512.3599999999999" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">₁₀: B: 8 388 608 → 16 779 264</text>
     </g>
     <g data-vertex-id="n6">
       <desc>A: 134238208 =&gt; 67119104</desc>
-      <rect x="580" y="210" width="500" height="62" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="830" y="248.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A: 0x08005000 → 0x04002800</text>
+      <rect x="580" y="420.0" width="500" height="124.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="830" y="484.85999999999996" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A: 0800 5000₁₆ → 0400 2800₁₆</text>
+    <text x="830" y="512.3599999999999" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">₁₀: A: 134 238 208 → 67 119 104</text>
     </g>
     <g data-vertex-id="n7">
       <desc>A: 16779264 =&gt; 33558528</desc>
-      <rect x="40" y="310" width="500" height="62" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="290" y="348.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A: 0x01000800 → 0x02001000</text>
+      <rect x="40" y="620.0" width="500" height="124.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="290" y="684.86" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A: 0100 0800₁₆ → 0200 1000₁₆</text>
+    <text x="290" y="712.36" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">₁₀: A: 16 779 264 → 33 558 528</text>
     </g>
     <g data-vertex-id="n8">
       <desc>B: 67119104 =&gt; 33558528</desc>
-      <rect x="580" y="310" width="500" height="62" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="830" y="348.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">B: 0x04002800 → 0x02001000</text>
+      <rect x="580" y="620.0" width="500" height="124.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="830" y="684.86" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">B: 0400 2800₁₆ → 0200 1000₁₆</text>
+    <text x="830" y="712.36" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">₁₀: B: 67 119 104 → 33 558 528</text>
     </g>
     <g data-vertex-id="n9">
       <desc>B: 33558528 =&gt; 67119104</desc>
-      <rect x="40" y="410" width="500" height="62" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="290" y="448.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">B: 0x02001000 → 0x04002800</text>
+      <rect x="40" y="820.0" width="500" height="124.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="290" y="884.86" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">B: 0200 1000₁₆ → 0400 2800₁₆</text>
+    <text x="290" y="912.36" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">₁₀: B: 33 558 528 → 67 119 104</text>
     </g>
     <g data-vertex-id="n10">
       <desc>A: 33558528 =&gt; 16779264</desc>
-      <rect x="580" y="410" width="500" height="62" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="830" y="448.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A: 0x02001000 → 0x01000800</text>
+      <rect x="580" y="820.0" width="500" height="124.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="830" y="884.86" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A: 0200 1000₁₆ → 0100 0800₁₆</text>
+    <text x="830" y="912.36" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">₁₀: A: 33 558 528 → 16 779 264</text>
     </g>
     <g data-vertex-id="n11">
       <desc>A: 67119104 =&gt; 134238208</desc>
-      <rect x="40" y="510" width="500" height="62" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="290" y="548.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A: 0x04002800 → 0x08005000</text>
+      <rect x="40" y="1020.0" width="500" height="124.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="290" y="1084.8600000000001" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A: 0400 2800₁₆ → 0800 5000₁₆</text>
+    <text x="290" y="1112.3600000000001" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">₁₀: A: 67 119 104 → 134 238 208</text>
     </g>
     <g data-vertex-id="n12">
       <desc>B: 16779264 =&gt; 8388608</desc>
-      <rect x="580" y="510" width="500" height="62" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="830" y="548.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">B: 0x01000800 → 0x00800000</text>
+      <rect x="580" y="1020.0" width="500" height="124.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="830" y="1084.8600000000001" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">B: 0100 0800₁₆ → 0080 0000₁₆</text>
+    <text x="830" y="1112.3600000000001" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">₁₀: B: 16 779 264 → 8 388 608</text>
     </g>
     <g data-vertex-id="n13">
       <desc>x = floor(x / f) × 4096
 + (x mod f) + c</desc>
-      <rect x="40" y="615" width="500" height="80" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="290" y="648.4" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">x = floor(x / f) × 0x1000</text>
-      <text x="290" y="676.56" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">+ (x mod f) + c</text>
+      <rect x="40" y="1230.0" width="500" height="160.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="290" y="1284.7" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">x = floor(x / f) × 2¹²</text>
+      <text x="290" y="1312.2" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">₁₀: x = floor(x / f) × 4 096</text>
+      <text x="290" y="1353.12" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">+ (x mod f) + c</text>
     </g>
     <g data-vertex-id="n14">
       <desc>x = f × floor(x / 4096)
 + (x mod 4096) − c</desc>
-      <rect x="580" y="615" width="500" height="80" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="830" y="648.4" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">x = f × floor(x / 0x1000)</text>
-      <text x="830" y="676.56" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">+ (x mod 0x1000) − c</text>
+      <rect x="580" y="1230.0" width="500" height="160.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="830" y="1284.7" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">x = f × floor(x / 2¹²)</text>
+      <text x="830" y="1312.2" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">₁₀: x = f × floor(x / 4 096)</text>
+      <text x="830" y="1341.02" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">+ (x mod 2¹²) − c</text>
+    <text x="830" y="1368.52" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">₁₀: + (x mod 4 096) − c</text>
     </g>
   </g>
 </svg>

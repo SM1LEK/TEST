@@ -1,65 +1,72 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="251" viewBox="8 8 1100 251" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="502.0" viewBox="8 16 1100 502" role="img">
   <title>lz77</title>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
       <path d="M 0 1 L 10 5 L 0 9 Z" fill="#b3afb9" />
     </marker>
   </defs>
-  <rect id="background" x="8" y="8.0" width="1100" height="251.0" fill="#1f1e24" />
+  <rect id="background" x="8" y="16.0" width="1100" height="502.0" fill="#1f1e24" />
   <g id="drawing">
-    <path d="M 94 125 L 94 155 L 237 155 Q 242 147 247 155 L 385 155 Q 390 147 395 155 L 430 155 L 430 125" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e0" data-source="n1" data-target="n3" />
-    <path d="M 242 125 L 242 183 L 385 183 Q 390 175 395 183 L 533 183 Q 538 175 543 183 L 578 183 L 578 125" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e1" data-source="n2" data-target="n4" />
-    <path d="M 390 125 L 390 211 L 533 211 Q 538 203 543 211 L 726 211 L 726 125" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e2" data-source="n3" data-target="n5" />
-    <path d="M 538 125 L 538 239 L 874 239 L 874 125" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e3" data-source="n4" data-target="n6" />
+    <path d="M 94 125 L 94 155 L 237 155 Q 242 147 247 155 L 385 155 Q 390 147 395 155 L 430 155 L 430 125" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e0" data-source="n1" data-target="n3" transform="scale(1,2)" />
+    <path d="M 242 125 L 242 183 L 385 183 Q 390 175 395 183 L 533 183 Q 538 175 543 183 L 578 183 L 578 125" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e1" data-source="n2" data-target="n4" transform="scale(1,2)" />
+    <path d="M 390 125 L 390 211 L 533 211 Q 538 203 543 211 L 726 211 L 726 125" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e2" data-source="n3" data-target="n5" transform="scale(1,2)" />
+    <path d="M 538 125 L 538 239 L 874 239 L 874 125" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e3" data-source="n4" data-target="n6" transform="scale(1,2)" />
     <g data-vertex-id="n1">
       <desc>0
 A</desc>
-      <rect x="40" y="40" width="148" height="85" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="114" y="75.9" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">0x00</text>
-      <text x="114" y="104.06" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A</text>
+      <rect x="40" y="80.0" width="148" height="170.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="114" y="139.70000000000002" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">00₁₆</text>
+      <text x="114" y="167.20000000000002" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">0₁₀</text>
+      <text x="114" y="208.12" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A</text>
     </g>
     <g data-vertex-id="n2">
       <desc>1
 B</desc>
-      <rect x="188" y="40" width="148" height="85" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="262" y="75.9" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">0x01</text>
-      <text x="262" y="104.06" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">B</text>
+      <rect x="188" y="80.0" width="148" height="170.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="262" y="139.70000000000002" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">01₁₆</text>
+      <text x="262" y="167.20000000000002" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">1₁₀</text>
+      <text x="262" y="208.12" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">B</text>
     </g>
     <g data-vertex-id="n3">
       <desc>2
 A</desc>
-      <rect x="336" y="40" width="148" height="85" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="410" y="75.9" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">0x02</text>
-      <text x="410" y="104.06" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A</text>
+      <rect x="336" y="80.0" width="148" height="170.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="410" y="139.70000000000002" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">02₁₆</text>
+      <text x="410" y="167.20000000000002" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">2₁₀</text>
+      <text x="410" y="208.12" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A</text>
     </g>
     <g data-vertex-id="n4">
       <desc>3
 B</desc>
-      <rect x="484" y="40" width="148" height="85" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="558" y="75.9" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">0x03</text>
-      <text x="558" y="104.06" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">B</text>
+      <rect x="484" y="80.0" width="148" height="170.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="558" y="139.70000000000002" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">03₁₆</text>
+      <text x="558" y="167.20000000000002" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">3₁₀</text>
+      <text x="558" y="208.12" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">B</text>
     </g>
     <g data-vertex-id="n5">
       <desc>4
 A</desc>
-      <rect x="632" y="40" width="148" height="85" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="706" y="75.9" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">0x04</text>
-      <text x="706" y="104.06" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A</text>
+      <rect x="632" y="80.0" width="148" height="170.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="706" y="139.70000000000002" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">04₁₆</text>
+      <text x="706" y="167.20000000000002" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">4₁₀</text>
+      <text x="706" y="208.12" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A</text>
     </g>
     <g data-vertex-id="n6">
       <desc>5
 B</desc>
-      <rect x="780" y="40" width="148" height="85" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="854" y="75.9" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">0x05</text>
-      <text x="854" y="104.06" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">B</text>
+      <rect x="780" y="80.0" width="148" height="170.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="854" y="139.70000000000002" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">05₁₆</text>
+      <text x="854" y="167.20000000000002" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">5₁₀</text>
+      <text x="854" y="208.12" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">B</text>
     </g>
     <g data-vertex-id="n7">
       <desc>6
 A</desc>
-      <rect x="928" y="40" width="148" height="85" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="1002" y="75.9" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">0x06</text>
-      <text x="1002" y="104.06" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A</text>
+      <rect x="928" y="80.0" width="148" height="170.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="1002" y="139.70000000000002" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">06₁₆</text>
+      <text x="1002" y="167.20000000000002" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">6₁₀</text>
+      <text x="1002" y="208.12" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A</text>
     </g>
   </g>
 </svg>

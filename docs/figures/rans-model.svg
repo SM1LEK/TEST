@@ -1,35 +1,38 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="928" viewBox="0 80 1120 928" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1856.0" viewBox="0 160 1120 1856" role="img">
   <title>rANS • нормализация целочисленных частот</title>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
       <path d="M 0 0 L 10 5 L 0 10 Z" fill="#b3afb9" />
     </marker>
   </defs>
-  <rect width="100%" height="928.0" fill="#1f1e24" y="80" />
-  <path d="M560 205 L560 253" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
-  <path d="M560 401 L560 449" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
-  <path d="M560 569 L560 617" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
-  <path d="M560 712 L560 760" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
-  <path d="M560 860 L560 908" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
-  <path d="M 284 110 H 860 L 836 205 H 260 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="560" y="144.08" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Частоты v(s); длина n &gt; 0</text>
-  <text x="560" y="170.92" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">D = число символов с v(s) &gt; 0</text>
-  <rect x="260" y="253" width="600" height="148" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="560" y="286.74" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Для каждого присутствующего символа</text>
-  <text x="560" y="313.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">w(s) = v(s) × (4096 − D)</text>
-  <text x="560" y="340.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">f⁰(s) = 1 + floor(w(s) / n)</text>
-  <text x="560" y="367.26" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">r(s) = w(s) mod n</text>
-  <rect x="260" y="449" width="600" height="120" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="560" y="482.16" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Δ = 4096 − Σ f⁰(s)</text>
-  <text x="560" y="509" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Сортировать: r по убыванию,</text>
-  <text x="560" y="535.84" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">при равенстве — байт по возрастанию</text>
-  <rect x="260" y="617" width="600" height="95" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="560" y="651.08" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Добавить 1 первым Δ символам</text>
-  <text x="560" y="677.92" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">f(s) ≥ 1; Σ f(s) = 4096</text>
-  <rect x="260" y="760" width="600" height="100" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="560" y="796.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">c(s) = Σ f(t), t &lt; s</text>
-  <text x="560" y="823.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Интервал: [c(s), c(s) + f(s))</text>
-  <path d="M 284 908 H 860 L 836 988 H 260 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="560" y="948" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Выход: частоты и начала интервалов</text>
+  <rect width="100%" height="1856.0" fill="#1f1e24" y="160.0" />
+  <path d="M560 205 L560 253" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" transform="scale(1,2)" />
+  <path d="M560 401 L560 449" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" transform="scale(1,2)" />
+  <path d="M560 569 L560 617" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" transform="scale(1,2)" />
+  <path d="M560 712 L560 760" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" transform="scale(1,2)" />
+  <path d="M560 860 L560 908" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" transform="scale(1,2)" />
+  <path d="M 284 110 H 860 L 836 205 H 260 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" transform="scale(1,2)" />
+  <text x="560" y="288.16" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Частоты v(s); длина n &gt; 0</text>
+  <text x="560" y="341.84" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">D = число символов с v(s) &gt; 0</text>
+  <rect x="260" y="506.0" width="600" height="296.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="560" y="573.48" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Для каждого присутствующего символа</text>
+  <text x="560" y="615.06" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">w(s) = v(s) × (2¹² − D)</text>
+  <text x="560" y="642.56" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">₁₀: w(s) = v(s) × (4096 − D)</text>
+  <text x="560" y="680.84" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">f⁰(s) = 1 + floor(w(s) / n)</text>
+  <text x="560" y="734.52" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">r(s) = w(s) mod n</text>
+  <rect x="260" y="898.0" width="600" height="240.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="560" y="952.22" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Δ = 2¹² − Σ f⁰(s)</text>
+  <text x="560" y="979.72" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">₁₀: Δ = 4096 − Σ f⁰(s)</text>
+  <text x="560" y="1018.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Сортировать: r по убыванию,</text>
+  <text x="560" y="1071.68" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">при равенстве — байт по возрастанию</text>
+  <rect x="260" y="1234.0" width="600" height="190.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="560" y="1302.16" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Добавить 1 первым Δ символам</text>
+  <text x="560" y="1343.74" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">f(s) ≥ 1; Σ f(s) = 2¹²</text>
+  <text x="560" y="1371.24" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">₁₀: f(s) ≥ 1; Σ f(s) = 4096</text>
+  <rect x="260" y="1520.0" width="600" height="200.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+  <text x="560" y="1593.16" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">c(s) = Σ f(t), t &lt; s</text>
+  <text x="560" y="1646.84" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Интервал: [c(s), c(s) + f(s))</text>
+  <path d="M 284 908 H 860 L 836 988 H 260 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" transform="scale(1,2)" />
+  <text x="560" y="1896.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Выход: частоты и начала интервалов</text>
 </svg>

@@ -1,118 +1,119 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1184" height="1053" viewBox="48 75 1184 1053" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="1184" height="2106.0" viewBox="48 150 1184 2106" role="img">
   <title>lz77-flow</title>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
       <path d="M 0 1 L 10 5 L 0 9 Z" fill="#b3afb9" />
     </marker>
   </defs>
-  <rect id="background" x="48" y="75" width="1184" height="1053.0" fill="#1f1e24" />
+  <rect id="background" x="48" y="150.0" width="1184" height="2106.0" fill="#1f1e24" />
   <g id="drawing">
-    <path d="M 310 260 L 310 310" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e0" data-source="n2" data-target="n3" />
-    <path d="M 310 470 L 310 520" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e1" data-source="n3" data-target="n4" />
-    <path d="M 310 680 L 310 730" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e2" data-source="n4" data-target="n5" />
-    <path d="M 310 890 L 310 940" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e3" data-source="n5" data-target="n6" />
-    <path d="M 970 260 L 970 310" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e4" data-source="n8" data-target="n9" />
-    <path d="M 970 470 L 970 520" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e5" data-source="n9" data-target="n10" />
-    <path d="M 970 680 L 970 730" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e6" data-source="n10" data-target="n11" />
-    <path d="M 970 890 L 970 940" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e7" data-source="n11" data-target="n12" />
+    <path d="M 310 260 L 310 310" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e0" data-source="n2" data-target="n3" transform="scale(1,2)" />
+    <path d="M 310 470 L 310 520" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e1" data-source="n3" data-target="n4" transform="scale(1,2)" />
+    <path d="M 310 680 L 310 730" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e2" data-source="n4" data-target="n5" transform="scale(1,2)" />
+    <path d="M 310 890 L 310 940" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e3" data-source="n5" data-target="n6" transform="scale(1,2)" />
+    <path d="M 970 260 L 970 310" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e4" data-source="n8" data-target="n9" transform="scale(1,2)" />
+    <path d="M 970 470 L 970 520" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e5" data-source="n9" data-target="n10" transform="scale(1,2)" />
+    <path d="M 970 680 L 970 730" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e6" data-source="n10" data-target="n11" transform="scale(1,2)" />
+    <path d="M 970 890 L 970 940" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e7" data-source="n11" data-target="n12" transform="scale(1,2)" />
     <g data-vertex-id="n2">
       <desc>Начало блока
 Записать длину N как varint.
 position = 0; новый словарь.</desc>
-      <rect x="80" y="100" width="460" height="160" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="310" y="159.32" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Начало блока</text>
-      <text x="310" y="187.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Записать длину N как varint.</text>
-      <text x="310" y="215.64" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">position = 0; новый словарь.</text>
+      <rect x="80" y="200.0" width="460" height="320.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="310" y="318.64" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Начало блока</text>
+      <text x="310" y="374.96" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Записать длину N как varint.</text>
+      <text x="310" y="431.28" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">position = 0; новый словарь.</text>
     </g>
     <g data-vertex-id="n3">
       <desc>Найти лучшую ссылку
 Окно 4096; длина до 255.
 Оставить один байт для литерала.
 При равной длине - ближайшая ссылка.</desc>
-      <rect x="80" y="310" width="460" height="160" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="310" y="355.24" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Найти лучшую ссылку</text>
-      <text x="310" y="383.4" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Окно 4096; длина до 255.</text>
-      <text x="310" y="411.56" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Оставить один байт для литерала.</text>
-      <text x="310" y="439.72" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">При равной длине - ближайшая ссылка.</text>
+      <rect x="80" y="620.0" width="460" height="320.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="310" y="710.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Найти лучшую ссылку</text>
+      <text x="310" y="754.6999999999999" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Окно 2¹²; длина до 255.</text>
+      <text x="310" y="782.1999999999999" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">₁₀: Окно 4096; длина до 255.</text>
+      <text x="310" y="823.12" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Оставить один байт для литерала.</text>
+      <text x="310" y="879.44" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">При равной длине - ближайшая ссылка.</text>
     </g>
     <g data-vertex-id="n4">
       <desc>Записать тройку
 Длина, расстояние, следующий байт.
 При длине 0 расстояние не пишется.</desc>
-      <rect x="80" y="520" width="460" height="160" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="310" y="579.32" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Записать тройку</text>
-      <text x="310" y="607.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Длина, расстояние, следующий байт.</text>
-      <text x="310" y="635.64" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">При длине 0 расстояние не пишется.</text>
+      <rect x="80" y="1040.0" width="460" height="320.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="310" y="1158.64" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Записать тройку</text>
+      <text x="310" y="1214.96" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Длина, расстояние, следующий байт.</text>
+      <text x="310" y="1271.28" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">При длине 0 расстояние не пишется.</text>
     </g>
     <g data-vertex-id="n5">
       <desc>Обновить словарь
 Добавить все пройденные позиции.
 position += длина + 1.</desc>
-      <rect x="80" y="730" width="460" height="160" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="310" y="789.32" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Обновить словарь</text>
-      <text x="310" y="817.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Добавить все пройденные позиции.</text>
-      <text x="310" y="845.64" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">position += длина + 1.</text>
+      <rect x="80" y="1460.0" width="460" height="320.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="310" y="1578.64" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Обновить словарь</text>
+      <text x="310" y="1634.96" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Добавить все пройденные позиции.</text>
+      <text x="310" y="1691.28" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">position += длина + 1.</text>
     </g>
     <g data-vertex-id="n6">
       <desc>Перейти к следующей тройке
 Пока position &lt; N: повторить шаги 2–4.
 Иначе вернуть поток LZ77.</desc>
-      <rect x="80" y="940" width="460" height="160" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="310" y="999.32" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Перейти к следующей тройке</text>
-      <text x="310" y="1027.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Пока position &lt; N: повторить шаги 2–4.</text>
-      <text x="310" y="1055.64" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Иначе вернуть поток LZ77.</text>
+      <rect x="80" y="1880.0" width="460" height="320.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="310" y="1998.64" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Перейти к следующей тройке</text>
+      <text x="310" y="2054.96" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Пока position &lt; N: повторить шаги 2–4.</text>
+      <text x="310" y="2111.28" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Иначе вернуть поток LZ77.</text>
     </g>
     <g data-vertex-id="n8">
       <desc>Прочитать поток
 Прочитать N один раз; затем тройку.
 При ненулевой длине - расстояние.
 Прочитать следующий явный байт.</desc>
-      <rect x="740" y="100" width="460" height="160" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="970" y="145.24" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Прочитать поток</text>
-      <text x="970" y="173.4" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Прочитать N один раз; затем тройку.</text>
-      <text x="970" y="201.56" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">При ненулевой длине - расстояние.</text>
-      <text x="970" y="229.72" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Прочитать следующий явный байт.</text>
+      <rect x="740" y="200.0" width="460" height="320.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="970" y="290.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Прочитать поток</text>
+      <text x="970" y="346.8" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Прочитать N один раз; затем тройку.</text>
+      <text x="970" y="403.12" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">При ненулевой длине - расстояние.</text>
+      <text x="970" y="459.44" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Прочитать следующий явный байт.</text>
     </g>
     <g data-vertex-id="n9">
       <desc>Проверить ссылку
 Расстояние не больше окна и выхода.
 Ненулевая ссылка: расстояние &gt; 0.
 Длина + литерал не выходят за N.</desc>
-      <rect x="740" y="310" width="460" height="160" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="970" y="355.24" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Проверить ссылку</text>
-      <text x="970" y="383.4" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Расстояние не больше окна и выхода.</text>
-      <text x="970" y="411.56" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Ненулевая ссылка: расстояние &gt; 0.</text>
-      <text x="970" y="439.72" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Длина + литерал не выходят за N.</text>
+      <rect x="740" y="620.0" width="460" height="320.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="970" y="710.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Проверить ссылку</text>
+      <text x="970" y="766.8" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Расстояние не больше окна и выхода.</text>
+      <text x="970" y="823.12" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Ненулевая ссылка: расстояние &gt; 0.</text>
+      <text x="970" y="879.44" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Длина + литерал не выходят за N.</text>
     </g>
     <g data-vertex-id="n10">
       <desc>Восстановить совпадение
 Копировать по одному байту назад
 на заданное расстояние.
 Перекрытие ссылки допустимо.</desc>
-      <rect x="740" y="520" width="460" height="160" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="970" y="565.24" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Восстановить совпадение</text>
-      <text x="970" y="593.4" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Копировать по одному байту назад</text>
-      <text x="970" y="621.56" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">на заданное расстояние.</text>
-      <text x="970" y="649.72" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Перекрытие ссылки допустимо.</text>
+      <rect x="740" y="1040.0" width="460" height="320.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="970" y="1130.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Восстановить совпадение</text>
+      <text x="970" y="1186.8" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Копировать по одному байту назад</text>
+      <text x="970" y="1243.12" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">на заданное расстояние.</text>
+      <text x="970" y="1299.44" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Перекрытие ссылки допустимо.</text>
     </g>
     <g data-vertex-id="n11">
       <desc>Добавить литерал
 Записать следующий явный байт.
 До конца потока повторять шаги 1–4.</desc>
-      <rect x="740" y="730" width="460" height="160" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="970" y="789.32" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Добавить литерал</text>
-      <text x="970" y="817.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Записать следующий явный байт.</text>
-      <text x="970" y="845.64" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">До конца потока повторять шаги 1–4.</text>
+      <rect x="740" y="1460.0" width="460" height="320.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="970" y="1578.64" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Добавить литерал</text>
+      <text x="970" y="1634.96" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Записать следующий явный байт.</text>
+      <text x="970" y="1691.28" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">До конца потока повторять шаги 1–4.</text>
     </g>
     <g data-vertex-id="n12">
       <desc>Завершить блок
 Проверить: восстановлено ровно N байт.
 Вернуть исходный блок.</desc>
-      <rect x="740" y="940" width="460" height="160" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="970" y="999.32" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Завершить блок</text>
-      <text x="970" y="1027.48" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Проверить: восстановлено ровно N байт.</text>
-      <text x="970" y="1055.64" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Вернуть исходный блок.</text>
+      <rect x="740" y="1880.0" width="460" height="320.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
+      <text x="970" y="1998.64" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Завершить блок</text>
+      <text x="970" y="2054.96" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Проверить: восстановлено ровно N байт.</text>
+      <text x="970" y="2111.28" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">Вернуть исходный блок.</text>
     </g>
   </g>
 </svg>
