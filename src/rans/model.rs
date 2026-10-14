@@ -5,7 +5,7 @@ use std::io::{self, Read};
 pub(super) fn write_model(output: &mut Vec<u8>, frequencies: &[u16; 256]) -> io::Result<()> {
     let symbols: Vec<_> = (0..256).filter(|&s| frequencies[s] != 0).collect();
     output.push((symbols.len() - 1) as u8);
-    
+
     if symbols.len() <= 32 {
         output.extend(symbols.iter().map(|&s| s as u8));
     } else {
@@ -15,7 +15,7 @@ pub(super) fn write_model(output: &mut Vec<u8>, frequencies: &[u16; 256]) -> io:
         }
         output.extend_from_slice(&bitmap);
     }
-    
+
     for &symbol in &symbols[..symbols.len() - 1] {
         varint::write(output, u64::from(frequencies[symbol]))?;
     }
@@ -73,13 +73,13 @@ pub(crate) fn read_header(data: &[u8]) -> io::Result<Header> {
     };
     let mut sum = 0;
     for (index, &symbol) in symbols.iter().enumerate() {
-        
+        // Последняя частота определяется остатком до TOTAL и не хранится.
         let frequency = if index + 1 == distinct {
             TOTAL as usize - sum
         } else {
             varint::read_bounded(&mut input, TOTAL as usize - 1)?
         };
-        
+
         if frequency == 0 || sum + frequency + distinct - index - 1 > TOTAL as usize {
             return Err(invalid("Неверные частоты rANS"));
         }
@@ -120,7 +120,8 @@ pub(crate) fn frequencies(data: &[u8]) -> [u16; 256] {
             remainders.push((weight % data.len() as u64, symbol));
         }
     }
-    
+
+    // Одинаковые остатки упорядочиваются по байту для воспроизводимости архива.
     remainders.sort_by(|a, b| b.0.cmp(&a.0).then(a.1.cmp(&b.1)));
     for &(_, symbol) in remainders.iter().take((TOTAL - sum) as usize) {
         frequencies[symbol] += 1;

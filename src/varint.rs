@@ -4,15 +4,10 @@ use crate::invalid;
 
 pub(crate) fn write(output: &mut impl Write, mut value: u64) -> io::Result<()> {
     loop {
-        
-        let byte = (value as u8 & 0x7F) | if value >= 128 {
-            0x80
-        } else {
-            0
-        };
-        output.write_all(&[byte])?;
+        let more = value >= 128;
+        output.write_all(&[(value as u8 & 0x7F) | ((more as u8) << 7)])?;
         value >>= 7;
-        if value == 0 {
+        if !more {
             return Ok(());
         }
     }
@@ -20,19 +15,17 @@ pub(crate) fn write(output: &mut impl Write, mut value: u64) -> io::Result<()> {
 
 pub(crate) fn read(input: &mut impl Read) -> io::Result<u64> {
     let mut value = 0_u64;
-    
+    let mut byte = [0u8];
     for index in 0..10 {
-        let mut byte = [0];
         input.read_exact(&mut byte)?;
-        let byte = byte[0];
-        
-        if index == 9 && byte > 1 {
+        let current = byte[0];
+        // В десятом байте u64 допустим только один значащий бит.
+        if index == 9 && current > 1 {
             return Err(invalid("Переполнение varint"));
         }
-        
-        value |= u64::from(byte & 0x7F) << (index * 7);
-        if byte & 0x80 == 0 {
-            if index != 0 && byte == 0 {
+        value |= u64::from(current & 0x7F) << (index * 7);
+        if current & 0x80 == 0 {
+            if index != 0 && current == 0 {
                 return Err(invalid("Неканоническая запись varint"));
             }
             return Ok(value);

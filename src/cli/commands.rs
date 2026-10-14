@@ -13,10 +13,7 @@ fn print_statistics(stats: &Statistics) {
     );
     println!("Сжатых блоков: {}", stats.compressed_blocks);
     println!("Блоков без сжатия: {}", stats.stored_blocks);
-    println!(
-        "Защита: {}",
-        if stats.protected { "RS(10+2)" } else { "-" }
-    );
+    println!("Защита: {}", if stats.protected { "RS(10+2)" } else { "-" });
     println!("Исправлено фрагментов: {}", stats.corrected_shards);
 }
 

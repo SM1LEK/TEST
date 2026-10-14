@@ -9,7 +9,7 @@
   <rect x="0" y="45" width="900" height="433.0" fill="#1f1e24" />
   <g id="drawing">
     <rect x="275" y="60" width="350" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    <text x="450" y="97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Заголовок (4 байта): N-1 | S-1</text>
+    <text x="450" y="97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Общий заголовок (9 байт): CLARSv03 | флаги</text>
     <path d="M 350 120 L 165 170" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)" />
     <path d="M 450 120 L 450 170" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)" />
     <path d="M 550 120 L 735 170" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)" />

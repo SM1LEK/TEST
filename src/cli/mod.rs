@@ -13,12 +13,11 @@ fn argument_error(message: &str) -> io::Error {
 }
 
 pub(crate) fn run(args: &[OsString]) -> io::Result<()> {
-    
     let (args, threads) = thread_options::parse(args)?;
     let command = args
         .first()
         .ok_or_else(|| argument_error("Не указана команда"))?;
-    
+
     match command.to_str() {
         Some("create") => {
             let mut options = EncodingOptions::default();

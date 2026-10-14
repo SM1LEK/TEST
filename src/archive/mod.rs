@@ -4,8 +4,8 @@ use std::path::Path;
 mod pack;
 mod paths;
 mod unpack;
-pub use pack::{create, create_with_options, create_with_threads};
-pub use unpack::{extract, extract_with_threads, inspect, inspect_with_threads};
+pub use pack::create_with_options;
+pub use unpack::{extract_with_threads, inspect_with_threads};
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub struct EncodingOptions {
@@ -25,19 +25,33 @@ impl Default for EncodingOptions {
 }
 
 impl EncodingOptions {
-    
+    const LZ77_BIT: u8 = 1 << 0;
+    const RANS_BIT: u8 = 1 << 1;
+    const PROTECTED_BIT: u8 = 1 << 2;
+    const ALL_BITS: u8 = Self::LZ77_BIT | Self::RANS_BIT | Self::PROTECTED_BIT;
+
     pub(crate) fn flags(self) -> u8 {
-        u8::from(self.lz77) | (u8::from(self.rans) << 1) | (u8::from(self.protected) << 2)
+        let mut flags = 0;
+        if self.lz77 {
+            flags |= Self::LZ77_BIT;
+        }
+        if self.rans {
+            flags |= Self::RANS_BIT;
+        }
+        if self.protected {
+            flags |= Self::PROTECTED_BIT;
+        }
+        flags
     }
 
     pub(crate) fn from_flags(flags: u8) -> io::Result<Self> {
-        if flags & !7 != 0 {
+        if flags & !Self::ALL_BITS != 0 {
             return Err(crate::invalid("Неизвестные флаги кодирования"));
         }
         Ok(Self {
-            lz77: flags & 1 != 0,
-            rans: flags & 2 != 0,
-            protected: flags & 4 != 0,
+            lz77: flags & Self::LZ77_BIT != 0,
+            rans: flags & Self::RANS_BIT != 0,
+            protected: flags & Self::PROTECTED_BIT != 0,
         })
     }
 }

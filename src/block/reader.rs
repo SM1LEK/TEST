@@ -8,6 +8,7 @@ struct StoredBlock {
     original_size: usize,
     stored_size: usize,
     payload: Vec<u8>,
+    corrected_shards: u64,
 }
 
 struct DecodedBlock {
@@ -20,14 +21,15 @@ fn decode_block(
     block: StoredBlock,
     options: crate::archive::EncodingOptions,
 ) -> io::Result<DecodedBlock> {
-    let (stored, corrected_shards) = if options.protected {
-        ecc::decode(&block.payload, block.stored_size)?
+    let (stored, payload_corrections) = if options.protected {
+        ecc::decode(&block.payload)?
     } else {
         (block.payload, 0)
     };
     let compressed = block.stored_size < block.original_size;
     let mut data = stored;
     if compressed {
+        // Этапы снимаются в порядке, обратном кодированию.
         if options.rans {
             data = rans::decode(&data)?;
         }
@@ -41,13 +43,12 @@ fn decode_block(
     Ok(DecodedBlock {
         data,
         compressed,
-        corrected_shards,
+        corrected_shards: block.corrected_shards + payload_corrections,
     })
 }
 
 pub(crate) struct BlockReader<R: Read> {
     input: R,
-    sequence: u64,
     buffer: Vec<u8>,
     position: usize,
     stats: BlockStats,
@@ -59,8 +60,10 @@ pub(crate) struct BlockReader<R: Read> {
 impl<R: Read> BlockReader<R> {
     pub fn with_threads(mut input: R, threads: Option<usize>) -> io::Result<Self> {
         let executor = Executor::new(threads)?;
-        let mut header = [0u8; ARCHIVE_HEADER_SIZE];
-        input.read_exact(&mut header)?;
+        let mut stored_header = [0u8; ARCHIVE_HEADER_SIZE * 3];
+        input.read_exact(&mut stored_header)?;
+        let header = detriplicate(&stored_header, ARCHIVE_HEADER_SIZE)
+            .ok_or_else(|| invalid("Повреждён заголовок архива"))?;
         if &header[..8] != SIGNATURE {
             return Err(invalid("Неизвестный формат"));
         }
@@ -68,7 +71,6 @@ impl<R: Read> BlockReader<R> {
 
         Ok(Self {
             input,
-            sequence: 0,
             buffer: Vec::new(),
             position: 0,
             stats: BlockStats {
@@ -83,9 +85,13 @@ impl<R: Read> BlockReader<R> {
 
     fn read_stored(&mut self) -> io::Result<Option<StoredBlock>> {
         let protected = self.stats.options.protected;
-        let header_len = if protected { BLOCK_HEADER_SIZE * 3 } else { BLOCK_HEADER_SIZE };
+        let header_len = if protected {
+            ecc::encoded_size(BLOCK_HEADER_SIZE)
+        } else {
+            BLOCK_HEADER_SIZE
+        };
         let mut header_buf = vec![0; header_len];
-        
+
         loop {
             match self.input.read(&mut header_buf[..1]) {
                 Ok(0) => return Ok(None),
@@ -96,11 +102,14 @@ impl<R: Read> BlockReader<R> {
         }
         self.input.read_exact(&mut header_buf[1..])?;
 
-        let header = if protected {
-            detriplicate(&header_buf, BLOCK_HEADER_SIZE)
-                .ok_or_else(|| invalid("Повреждён заголовок блока"))?
+        let (header, corrected_shards) = if protected {
+            let (header, corrected_shards) = ecc::decode(&header_buf)?;
+            if header.len() != BLOCK_HEADER_SIZE {
+                return Err(invalid("Неверный размер заголовка блока"));
+            }
+            (header, corrected_shards)
         } else {
-            header_buf
+            (header_buf, 0)
         };
 
         let original_size = usize::from(u16::from_le_bytes([header[0], header[1]])) + 1;
@@ -120,11 +129,11 @@ impl<R: Read> BlockReader<R> {
         };
         let mut payload = vec![0; payload_len];
         self.input.read_exact(&mut payload)?;
-        self.sequence += 1;
         Ok(Some(StoredBlock {
             original_size,
             stored_size,
             payload,
+            corrected_shards,
         }))
     }
 
@@ -132,7 +141,9 @@ impl<R: Read> BlockReader<R> {
         let mut stored = Vec::new();
         let mut read_error = None;
         for _ in 0..self.executor.batch_size() {
-            if self.eof { break; }
+            if self.eof {
+                break;
+            }
             match self.read_stored() {
                 Ok(Some(block)) => stored.push(block),
                 Ok(None) => self.eof = true,
@@ -144,6 +155,7 @@ impl<R: Read> BlockReader<R> {
             }
         }
         let options = self.stats.options;
+        // Результаты Rayon сохраняют исходный порядок блоков.
         self.pending = self
             .executor
             .map(stored, |block| decode_block(block, options))?

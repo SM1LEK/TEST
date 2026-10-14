@@ -6,38 +6,35 @@ use crate::{BLOCK_SIZE, ecc, lz77, parallel::Executor, rans};
 pub(crate) struct BlockWriter<W: Write> {
     output: W,
     options: crate::archive::EncodingOptions,
-    sequence: u64,
     buffer: Vec<u8>,
     pending: Vec<Vec<u8>>,
     executor: Executor,
 }
 
-fn encode_block(
-    raw: Vec<u8>,
-    options: crate::archive::EncodingOptions,
-    _sequence: u64,
-) -> io::Result<Vec<u8>> {
-    let mut compressed = if options.lz77 {
-        lz77::encode(&raw)?
-    } else {
-        raw.clone()
-    };
-    if options.rans {
-        compressed = rans::encode(&compressed)?;
-    }
+fn encode_block(raw: Vec<u8>, options: crate::archive::EncodingOptions) -> io::Result<Vec<u8>> {
     let raw_size = raw.len();
-    let stored = if compressed.len() < raw_size {
-        compressed
-    } else {
-        raw
+    let compressed = match (options.lz77, options.rans) {
+        (false, false) => None,
+        (false, true) => Some(rans::encode(&raw)?),
+        (true, false) => Some(lz77::encode(&raw)?),
+        (true, true) => {
+            let lz77 = lz77::encode(&raw)?;
+            Some(rans::encode(&lz77)?)
+        }
     };
-    let mut header = Vec::with_capacity(BLOCK_HEADER_SIZE);
-    header.extend_from_slice(&((raw_size - 1) as u16).to_le_bytes());
-    header.extend_from_slice(&((stored.len() - 1) as u16).to_le_bytes());
+    let stored = match compressed {
+        Some(compressed) if compressed.len() < raw_size => compressed,
+        _ => raw,
+    };
+    // Неравенство размеров служит признаком сжатого блока в формате.
+    let raw_bytes = ((raw_size - 1) as u16).to_le_bytes();
+    let stored_bytes = ((stored.len() - 1) as u16).to_le_bytes();
+    let header: [u8; BLOCK_HEADER_SIZE] =
+        [raw_bytes[0], raw_bytes[1], stored_bytes[0], stored_bytes[1]];
     let mut output = if options.protected {
-        triplicate(&header)
+        ecc::encode(&header)
     } else {
-        header
+        header.to_vec()
     };
     if options.protected {
         output.extend_from_slice(&ecc::encode(&stored));
@@ -56,11 +53,10 @@ impl<W: Write> BlockWriter<W> {
         let executor = Executor::new(threads)?;
         let mut header = SIGNATURE.to_vec();
         header.push(options.flags());
-        output.write_all(&header)?;
+        output.write_all(&triplicate(&header))?;
         Ok(Self {
             output,
             options,
-            sequence: 0,
             buffer: Vec::with_capacity(BLOCK_SIZE),
             pending: Vec::new(),
             executor,
@@ -82,17 +78,10 @@ impl<W: Write> BlockWriter<W> {
 
     fn flush_batch(&mut self) -> io::Result<()> {
         let options = self.options;
-        let sequence = self.sequence;
-        let batch = std::mem::take(&mut self.pending)
-            .into_iter()
-            .enumerate()
-            .collect();
-        let packed = self.executor.map(batch, |(index, raw)| {
-            encode_block(raw, options, sequence + index as u64)
-        })?;
+        let batch: Vec<Vec<u8>> = std::mem::take(&mut self.pending);
+        let packed = self.executor.map(batch, |raw| encode_block(raw, options))?;
         for block in packed {
             self.output.write_all(&block?)?;
-            self.sequence += 1;
         }
         Ok(())
     }

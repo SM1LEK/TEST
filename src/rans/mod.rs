@@ -24,11 +24,12 @@ pub(crate) fn encode(data: &[u8]) -> io::Result<Vec<u8>> {
     let starts = cumulative(&frequencies);
     let mut state = LOWER_BOUND;
     let mut emitted = Vec::new();
+    // rANS кодирует с конца, поскольку состояние работает как стек.
     for &symbol in data.iter().rev() {
         let symbol = symbol as usize;
         let frequency = u32::from(frequencies[symbol]);
         let threshold = ((LOWER_BOUND >> SCALE_BITS) << 8) * frequency;
-        
+
         while state >= threshold {
             emitted.push(state as u8);
             state >>= 8;
@@ -66,12 +67,12 @@ pub(crate) fn decode(data: &[u8]) -> io::Result<Vec<u8>> {
     }
     let mut output = Vec::with_capacity(size);
     for _ in 0..size {
-        
         let slot = state & (TOTAL - 1);
         let symbol = symbols[slot as usize] as usize;
         output.push(symbol as u8);
         state = u32::from(frequencies[symbol]) * (state >> SCALE_BITS) + slot - starts[symbol];
-        
+
+        // Вынесенные кодером байты возвращают состояние в рабочий диапазон.
         while state < LOWER_BOUND {
             let byte = *data
                 .get(position)

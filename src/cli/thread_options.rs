@@ -5,7 +5,7 @@ pub fn parse_count(value: &str) -> io::Result<usize> {
     value
         .parse::<usize>()
         .ok()
-        .filter(|n| (1..=64).contains(n))
+        .filter(|n| (1..=archiver::MAX_THREADS).contains(n))
         .ok_or_else(|| io::Error::new(io::ErrorKind::InvalidInput, "Потоков 1<=>64"))
 }
 

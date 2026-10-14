@@ -2,7 +2,7 @@ use super::{
     EncodingOptions, cleanup_error,
     paths::{Names, archive_path, file_name, is_link},
 };
-use crate::{BLOCK_SIZE, block::BlockWriter, invalid, varint};
+use crate::{block::BlockWriter, invalid, varint};
 use std::fs::{self, File, OpenOptions};
 use std::io::{self, BufWriter, Read, Write};
 use std::path::{Path, PathBuf};
@@ -16,15 +16,8 @@ fn pack_file(output: &mut impl Write, path: &Path) -> io::Result<()> {
     let mut input = File::open(path)?;
     let size = input.metadata()?.len();
     varint::write(output, size)?;
-    let mut remaining = size;
-    let mut buffer = vec![0; BLOCK_SIZE];
-    while remaining != 0 {
-        let count = remaining.min(BLOCK_SIZE as u64) as usize;
-        input.read_exact(&mut buffer[..count])?;
-        output.write_all(&buffer[..count])?;
-        remaining -= count as u64;
-    }
-    if input.read(&mut buffer[..1])? != 0 {
+    let copied = io::copy(&mut (&mut input).take(size), output)?;
+    if copied != size || input.read(&mut [0u8; 1])? != 0 {
         return Err(invalid(&format!(
             "Данные были изменены: {}",
             path.display()
@@ -44,8 +37,9 @@ fn pack_path(
     if is_link(&metadata) {
         return Err(invalid(&format!("Не путь: {}", path.display())));
     }
-    
-    if fs::canonicalize(path)? == destination {
+
+    // Исключаем создаваемый архив из упаковываемого каталога.
+    if path.file_name() == destination.file_name() && fs::canonicalize(path)? == destination {
         return Ok(());
     }
     let directory = metadata.is_dir();
@@ -56,7 +50,6 @@ fn pack_path(
     output.write_all(&[if directory { 2 } else { 1 }])?;
     write_name(output, name)?;
     if directory {
-        
         let mut children: Vec<_> = fs::read_dir(path)?.collect::<io::Result<_>>()?;
         children.sort_by_key(|entry| entry.file_name());
         for child in children {
@@ -68,27 +61,6 @@ fn pack_path(
         pack_file(output, path)?;
     }
     Ok(())
-}
-
-pub fn create(path: &Path, sources: &[PathBuf], protected: bool) -> io::Result<PathBuf> {
-    create_with_threads(path, sources, protected, None)
-}
-
-pub fn create_with_threads(
-    path: &Path,
-    sources: &[PathBuf],
-    protected: bool,
-    threads: Option<usize>,
-) -> io::Result<PathBuf> {
-    create_with_options(
-        path,
-        sources,
-        EncodingOptions {
-            protected,
-            ..EncodingOptions::default()
-        },
-        threads,
-    )
 }
 
 pub fn create_with_options(
@@ -105,12 +77,12 @@ pub fn create_with_options(
         .iter()
         .map(std::path::absolute)
         .collect::<io::Result<_>>()?;
-    
+
     for source in &sources {
         file_name(source)?;
         fs::symlink_metadata(source)?;
     }
-    
+
     let file = OpenOptions::new()
         .write(true)
         .create_new(true)

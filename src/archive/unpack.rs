@@ -2,15 +2,15 @@ use super::{
     Entry, Statistics, cleanup_error,
     paths::{MAX_PATH_BYTES, Names, archive_path},
 };
-use crate::{BLOCK_SIZE, block::BlockReader, invalid, varint};
+use crate::{block::BlockReader, invalid, varint};
 use std::fs::{self, File, OpenOptions};
-use std::io::{self, BufReader, Read, Write};
+use std::io::{self, BufReader, Read};
 use std::path::Path;
 
 fn read_name(input: &mut impl Read) -> io::Result<String> {
     let length = varint::read_bounded(input, MAX_PATH_BYTES)?;
-    if !(1..=MAX_PATH_BYTES).contains(&length) {
-        return Err(invalid("Превышение длины пути"));
+    if length == 0 {
+        return Err(invalid("Пустой путь"));
     }
     let mut bytes = vec![0; length];
     input.read_exact(&mut bytes)?;
@@ -30,7 +30,6 @@ fn process(
     };
     let mut reader = BlockReader::with_threads(BufReader::new(file), threads)?;
     let mut names = Names::default();
-    let mut buffer = vec![0; BLOCK_SIZE];
     loop {
         let mut kind = [0];
         reader.read_exact(&mut kind)?;
@@ -43,10 +42,10 @@ fn process(
         let name = read_name(&mut reader)?;
         let directory = kind[0] == 2;
         names.add(&name, directory)?;
-        
+
         let target = destination.map(|root| root.join(&name));
         let mut size = 0;
-        
+
         if directory {
             stats.directories += 1;
             if let Some(target) = &target {
@@ -63,15 +62,14 @@ fn process(
                 .as_ref()
                 .map(|target| OpenOptions::new().write(true).create_new(true).open(target))
                 .transpose()?;
-            let mut remaining = size;
-            
-            while remaining != 0 {
-                let count = remaining.min(BLOCK_SIZE as u64) as usize;
-                reader.read_exact(&mut buffer[..count])?;
-                if let Some(output) = &mut output {
-                    output.write_all(&buffer[..count])?;
-                }
-                remaining -= count as u64;
+            let mut source = (&mut reader).take(size);
+            let copied = if let Some(sink) = output.as_mut() {
+                io::copy(&mut source, sink)?
+            } else {
+                io::copy(&mut source, &mut io::sink())?
+            };
+            if copied != size {
+                return Err(invalid("Неожиданный конец архива"));
             }
             if let Some(output) = output {
                 output.sync_all()?;
@@ -96,10 +94,6 @@ fn process(
     Ok(stats)
 }
 
-pub fn inspect(path: &Path, on_entry: impl FnMut(&Entry)) -> io::Result<Statistics> {
-    inspect_with_threads(path, None, on_entry)
-}
-
 pub fn inspect_with_threads(
     path: &Path,
     threads: Option<usize>,
@@ -108,16 +102,12 @@ pub fn inspect_with_threads(
     process(path, None, threads, on_entry)
 }
 
-pub fn extract(path: &Path, destination: &Path) -> io::Result<Statistics> {
-    extract_with_threads(path, destination, None)
-}
-
 pub fn extract_with_threads(
     path: &Path,
     destination: &Path,
     threads: Option<usize>,
 ) -> io::Result<Statistics> {
-    fs::create_dir(destination)?; 
+    fs::create_dir(destination)?;
     match process(path, Some(destination), threads, |_| {}) {
         Ok(stats) => Ok(stats),
         Err(error) => Err(cleanup_error(destination, true, error)),

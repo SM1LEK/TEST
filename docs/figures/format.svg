@@ -9,9 +9,9 @@
   <rect x="0" y="0.0" width="1312" height="998.0" fill="#1f1e24" />
   <g id="drawing">
     <rect x="40" y="30" width="1248" height="55" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    <text x="664" y="69" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Заголовок архива: 9 байт</text>
+    <text x="664" y="69" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Общий заголовок: 3 копии по 9 байт, всего 27 байт</text>
     <rect x="40" y="110" width="768" height="80" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    <text x="424" y="162" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">0..=7: CLARSv02</text>
+    <text x="424" y="162" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">0..=7: CLARSv03</text>
     <rect x="808" y="110" width="480" height="80" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
     <text x="1048" y="148" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">8: Флаги</text>
     <text x="1048" y="174" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">[0] LZ77 [1] rANS [2] RS</text>
@@ -22,13 +22,13 @@
     <rect x="664" y="305" width="624" height="80" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
     <text x="976" y="343" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">2..=3: S - 1 (сохранённый размер)</text>
     <rect x="40" y="420" width="1248" height="55" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    <text x="664" y="458" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Заголовок блока с RS: 4 x 3 = 12 байт (троирование)</text>
+    <text x="664" y="458" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Заголовок блока с RS: отдельное RS-слово, 60 байт</text>
     <rect x="40" y="500" width="416" height="80" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    <text x="248" y="543" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Копия 1 (4 байта)</text>
+    <text x="248" y="543" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">12 CRC32 (48 байт)</text>
     <rect x="456" y="500" width="416" height="80" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    <text x="664" y="543" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Копия 2 (4 байта)</text>
+    <text x="664" y="543" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">10 фрагментов данных</text>
     <rect x="872" y="500" width="416" height="80" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    <text x="1080" y="543" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Копия 3 (4 байта)</text>
+    <text x="1080" y="543" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">2 проверочных фрагмента</text>
     <rect x="40" y="615" width="1248" height="55" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
     <text x="664" y="653" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Данные блока: без RS = S байт; с RS = E(S) байт</text>
     <rect x="40" y="695" width="1248" height="55" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />

@@ -15,7 +15,6 @@ pub(super) struct Names {
 }
 
 impl Names {
-    
     pub(super) fn add(&mut self, name: &str, directory: bool) -> io::Result<()> {
         if name.is_empty() || name.len() > MAX_PATH_BYTES || name.split('/').count() > MAX_DEPTH {
             return Err(invalid("Неверный путь"));
@@ -23,7 +22,8 @@ impl Names {
         for component in name.split('/') {
             check_component(component)?;
         }
-        
+
+        // Родительский каталог должен быть объявлен раньше дочерней записи.
         let key = name.to_lowercase();
         if let Some((parent, _)) = key.rsplit_once('/')
             && !self.directories.contains(parent)
@@ -74,7 +74,7 @@ pub(super) fn is_link(metadata: &Metadata) -> bool {
     #[cfg(windows)]
     {
         use std::os::windows::fs::MetadataExt;
-        metadata.file_attributes() & 0x400 != 0 
+        metadata.file_attributes() & 0x400 != 0
     }
     #[cfg(not(windows))]
     {
@@ -92,7 +92,7 @@ pub(super) fn archive_path(path: &Path) -> io::Result<PathBuf> {
     if !path
         .extension()
         .and_then(|ext| ext.to_str())
-        .is_some_and(|ext| ext.eq_ignore_ascii_case("mrx")) 
+        .is_some_and(|ext| ext.eq_ignore_ascii_case("mrx"))
     {
         return Err(invalid("Неизвестное расширение"));
     }

@@ -6,12 +6,9 @@ pub(crate) use writer::BlockWriter;
 pub(crate) const ARCHIVE_HEADER_SIZE: usize = 9;
 pub(crate) const BLOCK_HEADER_SIZE: usize = 4;
 
+#[allow(dead_code)] // используется из интеграционных тестов
 pub(crate) fn triplicate(data: &[u8]) -> Vec<u8> {
-    let mut out = Vec::with_capacity(data.len() * 3);
-    for _ in 0..3 {
-        out.extend_from_slice(data);
-    }
-    out
+    data.repeat(3)
 }
 
 pub(crate) fn detriplicate(data: &[u8], size: usize) -> Option<Vec<u8>> {
@@ -21,13 +18,11 @@ pub(crate) fn detriplicate(data: &[u8], size: usize) -> Option<Vec<u8>> {
     let (a, rest) = data.split_at(size);
     let (b, c) = rest.split_at(size);
     let mut result = Vec::with_capacity(size);
-    let mut _corrections = 0u64;
     for i in 0..size {
         if a[i] == b[i] || a[i] == c[i] {
             result.push(a[i]);
         } else if b[i] == c[i] {
             result.push(b[i]);
-            _corrections += 1;
         } else {
             return None;
         }
@@ -35,7 +30,7 @@ pub(crate) fn detriplicate(data: &[u8], size: usize) -> Option<Vec<u8>> {
     Some(result)
 }
 
-const SIGNATURE: &[u8; 8] = b"CLARSv02";
+const SIGNATURE: &[u8; 8] = b"CLARSv03";
 
 #[derive(Debug, Default)]
 pub(crate) struct BlockStats {

@@ -19,7 +19,6 @@ pub(crate) fn encode(data: &[u8]) -> io::Result<Vec<u8>> {
     let mut matcher = Matcher::new(data.len());
     let mut position = 0;
     while position < data.len() {
-        
         let limit = MAX_MATCH.min(data.len() - position - 1);
         let best = matcher.find_best(data, position, limit);
         output.push(best.length as u8);
@@ -45,7 +44,7 @@ pub(crate) fn decode(data: &[u8]) -> io::Result<Vec<u8>> {
     let mut input = data;
     let size = varint::read_bounded(&mut input, BLOCK_SIZE)?;
     let mut output = Vec::with_capacity(size);
-    
+
     while !input.is_empty() {
         let mut byte = [0];
         input.read_exact(&mut byte)?;
@@ -62,7 +61,7 @@ pub(crate) fn decode(data: &[u8]) -> io::Result<Vec<u8>> {
         {
             return Err(invalid("Некорректная ссылка LZ77"));
         }
-        
+
         for _ in 0..length {
             output.push(output[output.len() - distance]);
         }

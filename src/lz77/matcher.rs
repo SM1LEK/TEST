@@ -2,16 +2,14 @@ use super::WINDOW;
 
 const NONE: usize = usize::MAX;
 const HASH_BITS: u32 = 12;
-const HASH_SIZE: usize = 1 << HASH_BITS; 
+const HASH_SIZE: usize = 1 << HASH_BITS;
+// Лимит сохраняет дальние повторы и ограничивает худшее время поиска.
+const MAX_CANDIDATES: usize = 512;
 
 #[derive(Default)]
 pub(crate) struct Match {
-    
     pub distance: usize,
-    
     pub length: usize,
-    
-    pub candidates: usize,
 }
 
 pub(crate) struct Matcher {
@@ -21,7 +19,6 @@ pub(crate) struct Matcher {
 }
 
 impl Matcher {
-    
     pub fn new(size: usize) -> Self {
         Self {
             heads: vec![NONE; HASH_SIZE],
@@ -37,14 +34,16 @@ impl Matcher {
         }
         if limit >= 2 {
             let mut candidate = self.heads[hash_pair(data, position)];
+            let mut candidates = 0;
 
-            while candidate != NONE && position - candidate <= WINDOW {
-                best.candidates += 1;
+            while candidate != NONE && position - candidate <= WINDOW && candidates < MAX_CANDIDATES
+            {
+                candidates += 1;
                 let mut length = 0;
                 while length < limit && data[candidate + length] == data[position + length] {
                     length += 1;
                 }
-                
+
                 if length >= 2 && length > best.length {
                     best.length = length;
                     best.distance = position - candidate;
@@ -58,7 +57,6 @@ impl Matcher {
         if best.length == 0 {
             let candidate = self.last_byte[data[position] as usize];
             if candidate != NONE && position - candidate <= WINDOW {
-                best.candidates += 1;
                 best.distance = position - candidate;
                 best.length = 1;
             }
@@ -70,7 +68,7 @@ impl Matcher {
         self.last_byte[data[position] as usize] = position;
         if position + 1 < data.len() {
             let hash = hash_pair(data, position);
-            
+
             self.previous[position] = self.heads[hash];
             self.heads[hash] = position;
         }
