@@ -1,105 +1,71 @@
-<?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="1792.0" viewBox="0 160 1280 1792" role="img">
-  <title>RS(12,10) • систематическая порождающая матрица</title>
-  <defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#b3afb9" />
-    </marker>
-  </defs>
-  <rect width="100%" height="1792.0" fill="#1f1e24" y="160.0" />
-  <path d="M640 210 L640 270" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" transform="scale(1,2)" />
-  <path d="M640 365 L648 455" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" transform="scale(1,2)" />
-  <path d="M40 567.5 L20 567.5 L20 894 L190 894" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" transform="scale(1,2)" />
-  <path d="M648 726 L648 790 L640 790 L640 840" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" transform="scale(1,2)" />
-  <rect x="140" y="220.0" width="1000" height="200.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="640" y="293.16" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Vᵢⱼ = iʲ в GF(256), i = 0…11, j = 0…9</text>
-  <text x="640" y="346.84" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">T = первые 10 строк V; G = V × T⁻¹</text>
-  <rect x="140" y="540.0" width="1000" height="190.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="640" y="608.16" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">G = [ I₁₀ ; Gₚ ]</text>
-  <rect x="40" y="910.0" width="140" height="150.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="110" y="985.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">P₀</text>
-  <rect x="40" y="1060.0" width="140" height="150.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="110" y="1135.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">P₁</text>
-  <rect x="180" y="910.0" width="104" height="150.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="232" y="972.9" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">81₁₆</text>
-  <text x="232" y="1000.4" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">129₁₀</text>
-  <rect x="284" y="910.0" width="104" height="150.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="336" y="972.9" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">96₁₆</text>
-  <text x="336" y="1000.4" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">150₁₀</text>
-  <rect x="388" y="910.0" width="104" height="150.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="440" y="972.9" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">AF₁₆</text>
-  <text x="440" y="1000.4" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">175₁₀</text>
-  <rect x="492" y="910.0" width="104" height="150.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="544" y="972.9" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">B8₁₆</text>
-  <text x="544" y="1000.4" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">184₁₀</text>
-  <rect x="596" y="910.0" width="104" height="150.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="648" y="972.9" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">D2₁₆</text>
-  <text x="648" y="1000.4" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">210₁₀</text>
-  <rect x="700" y="910.0" width="104" height="150.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="752" y="972.9" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">C4₁₆</text>
-  <text x="752" y="1000.4" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">196₁₀</text>
-  <rect x="804" y="910.0" width="104" height="150.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="856" y="972.9" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">FE₁₆</text>
-  <text x="856" y="1000.4" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">254₁₀</text>
-  <rect x="908" y="910.0" width="104" height="150.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="960" y="972.9" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">E8₁₆</text>
-  <text x="960" y="1000.4" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">232₁₀</text>
-  <rect x="1012" y="910.0" width="104" height="150.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="1064" y="972.9" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">03₁₆</text>
-  <text x="1064" y="1000.4" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">3₁₀</text>
-  <rect x="1116" y="910.0" width="104" height="150.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="1168" y="972.9" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">02₁₆</text>
-  <text x="1168" y="1000.4" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">2₁₀</text>
-  <rect x="180" y="1060.0" width="104" height="150.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="232" y="1122.9" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">96₁₆</text>
-  <text x="232" y="1150.4" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">150₁₀</text>
-  <rect x="284" y="1060.0" width="104" height="150.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="336" y="1122.9" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">81₁₆</text>
-  <text x="336" y="1150.4" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">129₁₀</text>
-  <rect x="388" y="1060.0" width="104" height="150.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="440" y="1122.9" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">B8₁₆</text>
-  <text x="440" y="1150.4" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">184₁₀</text>
-  <rect x="492" y="1060.0" width="104" height="150.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="544" y="1122.9" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">AF₁₆</text>
-  <text x="544" y="1150.4" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">175₁₀</text>
-  <rect x="596" y="1060.0" width="104" height="150.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="648" y="1122.9" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">C4₁₆</text>
-  <text x="648" y="1150.4" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">196₁₀</text>
-  <rect x="700" y="1060.0" width="104" height="150.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="752" y="1122.9" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">D2₁₆</text>
-  <text x="752" y="1150.4" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">210₁₀</text>
-  <rect x="804" y="1060.0" width="104" height="150.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="856" y="1122.9" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">E8₁₆</text>
-  <text x="856" y="1150.4" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">232₁₀</text>
-  <rect x="908" y="1060.0" width="104" height="150.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="960" y="1122.9" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">FE₁₆</text>
-  <text x="960" y="1150.4" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">254₁₀</text>
-  <rect x="1012" y="1060.0" width="104" height="150.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="1064" y="1122.9" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">02₁₆</text>
-  <text x="1064" y="1150.4" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">2₁₀</text>
-  <rect x="1116" y="1060.0" width="104" height="150.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="1168" y="1122.9" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">03₁₆</text>
-  <text x="1168" y="1150.4" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">3₁₀</text>
-  <rect x="180" y="1320.0" width="104" height="132.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="232" y="1386.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">D₀</text>
-  <rect x="284" y="1320.0" width="104" height="132.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="336" y="1386.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">D₁</text>
-  <rect x="388" y="1320.0" width="104" height="132.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="440" y="1386.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">D₂</text>
-  <rect x="492" y="1320.0" width="104" height="132.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="544" y="1386.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">D₃</text>
-  <rect x="596" y="1320.0" width="104" height="132.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="648" y="1386.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">D₄</text>
-  <rect x="700" y="1320.0" width="104" height="132.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="752" y="1386.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">D₅</text>
-  <rect x="804" y="1320.0" width="104" height="132.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="856" y="1386.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">D₆</text>
-  <rect x="908" y="1320.0" width="104" height="132.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="960" y="1386.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">D₇</text>
-  <rect x="1012" y="1320.0" width="104" height="132.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="1064" y="1386.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">D₈</text>
-  <rect x="1116" y="1320.0" width="104" height="132.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="1168" y="1386.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">D₉</text>
-  <rect x="190" y="1680.0" width="900" height="216.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="640" y="1761.16" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Pᵣ[j] = XORₖ (Gₚ[r,k] × Dₖ[j])</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="495" viewBox="0 0 1200 495" role="img" aria-labelledby="title desc"><title id="title">RS(12,10): систематическая матрица G</title><desc id="desc">Десятичные числа; байты и состояния с пометкой hex — шестнадцатеричные.</desc><defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#b3afb9"/></marker></defs><rect width="100%" height="100%" fill="#1f1e24"/><text x="30" y="43" font-family="Arial" font-size="29" fill="#8bd6b0">RS(12,10): систематическая матрица G</text><text x="30" y="82" font-family="Arial" font-size="20" fill="#bbb6c3">Десятичные числа; байты и состояния с пометкой hex — шестнадцатеричные.</text><rect x="30" y="125" width="140" height="51" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="42" y="158" font-family="Arial, sans-serif" font-size="21" fill="#84baff" text-anchor="start">Строка</text>
+<rect x="170" y="125" width="100" height="51" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="182" y="158" font-family="Arial, sans-serif" font-size="21" fill="#84baff" text-anchor="start">D0</text>
+<rect x="270" y="125" width="100" height="51" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="282" y="158" font-family="Arial, sans-serif" font-size="21" fill="#84baff" text-anchor="start">D1</text>
+<rect x="370" y="125" width="100" height="51" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="382" y="158" font-family="Arial, sans-serif" font-size="21" fill="#84baff" text-anchor="start">D2</text>
+<rect x="470" y="125" width="100" height="51" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="482" y="158" font-family="Arial, sans-serif" font-size="21" fill="#84baff" text-anchor="start">D3</text>
+<rect x="570" y="125" width="100" height="51" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="582" y="158" font-family="Arial, sans-serif" font-size="21" fill="#84baff" text-anchor="start">D4</text>
+<rect x="670" y="125" width="100" height="51" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="682" y="158" font-family="Arial, sans-serif" font-size="21" fill="#84baff" text-anchor="start">D5</text>
+<rect x="770" y="125" width="100" height="51" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="782" y="158" font-family="Arial, sans-serif" font-size="21" fill="#84baff" text-anchor="start">D6</text>
+<rect x="870" y="125" width="100" height="51" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="882" y="158" font-family="Arial, sans-serif" font-size="21" fill="#84baff" text-anchor="start">D7</text>
+<rect x="970" y="125" width="100" height="51" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="982" y="158" font-family="Arial, sans-serif" font-size="21" fill="#84baff" text-anchor="start">D8</text>
+<rect x="1070" y="125" width="100" height="51" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="1082" y="158" font-family="Arial, sans-serif" font-size="21" fill="#84baff" text-anchor="start">D9</text>
+<rect x="30" y="176" width="140" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="42" y="207" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">P0</text>
+<rect x="170" y="176" width="100" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="182" y="207" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">81</text>
+<rect x="270" y="176" width="100" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="282" y="207" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">96</text>
+<rect x="370" y="176" width="100" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="382" y="207" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">AF</text>
+<rect x="470" y="176" width="100" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="482" y="207" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">B8</text>
+<rect x="570" y="176" width="100" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="582" y="207" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">D2</text>
+<rect x="670" y="176" width="100" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="682" y="207" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">C4</text>
+<rect x="770" y="176" width="100" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="782" y="207" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">FE</text>
+<rect x="870" y="176" width="100" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="882" y="207" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">E8</text>
+<rect x="970" y="176" width="100" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="982" y="207" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">03</text>
+<rect x="1070" y="176" width="100" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="1082" y="207" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">02</text>
+<rect x="30" y="227" width="140" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="42" y="258" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">P1</text>
+<rect x="170" y="227" width="100" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="182" y="258" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">96</text>
+<rect x="270" y="227" width="100" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="282" y="258" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">81</text>
+<rect x="370" y="227" width="100" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="382" y="258" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">B8</text>
+<rect x="470" y="227" width="100" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="482" y="258" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">AF</text>
+<rect x="570" y="227" width="100" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="582" y="258" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">C4</text>
+<rect x="670" y="227" width="100" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="682" y="258" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">D2</text>
+<rect x="770" y="227" width="100" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="782" y="258" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">E8</text>
+<rect x="870" y="227" width="100" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="882" y="258" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">FE</text>
+<rect x="970" y="227" width="100" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="982" y="258" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">02</text>
+<rect x="1070" y="227" width="100" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="1082" y="258" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">03</text>
+<rect x="30" y="302" width="1140" height="157" rx="0" fill="#1f1e24" stroke="#8bd6b0" stroke-width="1.4"/>
+<text x="50" y="336" font-family="Arial, sans-serif" font-size="24" fill="#8bd6b0" text-anchor="start">Проверка</text>
+<text x="50" y="373" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">Первые 10 строк G — единичная матрица I₁₀. Здесь показаны две проверочные строки.</text>
+<text x="50" y="404" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">V[i,k]=iᵏ в GF(256); T=V[0…9,:]; G=V·T⁻¹.</text>
+<text x="50" y="435" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">Для каждого смещения j: P_r[j] = XOR_k (G[10+r,k]·D_k[j]).</text></svg>

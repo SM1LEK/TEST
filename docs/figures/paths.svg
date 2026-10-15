@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="618" viewBox="0 0 1200 618" role="img" aria-labelledby="title desc"><title id="title">Пути и откат результата</title><desc id="desc"></desc><defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#b3afb9"/></marker></defs><rect width="100%" height="100%" fill="#1f1e24"/><text x="30" y="43" font-family="Arial" font-size="29" fill="#8bd6b0">Пути и откат результата</text><rect x="30" y="94" width="1140" height="157" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="50" y="128" font-family="Arial, sans-serif" font-size="24" fill="#84baff" text-anchor="start">Проверки имён</text>
+<text x="50" y="165" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">UTF-8; путь 1…4096 байт; компонент ≤255 байт; глубина ≤128; записей ≤100000.</text>
+<text x="50" y="196" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">Нельзя пустые компоненты, конечные точку/пробел, управляющие и / \ : * ? &quot; &lt; &gt; |.</text>
+<text x="50" y="227" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">Устройства: con, prn, aux, nul, conin$, conout$ до первой точки.</text>
+<rect x="30" y="275" width="1140" height="126" rx="0" fill="#1f1e24" stroke="#f1c779" stroke-width="1.4"/>
+<text x="50" y="309" font-family="Arial, sans-serif" font-size="24" fill="#f1c779" text-anchor="start">Порядок и уникальность</text>
+<text x="50" y="346" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">Родительская папка объявляется раньше ребёнка. Дубликат после to_lowercase() запрещён.</text>
+<text x="50" y="377" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">NFC и полное Unicode case-folding не выполняются. COM1 и LPT1 кодом не перечислены.</text>
+<rect x="30" y="425" width="1140" height="157" rx="0" fill="#1f1e24" stroke="#8bd6b0" stroke-width="1.4"/>
+<text x="50" y="459" font-family="Arial, sans-serif" font-size="24" fill="#8bd6b0" text-anchor="start">Файловые операции</text>
+<text x="50" y="496" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">create_new запрещает перезапись архива и извлекаемого файла; корень извлечения — новый каталог.</text>
+<text x="50" y="527" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">При ошибке удалить созданный результат. Если очистка не удалась — добавить её ошибку к исходной.</text>
+<text x="50" y="558" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">Исходные symlink и Windows reparse points отклоняются. Сам архив исключается по каноническому пути.</text></svg>

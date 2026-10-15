@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1092" viewBox="0 0 1200 1092" role="img" aria-labelledby="title desc"><title id="title">Чтение и восстановление блока v3</title><desc id="desc">Прямоугольник — процесс; ромб — условие; параллелограмм — данные.</desc><defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#b3afb9"/></marker></defs><rect width="100%" height="100%" fill="#1f1e24"/><text x="30" y="43" font-family="Arial" font-size="29" fill="#8bd6b0">Чтение и восстановление блока v3</text><text x="30" y="82" font-family="Arial" font-size="20" fill="#bbb6c3">Прямоугольник — процесс; ромб — условие; параллелограмм — данные.</text><rect x="240" y="125" width="660" height="72" rx="34" fill="#1f1e24" stroke="#8bd6b0" stroke-width="1.4"/>
+<text x="570.0" y="169.0" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">После голосования общего заголовка</text>
+<polygon points="265,250 900,250 875,342 240,342" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="570.0" y="289.5" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">Без RS читать B:4 байта</text>
+<text x="570.0" y="318.5" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">С RS читать 60 байт и восстановить B</text>
+<rect x="240" y="395" width="660" height="92" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="570.0" y="434.5" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">N=u16(B[0..2])+1; S=u16(B[2..4])+1</text>
+<text x="570.0" y="463.5" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">Проверить S≤N и допустимость режима</text>
+<polygon points="265,540 900,540 875,632 240,632" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="570.0" y="579.5" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">Прочитать S байт либо E(S) байт</text>
+<text x="570.0" y="608.5" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">При RS восстановить Y</text>
+<rect x="240" y="685" width="660" height="92" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="570.0" y="724.5" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">Если S&lt;N: снять rANS, затем LZ77</text>
+<text x="570.0" y="753.5" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">Если S=N: использовать Y без декодирования</text>
+<rect x="240" y="830" width="660" height="72" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="570.0" y="874.0" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">Проверить размер результата N</text>
+<rect x="240" y="955" width="660" height="72" rx="34" fill="#1f1e24" stroke="#8bd6b0" stroke-width="1.4"/>
+<text x="570.0" y="999.0" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">Выдать блок в исходном порядке</text>
+<path d="M 570.0 197 V 250" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M 570.0 342 V 395" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M 570.0 487 V 540" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M 570.0 632 V 685" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M 570.0 777 V 830" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M 570.0 902 V 955" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/></svg>

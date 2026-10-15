@@ -1,40 +1,46 @@
-<?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="706.0" viewBox="0 0 1100 706">
-  <title>reed-solomon</title>
-  <defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
-      <path d="M 0 1 L 10 5 L 0 9 Z" fill="#b3afb9" />
-    </marker>
-  </defs>
-  <rect x="0" y="0.0" width="1100" height="706.0" fill="#1f1e24" />
-  <g id="drawing">
-    <rect x="40" y="120.0" width="80" height="120.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    <text x="80" y="194.0" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D₀</text>
-    <rect x="125" y="120.0" width="80" height="120.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    <text x="165" y="194.0" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D₁</text>
-    <rect x="210" y="120.0" width="80" height="120.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    <text x="250" y="194.0" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D₂</text>
-    <rect x="295" y="120.0" width="80" height="120.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    <text x="335" y="194.0" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D₃</text>
-    <rect x="380" y="120.0" width="80" height="120.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    <text x="420" y="194.0" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D₄</text>
-    <rect x="465" y="120.0" width="80" height="120.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    <text x="505" y="194.0" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D₅</text>
-    <rect x="550" y="120.0" width="80" height="120.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    <text x="590" y="194.0" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D₆</text>
-    <rect x="635" y="120.0" width="80" height="120.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    <text x="675" y="194.0" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D₇</text>
-    <rect x="720" y="120.0" width="80" height="120.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    <text x="760" y="194.0" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D₈</text>
-    <rect x="805" y="120.0" width="80" height="120.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    <text x="845" y="194.0" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D₉</text>
-    <rect x="890" y="120.0" width="80" height="120.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    <text x="930" y="194.0" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">P0</text>
-    <rect x="975" y="120.0" width="80" height="120.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    <text x="1015" y="194.0" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">P1</text>
-    <rect x="40" y="380.0" width="1040" height="110.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    <text x="560" y="450.0" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">CRC32 таблица: 12 x u32 LE = 48 байт</text>
-    <rect x="40" y="540.0" width="1040" height="110.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    <text x="560" y="610.0" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Тела фрагментов: 12 x shard_size байт</text>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="666" viewBox="0 0 1200 666" role="img" aria-labelledby="title desc"><title id="title">RS-слово: подготовка и физическая запись</title><desc id="desc">Десятичные числа; байты и состояния с пометкой hex — шестнадцатеричные.</desc><defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#b3afb9"/></marker></defs><rect width="100%" height="100%" fill="#1f1e24"/><text x="30" y="43" font-family="Arial" font-size="29" fill="#8bd6b0">RS-слово: подготовка и физическая запись</text><text x="30" y="82" font-family="Arial" font-size="20" fill="#bbb6c3">Десятичные числа; байты и состояния с пометкой hex — шестнадцатеричные.</text><rect x="30" y="125" width="320" height="51" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="42" y="158" font-family="Arial, sans-serif" font-size="21" fill="#84baff" text-anchor="start">Часть</text>
+<rect x="350" y="125" width="560" height="51" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="362" y="158" font-family="Arial, sans-serif" font-size="21" fill="#84baff" text-anchor="start">Состав</text>
+<rect x="910" y="125" width="260" height="51" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="922" y="158" font-family="Arial, sans-serif" font-size="21" fill="#84baff" text-anchor="start">Размер</text>
+<rect x="30" y="176" width="320" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="42" y="207" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">Защищаемые данные</text>
+<rect x="350" y="176" width="560" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="362" y="207" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">u32 LE(U) | payload | нули</text>
+<rect x="910" y="176" width="260" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="922" y="207" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">10q байт</text>
+<rect x="30" y="227" width="320" height="80" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="42" y="258" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">Информационные</text>
+<text x="42" y="287" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">фрагменты</text>
+<rect x="350" y="227" width="560" height="80" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="362" y="258" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">D₀…D₉</text>
+<rect x="910" y="227" width="260" height="80" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="922" y="258" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">10·q</text>
+<rect x="30" y="307" width="320" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="42" y="338" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">Проверочные фрагменты</text>
+<rect x="350" y="307" width="560" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="362" y="338" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">P₀, P₁</text>
+<rect x="910" y="307" width="260" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="922" y="338" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">2·q</text>
+<rect x="30" y="358" width="320" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="42" y="389" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">Сначала в потоке</text>
+<rect x="350" y="358" width="560" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="362" y="389" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">CRC(D₀)…CRC(D₉), CRC(P₀), CRC(P₁)</text>
+<rect x="910" y="358" width="260" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="922" y="389" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">48</text>
+<rect x="30" y="409" width="320" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="42" y="440" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">Затем в потоке</text>
+<rect x="350" y="409" width="560" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="362" y="440" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">D₀…D₉ | P₀ | P₁</text>
+<rect x="910" y="409" width="260" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="922" y="440" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">12·q</text>
+<rect x="30" y="460" width="320" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="42" y="491" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">Всего</text>
+<rect x="350" y="460" width="560" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="362" y="491" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">E(U) = 48 + 12·ceil((U+4)/10)</text>
+<rect x="910" y="460" width="260" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="922" y="491" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">q ≥ 1</text>
+<rect x="30" y="535" width="1140" height="95" rx="0" fill="#1f1e24" stroke="#8bd6b0" stroke-width="1.4"/>
+<text x="50" y="569" font-family="Arial, sans-serif" font-size="24" fill="#8bd6b0" text-anchor="start">Проверка</text>
+<text x="50" y="606" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">Один и тот же алгоритм вызывается отдельно для B длиной 4 и Y длиной S.</text></svg>

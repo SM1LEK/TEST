@@ -1,40 +1,26 @@
-<?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1060" viewBox="0 80 1120 1060" role="img">
-  <title>Заголовок блока • побайтовое голосование трёх копий</title>
-  <defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#b3afb9" />
-    </marker>
-  </defs>
-  <rect width="100%" height="1060.0" fill="#1f1e24" y="80" />
-  <path d="M560 200 L560 270" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
-  <path d="M560 350 L560 420" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
-  <path d="M340 470 L220 470 L220 605" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
-  <path d="M780 470 L875 470 L875 595" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
-  <path d="M875 695 L875 800" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
-  <path d="M700 645 L620 645" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
-  <path d="M220 685 L220 945 L560 945 L560 1010" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
-  <path d="M875 880 L875 945 L560 945 L560 1010" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
-  <path d="M 344 110 H 800 L 776 200 H 320 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="560" y="141.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Вход: H₀ | H₁ | H₂</text>
-  <text x="560" y="168.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Каждая копия — 4 байта</text>
-  <rect x="140" y="270" width="840" height="80" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="560" y="310" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Для позиции i: a = H₀[i], b = H₁[i], c = H₂[i]</text>
-  <path d="M 560.0 420 L 780 470.0 L 560.0 520 L 340 470.0 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="560" y="470" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">a = b или a = c?</text>
-  <rect x="40" y="605" width="360" height="80" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="220" y="645" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Результат[i] = a</text>
-  <path d="M 875.0 595 L 1050 645.0 L 875.0 695 L 700 645.0 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="875" y="645" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">b = c?</text>
-  <rect x="700" y="800" width="350" height="80" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="875" y="840" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Результат[i] = b</text>
-  <rect x="450" y="615" width="170" height="60" rx="30.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" ry="30.0" />
-  <text x="535" y="645" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Ошибка</text>
-  <text x="255" y="458" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="18" fill="#ececef">Да</text>
-  <text x="824" y="458" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="18" fill="#ececef">Нет</text>
-  <text x="902" y="740" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="18" fill="#ececef">Да</text>
-  <text x="665" y="624" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="18" fill="#ececef">Нет</text>
-  <path d="M 284 1010 H 860 L 836 1120 H 260 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="560" y="1051.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Повторить для всех 4 позиций</text>
-  <text x="560" y="1078.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">H = (N − 1) : u16 LE | (S − 1) : u16 LE</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1116" viewBox="0 0 1200 1116" role="img" aria-labelledby="title desc"><title id="title">Общий заголовок: побайтовое голосование</title><desc id="desc">Прямоугольник — процесс; ромб — условие; параллелограмм — данные.</desc><defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#b3afb9"/></marker></defs><rect width="100%" height="100%" fill="#1f1e24"/><text x="30" y="43" font-family="Arial" font-size="29" fill="#8bd6b0">Общий заголовок: побайтовое голосование</text><text x="30" y="82" font-family="Arial" font-size="20" fill="#bbb6c3">Прямоугольник — процесс; ромб — условие; параллелограмм — данные.</text><rect x="240" y="125" width="660" height="72" rx="34" fill="#1f1e24" stroke="#8bd6b0" stroke-width="1.4"/>
+<text x="570.0" y="169.0" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">Прочитать 27 байт: H₀ | H₁ | H₂</text>
+<rect x="240" y="250" width="660" height="92" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="570.0" y="289.5" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">Для каждой позиции i=0…8</text>
+<text x="570.0" y="318.5" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">a=H₀[i], b=H₁[i], c=H₂[i]</text>
+<polygon points="570.0,395 900,453.0 570.0,511 240,453.0" fill="#1f1e24" stroke="#f1c779" stroke-width="1.4"/>
+<text x="570.0" y="461.0" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">a=b или a=c?</text>
+<rect x="240" y="564" width="660" height="72" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="570.0" y="608.0" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">Да: результат[i]=a</text>
+<rect x="240" y="689" width="660" height="92" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="570.0" y="728.5" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">Иначе: b=c → результат[i]=b</text>
+<text x="570.0" y="757.5" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">Все три различны → ошибка</text>
+<rect x="240" y="834" width="660" height="92" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="570.0" y="873.5" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">После 9 позиций проверить CLARSv03</text>
+<text x="570.0" y="902.5" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">и отсутствие неизвестных битов флагов</text>
+<rect x="240" y="979" width="660" height="72" rx="34" fill="#1f1e24" stroke="#8bd6b0" stroke-width="1.4"/>
+<text x="570.0" y="1023.0" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">Получить режим архива</text>
+<path d="M 570.0 197 V 250" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M 570.0 342 V 395" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M 570.0 511 V 564" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="585.0" y="543" font-family="Arial, sans-serif" font-size="19" fill="#f1c779" text-anchor="start">Да</text>
+<path d="M 900 453.0 H 1033 V 735.0 H 900" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="1043" y="441.0" font-family="Arial, sans-serif" font-size="19" fill="#f1c779" text-anchor="start">Нет</text>
+<path d="M 240 600.0 H 156 V 880.0 H 240" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M 570.0 781 V 834" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M 570.0 926 V 979" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/></svg>

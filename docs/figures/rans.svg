@@ -1,95 +1,76 @@
-<?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1104" height="1424.0" viewBox="8 16 1104 1424" role="img">
-  <title>rans</title>
-  <defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
-      <path d="M 0 1 L 10 5 L 0 9 Z" fill="#b3afb9" />
-    </marker>
-  </defs>
-  <rect id="background" x="8" y="16.0" width="1104" height="1424.0" fill="#1f1e24" />
-  <g id="drawing">
-    <path d="M 290 272 L 290 310" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e0" data-source="n5" data-target="n7" transform="scale(1,2)" />
-    <path d="M 290 372 L 290 410" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e1" data-source="n7" data-target="n9" transform="scale(1,2)" />
-    <path d="M 290 472 L 290 510" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e2" data-source="n9" data-target="n11" transform="scale(1,2)" />
-    <path d="M 830 272 L 830 310" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e3" data-source="n6" data-target="n8" transform="scale(1,2)" />
-    <path d="M 830 372 L 830 410" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e4" data-source="n8" data-target="n10" transform="scale(1,2)" />
-    <path d="M 830 472 L 830 510" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" data-edge-id="e5" data-source="n10" data-target="n12" transform="scale(1,2)" />
-    <g data-vertex-id="n1">
-      <desc>A: 0..=2047; f(A) = 2048</desc>
-      <rect x="40" y="80.0" width="520" height="140.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="300" y="152.86" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A: 000₁₆…7FF₁₆; f(A)=2¹¹</text>
-    <text x="300" y="180.36" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">₁₀: A: 0…2 047; f(A)=2 048</text>
-    </g>
-    <g data-vertex-id="n2">
-      <desc>B: 2048..=4095; f(B) = 2048</desc>
-      <rect x="560" y="80.0" width="520" height="140.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="820" y="152.86" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">B: 800₁₆…FFF₁₆; f(B)=2¹¹</text>
-    <text x="820" y="180.36" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">₁₀: B: 2 048…4 095; f(B)=2 048</text>
-    </g>
-    <g data-vertex-id="n5">
-      <desc>B: 8388608 =&gt; 16779264</desc>
-      <rect x="40" y="420.0" width="500" height="124.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="290" y="484.85999999999996" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">B: 0080 0000₁₆ → 0100 0800₁₆</text>
-    <text x="290" y="512.3599999999999" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">₁₀: B: 8 388 608 → 16 779 264</text>
-    </g>
-    <g data-vertex-id="n6">
-      <desc>A: 134238208 =&gt; 67119104</desc>
-      <rect x="580" y="420.0" width="500" height="124.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="830" y="484.85999999999996" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A: 0800 5000₁₆ → 0400 2800₁₆</text>
-    <text x="830" y="512.3599999999999" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">₁₀: A: 134 238 208 → 67 119 104</text>
-    </g>
-    <g data-vertex-id="n7">
-      <desc>A: 16779264 =&gt; 33558528</desc>
-      <rect x="40" y="620.0" width="500" height="124.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="290" y="684.86" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A: 0100 0800₁₆ → 0200 1000₁₆</text>
-    <text x="290" y="712.36" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">₁₀: A: 16 779 264 → 33 558 528</text>
-    </g>
-    <g data-vertex-id="n8">
-      <desc>B: 67119104 =&gt; 33558528</desc>
-      <rect x="580" y="620.0" width="500" height="124.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="830" y="684.86" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">B: 0400 2800₁₆ → 0200 1000₁₆</text>
-    <text x="830" y="712.36" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">₁₀: B: 67 119 104 → 33 558 528</text>
-    </g>
-    <g data-vertex-id="n9">
-      <desc>B: 33558528 =&gt; 67119104</desc>
-      <rect x="40" y="820.0" width="500" height="124.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="290" y="884.86" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">B: 0200 1000₁₆ → 0400 2800₁₆</text>
-    <text x="290" y="912.36" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">₁₀: B: 33 558 528 → 67 119 104</text>
-    </g>
-    <g data-vertex-id="n10">
-      <desc>A: 33558528 =&gt; 16779264</desc>
-      <rect x="580" y="820.0" width="500" height="124.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="830" y="884.86" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A: 0200 1000₁₆ → 0100 0800₁₆</text>
-    <text x="830" y="912.36" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">₁₀: A: 33 558 528 → 16 779 264</text>
-    </g>
-    <g data-vertex-id="n11">
-      <desc>A: 67119104 =&gt; 134238208</desc>
-      <rect x="40" y="1020.0" width="500" height="124.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="290" y="1084.8600000000001" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">A: 0400 2800₁₆ → 0800 5000₁₆</text>
-    <text x="290" y="1112.3600000000001" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">₁₀: A: 67 119 104 → 134 238 208</text>
-    </g>
-    <g data-vertex-id="n12">
-      <desc>B: 16779264 =&gt; 8388608</desc>
-      <rect x="580" y="1020.0" width="500" height="124.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="830" y="1084.8600000000001" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">B: 0100 0800₁₆ → 0080 0000₁₆</text>
-    <text x="830" y="1112.3600000000001" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">₁₀: B: 16 779 264 → 8 388 608</text>
-    </g>
-    <g data-vertex-id="n13">
-      <desc>x = floor(x / f) × 4096
-+ (x mod f) + c</desc>
-      <rect x="40" y="1230.0" width="500" height="160.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="290" y="1284.7" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">x = floor(x / f) × 2¹²</text>
-      <text x="290" y="1312.2" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">₁₀: x = floor(x / f) × 4 096</text>
-      <text x="290" y="1353.12" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">+ (x mod f) + c</text>
-    </g>
-    <g data-vertex-id="n14">
-      <desc>x = f × floor(x / 4096)
-+ (x mod 4096) − c</desc>
-      <rect x="580" y="1230.0" width="500" height="160.0" rx="0" ry="0.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-      <text x="830" y="1284.7" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">x = f × floor(x / 2¹²)</text>
-      <text x="830" y="1312.2" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">₁₀: x = f × floor(x / 4 096)</text>
-      <text x="830" y="1341.02" text-anchor="middle" font-family="Arial" font-size="22px" fill="#ececef">+ (x mod 2¹²) − c</text>
-    <text x="830" y="1368.52" text-anchor="middle" font-family="Arial" font-size="20.0" fill="#bbb6c3">₁₀: + (x mod 4 096) − c</text>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="770" viewBox="0 0 1200 770" role="img" aria-labelledby="title desc"><title id="title">rANS: короткий обратимый пример ABAB</title><desc id="desc">Десятичные числа; байты и состояния с пометкой hex — шестнадцатеричные.</desc><defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#b3afb9"/></marker></defs><rect width="100%" height="100%" fill="#1f1e24"/><text x="30" y="43" font-family="Arial" font-size="29" fill="#8bd6b0">rANS: короткий обратимый пример ABAB</text><text x="30" y="82" font-family="Arial" font-size="20" fill="#bbb6c3">Десятичные числа; байты и состояния с пометкой hex — шестнадцатеричные.</text><rect x="30" y="125" width="230" height="51" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="42" y="158" font-family="Arial, sans-serif" font-size="21" fill="#84baff" text-anchor="start">Направление</text>
+<rect x="260" y="125" width="160" height="51" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="272" y="158" font-family="Arial, sans-serif" font-size="21" fill="#84baff" text-anchor="start">Байт</text>
+<rect x="420" y="125" width="375" height="51" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="432" y="158" font-family="Arial, sans-serif" font-size="21" fill="#84baff" text-anchor="start">x до</text>
+<rect x="795" y="125" width="375" height="51" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="807" y="158" font-family="Arial, sans-serif" font-size="21" fill="#84baff" text-anchor="start">x после</text>
+<rect x="30" y="176" width="230" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="42" y="207" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">Кодер</text>
+<rect x="260" y="176" width="160" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="272" y="207" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">B</text>
+<rect x="420" y="176" width="375" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="432" y="207" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">8388608</text>
+<rect x="795" y="176" width="375" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="807" y="207" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">16779264</text>
+<rect x="30" y="227" width="230" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="42" y="258" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">Кодер</text>
+<rect x="260" y="227" width="160" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="272" y="258" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">A</text>
+<rect x="420" y="227" width="375" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="432" y="258" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">16779264</text>
+<rect x="795" y="227" width="375" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="807" y="258" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">33558528</text>
+<rect x="30" y="278" width="230" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="42" y="309" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">Кодер</text>
+<rect x="260" y="278" width="160" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="272" y="309" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">B</text>
+<rect x="420" y="278" width="375" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="432" y="309" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">33558528</text>
+<rect x="795" y="278" width="375" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="807" y="309" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">67119104</text>
+<rect x="30" y="329" width="230" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="42" y="360" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">Кодер</text>
+<rect x="260" y="329" width="160" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="272" y="360" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">A</text>
+<rect x="420" y="329" width="375" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="432" y="360" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">67119104</text>
+<rect x="795" y="329" width="375" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="807" y="360" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">134238208</text>
+<rect x="30" y="380" width="230" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="42" y="411" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">Декодер</text>
+<rect x="260" y="380" width="160" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="272" y="411" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">A</text>
+<rect x="420" y="380" width="375" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="432" y="411" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">134238208</text>
+<rect x="795" y="380" width="375" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="807" y="411" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">67119104</text>
+<rect x="30" y="431" width="230" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="42" y="462" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">Декодер</text>
+<rect x="260" y="431" width="160" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="272" y="462" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">B</text>
+<rect x="420" y="431" width="375" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="432" y="462" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">67119104</text>
+<rect x="795" y="431" width="375" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="807" y="462" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">33558528</text>
+<rect x="30" y="482" width="230" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="42" y="513" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">Декодер</text>
+<rect x="260" y="482" width="160" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="272" y="513" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">A</text>
+<rect x="420" y="482" width="375" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="432" y="513" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">33558528</text>
+<rect x="795" y="482" width="375" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="807" y="513" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">16779264</text>
+<rect x="30" y="533" width="230" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="42" y="564" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">Декодер</text>
+<rect x="260" y="533" width="160" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="272" y="564" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">B</text>
+<rect x="420" y="533" width="375" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="432" y="564" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">16779264</text>
+<rect x="795" y="533" width="375" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="807" y="564" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">8388608</text>
+<rect x="30" y="608" width="1140" height="126" rx="0" fill="#1f1e24" stroke="#8bd6b0" stroke-width="1.4"/>
+<text x="50" y="642" font-family="Arial, sans-serif" font-size="24" fill="#8bd6b0" text-anchor="start">Проверка</text>
+<text x="50" y="679" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">f(A)=f(B)=2048; c(A)=0; c(B)=2048. Перенормировка не нужна.</text>
+<text x="50" y="710" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">Полный поток: 04 01 41 42 80 10 00 50 00 08. Включает длину, модель и состояние.</text></svg>

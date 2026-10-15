@@ -1,0 +1,266 @@
+[
+  {
+    "file": "entropy-cost.svg",
+    "viewBox": "0 0 1200 520"
+  },
+  {
+    "file": "data.svg",
+    "viewBox": "0 0 1320 835"
+  },
+  {
+    "file": "data-espd.svg",
+    "viewBox": "0 0 1200 737"
+  },
+  {
+    "file": "block-choice.svg",
+    "viewBox": "0 0 1200 1221"
+  },
+  {
+    "file": "reader.svg",
+    "viewBox": "0 0 1200 1092"
+  },
+  {
+    "file": "records.svg",
+    "viewBox": "0 0 1200 587"
+  },
+  {
+    "file": "leb128-example.svg",
+    "viewBox": "0 0 1200 576"
+  },
+  {
+    "file": "bits.svg",
+    "viewBox": "0 0 1200 547"
+  },
+  {
+    "file": "lz77-overview.svg",
+    "viewBox": "0 0 1200 556"
+  },
+  {
+    "file": "lz77-window.svg",
+    "viewBox": "0 0 1200 723"
+  },
+  {
+    "file": "lz77-matcher.svg",
+    "viewBox": "0 0 1200 1136"
+  },
+  {
+    "file": "lz77-flow.svg",
+    "viewBox": "0 0 1200 1241"
+  },
+  {
+    "file": "lz77-cost.svg",
+    "viewBox": "0 0 1200 649"
+  },
+  {
+    "file": "lz77.svg",
+    "viewBox": "0 0 1200 546"
+  },
+  {
+    "file": "lz77-search-example.svg",
+    "viewBox": "0 0 1200 526"
+  },
+  {
+    "file": "lz77-overlap.svg",
+    "viewBox": "0 0 1200 617"
+  },
+  {
+    "file": "lz77-decode.svg",
+    "viewBox": "0 0 1200 1245"
+  },
+  {
+    "file": "rans-banan-model.svg",
+    "viewBox": "0 0 1200 515"
+  },
+  {
+    "file": "rans-model.svg",
+    "viewBox": "0 0 1200 572"
+  },
+  {
+    "file": "rans-overview.svg",
+    "viewBox": "0 0 1200 706"
+  },
+  {
+    "file": "rans.svg",
+    "viewBox": "0 0 1200 770"
+  },
+  {
+    "file": "rans-flow.svg",
+    "viewBox": "0 0 1200 1285"
+  },
+  {
+    "file": "rans-decode.svg",
+    "viewBox": "0 0 1200 1265"
+  },
+  {
+    "file": "rans-banan-encode.svg",
+    "viewBox": "0 0 1200 648"
+  },
+  {
+    "file": "rans-banan-decode.svg",
+    "viewBox": "0 0 1200 648"
+  },
+  {
+    "file": "rans-slots.svg",
+    "viewBox": "0 0 1200 1012"
+  },
+  {
+    "file": "rans-utf8-model.svg",
+    "viewBox": "0 0 1200 566"
+  },
+  {
+    "file": "rans-utf8-encode.svg",
+    "viewBox": "0 0 1200 903"
+  },
+  {
+    "file": "rans-utf8-decode.svg",
+    "viewBox": "0 0 1200 903"
+  },
+  {
+    "file": "rans-renorm-encode-1.svg",
+    "viewBox": "0 0 1200 770"
+  },
+  {
+    "file": "rans-renorm-encode-2.svg",
+    "viewBox": "0 0 1200 770"
+  },
+  {
+    "file": "rans-renorm-encode-3.svg",
+    "viewBox": "0 0 1200 770"
+  },
+  {
+    "file": "rans-renorm-encode-4.svg",
+    "viewBox": "0 0 1200 770"
+  },
+  {
+    "file": "rans-renorm-decode-1.svg",
+    "viewBox": "0 0 1200 770"
+  },
+  {
+    "file": "rans-renorm-decode-2.svg",
+    "viewBox": "0 0 1200 770"
+  },
+  {
+    "file": "rans-renorm-decode-3.svg",
+    "viewBox": "0 0 1200 770"
+  },
+  {
+    "file": "rans-renorm-decode-4.svg",
+    "viewBox": "0 0 1200 770"
+  },
+  {
+    "file": "rans-byte-streams.svg",
+    "viewBox": "0 0 1200 675"
+  },
+  {
+    "file": "rans-model-bytes.svg",
+    "viewBox": "0 0 1320 1084"
+  },
+  {
+    "file": "crc32-flow.svg",
+    "viewBox": "0 0 1200 971"
+  },
+  {
+    "file": "crc32-bit-example.svg",
+    "viewBox": "0 0 1200 801"
+  },
+  {
+    "file": "crc32-byte-example.svg",
+    "viewBox": "0 0 1200 821"
+  },
+  {
+    "file": "gf256.svg",
+    "viewBox": "0 0 1200 556"
+  },
+  {
+    "file": "gf256-multiply-example.svg",
+    "viewBox": "0 0 1200 770"
+  },
+  {
+    "file": "gf256-powers.svg",
+    "viewBox": "0 0 1320 1103"
+  },
+  {
+    "file": "reed-solomon.svg",
+    "viewBox": "0 0 1200 666"
+  },
+  {
+    "file": "rs-erasure-encode.svg",
+    "viewBox": "0 0 1200 1052"
+  },
+  {
+    "file": "rs-columns.svg",
+    "viewBox": "0 0 1320 1017"
+  },
+  {
+    "file": "rs-matrix.svg",
+    "viewBox": "0 0 1200 495"
+  },
+  {
+    "file": "rs-parity-example.svg",
+    "viewBox": "0 0 1200 872"
+  },
+  {
+    "file": "rs-inverse-example.svg",
+    "viewBox": "0 0 1200 737"
+  },
+  {
+    "file": "rs-erasure-decode.svg",
+    "viewBox": "0 0 1200 1261"
+  },
+  {
+    "file": "rs-failure-budget.svg",
+    "viewBox": "0 0 1200 663"
+  },
+  {
+    "file": "triplication.svg",
+    "viewBox": "0 0 1200 556"
+  },
+  {
+    "file": "header-vote.svg",
+    "viewBox": "0 0 1200 1116"
+  },
+  {
+    "file": "header-vote-example.svg",
+    "viewBox": "0 0 1200 597"
+  },
+  {
+    "file": "format.svg",
+    "viewBox": "0 0 1320 1192"
+  },
+  {
+    "file": "archive-minimal.svg",
+    "viewBox": "0 0 1200 615"
+  },
+  {
+    "file": "archive-protected-summary.svg",
+    "viewBox": "0 0 1320 1367"
+  },
+  {
+    "file": "rs-overhead.svg",
+    "viewBox": "0 0 1200 902"
+  },
+  {
+    "file": "rs-staircase.svg",
+    "viewBox": "0 0 1200 902"
+  },
+  {
+    "file": "parallel.svg",
+    "viewBox": "0 0 1200 597"
+  },
+  {
+    "file": "paths.svg",
+    "viewBox": "0 0 1200 618"
+  },
+  {
+    "file": "benchmark-compression.svg",
+    "viewBox": "0 0 1200 912"
+  },
+  {
+    "file": "benchmark-speed.svg",
+    "viewBox": "0 0 1200 912"
+  },
+  {
+    "file": "benchmark-threads.svg",
+    "viewBox": "0 0 1200 520"
+  }
+]

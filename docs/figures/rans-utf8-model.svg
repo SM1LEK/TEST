@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="566" viewBox="0 0 1200 566" role="img" aria-labelledby="title desc"><title id="title">rANS: модель БАНАН (UTF-8)</title><desc id="desc">Десятичные числа; байты и состояния с пометкой hex — шестнадцатеричные.</desc><defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#b3afb9"/></marker></defs><rect width="100%" height="100%" fill="#1f1e24"/><text x="30" y="43" font-family="Arial" font-size="29" fill="#8bd6b0">rANS: модель БАНАН (UTF-8)</text><text x="30" y="82" font-family="Arial" font-size="20" fill="#bbb6c3">Десятичные числа; байты и состояния с пометкой hex — шестнадцатеричные.</text><rect x="30" y="125" width="150" height="51" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="42" y="158" font-family="Arial, sans-serif" font-size="21" fill="#84baff" text-anchor="start">Байт hex</text>
+<rect x="180" y="125" width="100" height="51" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="192" y="158" font-family="Arial, sans-serif" font-size="21" fill="#84baff" text-anchor="start">v</text>
+<rect x="280" y="125" width="300" height="51" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="292" y="158" font-family="Arial, sans-serif" font-size="21" fill="#84baff" text-anchor="start">1+floor(v·A/n)</text>
+<rect x="580" y="125" width="150" height="51" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="592" y="158" font-family="Arial, sans-serif" font-size="21" fill="#84baff" text-anchor="start">Остаток</text>
+<rect x="730" y="125" width="140" height="51" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="742" y="158" font-family="Arial, sans-serif" font-size="21" fill="#84baff" text-anchor="start">f</text>
+<rect x="870" y="125" width="300" height="51" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="882" y="158" font-family="Arial, sans-serif" font-size="21" fill="#84baff" text-anchor="start">Интервал</text>
+<rect x="30" y="176" width="150" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="42" y="207" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">90</text>
+<rect x="180" y="176" width="100" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="192" y="207" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">2</text>
+<rect x="280" y="176" width="300" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="292" y="207" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">819</text>
+<rect x="580" y="176" width="150" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="592" y="207" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">4</text>
+<rect x="730" y="176" width="140" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="742" y="207" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">820</text>
+<rect x="870" y="176" width="300" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="882" y="207" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">[0, 820)</text>
+<rect x="30" y="227" width="150" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="42" y="258" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">91</text>
+<rect x="180" y="227" width="100" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="192" y="258" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">1</text>
+<rect x="280" y="227" width="300" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="292" y="258" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">410</text>
+<rect x="580" y="227" width="150" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="592" y="258" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">2</text>
+<rect x="730" y="227" width="140" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="742" y="258" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">410</text>
+<rect x="870" y="227" width="300" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="882" y="258" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">[820, 1230)</text>
+<rect x="30" y="278" width="150" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="42" y="309" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">9D</text>
+<rect x="180" y="278" width="100" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="192" y="309" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">2</text>
+<rect x="280" y="278" width="300" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="292" y="309" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">819</text>
+<rect x="580" y="278" width="150" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="592" y="309" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">4</text>
+<rect x="730" y="278" width="140" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="742" y="309" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">819</text>
+<rect x="870" y="278" width="300" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="882" y="309" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">[1230, 2049)</text>
+<rect x="30" y="329" width="150" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="42" y="360" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">D0</text>
+<rect x="180" y="329" width="100" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="192" y="360" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">5</text>
+<rect x="280" y="329" width="300" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="292" y="360" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">2047</text>
+<rect x="580" y="329" width="150" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="592" y="360" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">0</text>
+<rect x="730" y="329" width="140" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="742" y="360" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">2047</text>
+<rect x="870" y="329" width="300" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="882" y="360" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">[2049, 4096)</text>
+<rect x="30" y="404" width="1140" height="126" rx="0" fill="#1f1e24" stroke="#8bd6b0" stroke-width="1.4"/>
+<text x="50" y="438" font-family="Arial, sans-serif" font-size="24" fill="#8bd6b0" text-anchor="start">Проверка</text>
+<text x="50" y="475" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">n=10; D=4; A=4096−D=4092; сумма итоговых частот = 4096.</text>
+<text x="50" y="506" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">Остаточные единицы: по убыванию остатка; равенство — меньший байт первым.</text></svg>

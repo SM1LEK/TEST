@@ -1,30 +1,12 @@
-<?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="433" viewBox="0 45 900 433">
-  <title>triplication</title>
-  <defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
-      <path d="M 0 1 L 10 5 L 0 9 Z" fill="#b3afb9" />
-    </marker>
-  </defs>
-  <rect x="0" y="45" width="900" height="433.0" fill="#1f1e24" />
-  <g id="drawing">
-    <rect x="275" y="60" width="350" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    <text x="450" y="97" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Общий заголовок (9 байт): CLARSv03 | флаги</text>
-    <path d="M 350 120 L 165 170" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)" />
-    <path d="M 450 120 L 450 170" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)" />
-    <path d="M 550 120 L 735 170" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)" />
-    <rect x="40" y="170" width="250" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    <text x="165" y="207" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Копия 1</text>
-    <rect x="325" y="170" width="250" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    <text x="450" y="207" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Копия 2</text>
-    <rect x="610" y="170" width="250" height="60" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    <text x="735" y="207" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Копия 3</text>
-    <path d="M 165 230 L 350 290" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)" />
-    <path d="M 450 230 L 450 290" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)" />
-    <path d="M 735 230 L 550 290" fill="none" stroke="#b3afb9" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)" />
-    <rect x="300" y="290" width="300" height="160" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    <text x="450" y="360" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">Побайтовое</text>
-    <text x="450" y="386" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">голосование</text>
-    <text x="450" y="412" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">(2 из 3)</text>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="556" viewBox="0 0 1200 556" role="img" aria-labelledby="title desc"><title id="title">Два независимых способа защиты заголовков</title><desc id="desc"></desc><defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#b3afb9"/></marker></defs><rect width="100%" height="100%" fill="#1f1e24"/><text x="30" y="43" font-family="Arial" font-size="29" fill="#8bd6b0">Два независимых способа защиты заголовков</text><rect x="30" y="94" width="1140" height="126" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="50" y="128" font-family="Arial, sans-serif" font-size="24" fill="#84baff" text-anchor="start">Общий заголовок, всегда</text>
+<text x="50" y="165" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">H содержит сигнатуру и флаги, 9 байт. Запись H|H|H = 27 байт.</text>
+<text x="50" y="196" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">Побайтовое большинство; действует и без --protect.</text>
+<rect x="30" y="244" width="1140" height="126" rx="0" fill="#1f1e24" stroke="#f1c779" stroke-width="1.4"/>
+<text x="50" y="278" font-family="Arial, sans-serif" font-size="24" fill="#f1c779" text-anchor="start">Заголовок блока, только с --protect</text>
+<text x="50" y="315" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">B содержит N−1 и S−1, 4 байта. Запись RS(B)=60 байт.</text>
+<text x="50" y="346" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">Внутри: 12 CRC32 (48 байт) + 12 фрагментов по 1 байту.</text>
+<rect x="30" y="394" width="1140" height="126" rx="0" fill="#1f1e24" stroke="#8bd6b0" stroke-width="1.4"/>
+<text x="50" y="428" font-family="Arial, sans-serif" font-size="24" fill="#8bd6b0" text-anchor="start">Почему сначала B</text>
+<text x="50" y="465" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">Длина RS(B) фиксирована. Восстановив B, читатель узнаёт S и длину RS(Y).</text>
+<text x="50" y="496" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">Заголовок блока v3 не троируется. Общий заголовок не входит в RS.</text></svg>

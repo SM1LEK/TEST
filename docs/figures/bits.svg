@@ -1,292 +1,43 @@
-<?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1104" height="467" viewBox="8 0 1104 467" role="img">
-  <title>bits</title>
-  <defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
-      <path d="M 0 1 L 10 5 L 0 9 Z" fill="#b3afb9" />
-    </marker>
-  </defs>
-  <rect id="background" x="8" y="0" width="1104" height="467" fill="#1f1e24" />
-  <g id="drawing">
-    <g data-vertex-id="v1">
-      <desc />
-      <rect x="40" y="32.0" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    </g>
-    <g data-vertex-id="v2">
-      <desc />
-      <rect x="170" y="32.0" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    </g>
-    <g data-vertex-id="v3">
-      <desc />
-      <rect x="300" y="32.0" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    </g>
-    <g data-vertex-id="v4">
-      <desc />
-      <rect x="430" y="32.0" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    </g>
-    <g data-vertex-id="v5">
-      <desc />
-      <rect x="560" y="32.0" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    </g>
-    <g data-vertex-id="v6">
-      <desc />
-      <rect x="690" y="32.0" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    </g>
-    <g data-vertex-id="v7">
-      <desc />
-      <rect x="820" y="32.0" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    </g>
-    <g data-vertex-id="v8">
-      <desc />
-      <rect x="950" y="32.0" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    </g>
-    <g data-vertex-id="v11">
-      <desc />
-      <rect x="40" y="116.0" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    </g>
-    <g data-vertex-id="v12">
-      <desc />
-      <rect x="170" y="116.0" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    </g>
-    <g data-vertex-id="v13">
-      <desc />
-      <rect x="300" y="116.0" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    </g>
-    <g data-vertex-id="v14">
-      <desc />
-      <rect x="430" y="116.0" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    </g>
-    <g data-vertex-id="v15">
-      <desc />
-      <rect x="560" y="116.0" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    </g>
-    <g data-vertex-id="v16">
-      <desc />
-      <rect x="690" y="116.0" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    </g>
-    <g data-vertex-id="v17">
-      <desc />
-      <rect x="820" y="116.0" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    </g>
-    <g data-vertex-id="v18">
-      <desc />
-      <rect x="950" y="116.0" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    </g>
-    <g data-vertex-id="v22">
-      <desc />
-      <rect x="40" y="200.0" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    </g>
-    <g data-vertex-id="v23">
-      <desc />
-      <rect x="170" y="200.0" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    </g>
-    <g data-vertex-id="v24">
-      <desc />
-      <rect x="300" y="200.0" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    </g>
-    <g data-vertex-id="v25">
-      <desc />
-      <rect x="430" y="200.0" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    </g>
-    <g data-vertex-id="v26">
-      <desc />
-      <rect x="560" y="200.0" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    </g>
-    <g data-vertex-id="v27">
-      <desc />
-      <rect x="690" y="200.0" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    </g>
-    <g data-vertex-id="v28">
-      <desc />
-      <rect x="820" y="200.0" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    </g>
-    <g data-vertex-id="v29">
-      <desc />
-      <rect x="950" y="200.0" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    </g>
-    <g data-vertex-id="v32">
-      <desc />
-      <rect x="40" y="284.0" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    </g>
-    <g data-vertex-id="v33">
-      <desc />
-      <rect x="170" y="284.0" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    </g>
-    <g data-vertex-id="v34">
-      <desc />
-      <rect x="300" y="284.0" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    </g>
-    <g data-vertex-id="v35">
-      <desc />
-      <rect x="430" y="284.0" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    </g>
-    <g data-vertex-id="v36">
-      <desc />
-      <rect x="560" y="284.0" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    </g>
-    <g data-vertex-id="v37">
-      <desc />
-      <rect x="690" y="284.0" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    </g>
-    <g data-vertex-id="v38">
-      <desc />
-      <rect x="820" y="284.0" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    </g>
-    <g data-vertex-id="v39">
-      <desc />
-      <rect x="950" y="284.0" width="130" height="55" rx="0" ry="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-    </g>
-    <g data-vertex-id="t1">
-      <desc>7: 0</desc>
-      <text x="105" y="70.77000000000001" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">7: 0</text>
-    </g>
-    <g data-vertex-id="t2">
-      <desc>6: 0</desc>
-      <text x="235" y="70.77000000000001" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">6: 0</text>
-    </g>
-    <g data-vertex-id="t3">
-      <desc>5: 0</desc>
-      <text x="365" y="70.77000000000001" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">5: 0</text>
-    </g>
-    <g data-vertex-id="t4">
-      <desc>4: 0</desc>
-      <text x="495" y="70.77000000000001" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">4: 0</text>
-    </g>
-    <g data-vertex-id="t5">
-      <desc>3: 0</desc>
-      <text x="625" y="70.77000000000001" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">3: 0</text>
-    </g>
-    <g data-vertex-id="t6">
-      <desc>2: RS</desc>
-      <text x="755" y="70.77000000000001" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">2: RS</text>
-    </g>
-    <g data-vertex-id="t7">
-      <desc>1: rANS</desc>
-      <text x="885" y="70.77000000000001" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">1: rANS</text>
-    </g>
-    <g data-vertex-id="t8">
-      <desc>0: LZ77</desc>
-      <text x="1015" y="70.77000000000001" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">0: LZ77</text>
-    </g>
-    <g data-vertex-id="t11">
-      <desc>C</desc>
-      <text x="105" y="154.76999999999998" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">C</text>
-    </g>
-    <g data-vertex-id="t12">
-      <desc>b6</desc>
-      <text x="235" y="154.76999999999998" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">b6</text>
-    </g>
-    <g data-vertex-id="t13">
-      <desc>b5</desc>
-      <text x="365" y="154.76999999999998" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">b5</text>
-    </g>
-    <g data-vertex-id="t14">
-      <desc>b4</desc>
-      <text x="495" y="154.76999999999998" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">b4</text>
-    </g>
-    <g data-vertex-id="t15">
-      <desc>b3</desc>
-      <text x="625" y="154.76999999999998" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">b3</text>
-    </g>
-    <g data-vertex-id="t16">
-      <desc>b2</desc>
-      <text x="755" y="154.76999999999998" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">b2</text>
-    </g>
-    <g data-vertex-id="t17">
-      <desc>b1</desc>
-      <text x="885" y="154.76999999999998" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">b1</text>
-    </g>
-    <g data-vertex-id="t18">
-      <desc>b0</desc>
-      <text x="1015" y="154.76999999999998" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">b0</text>
-    </g>
-    <g data-vertex-id="t22">
-      <desc>b7</desc>
-      <text x="105" y="238.76999999999998" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">b7</text>
-    </g>
-    <g data-vertex-id="t23">
-      <desc>b6</desc>
-      <text x="235" y="238.76999999999998" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">b6</text>
-    </g>
-    <g data-vertex-id="t24">
-      <desc>b5</desc>
-      <text x="365" y="238.76999999999998" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">b5</text>
-    </g>
-    <g data-vertex-id="t25">
-      <desc>b4</desc>
-      <text x="495" y="238.76999999999998" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">b4</text>
-    </g>
-    <g data-vertex-id="t26">
-      <desc>b3</desc>
-      <text x="625" y="238.76999999999998" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">b3</text>
-    </g>
-    <g data-vertex-id="t27">
-      <desc>b2</desc>
-      <text x="755" y="238.76999999999998" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">b2</text>
-    </g>
-    <g data-vertex-id="t28">
-      <desc>b1</desc>
-      <text x="885" y="238.76999999999998" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">b1</text>
-    </g>
-    <g data-vertex-id="t29">
-      <desc>b0</desc>
-      <text x="1015" y="238.76999999999998" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">b0</text>
-    </g>
-    <g data-vertex-id="t32">
-      <desc>8j+7</desc>
-      <text x="105" y="322.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">8j+7</text>
-    </g>
-    <g data-vertex-id="t33">
-      <desc>8j+6</desc>
-      <text x="235" y="322.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">8j+6</text>
-    </g>
-    <g data-vertex-id="t34">
-      <desc>8j+5</desc>
-      <text x="365" y="322.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">8j+5</text>
-    </g>
-    <g data-vertex-id="t35">
-      <desc>8j+4</desc>
-      <text x="495" y="322.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">8j+4</text>
-    </g>
-    <g data-vertex-id="t36">
-      <desc>8j+3</desc>
-      <text x="625" y="322.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">8j+3</text>
-    </g>
-    <g data-vertex-id="t37">
-      <desc>8j+2</desc>
-      <text x="755" y="322.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">8j+2</text>
-    </g>
-    <g data-vertex-id="t38">
-      <desc>8j+1</desc>
-      <text x="885" y="322.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">8j+1</text>
-    </g>
-    <g data-vertex-id="t39">
-      <desc>8j+0</desc>
-      <text x="1015" y="322.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">8j+0</text>
-    </g>
-    <g data-vertex-id="t42">
-      <desc>stored_N = N − 1</desc>
-      <text x="205" y="401.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">stored_N = N − 1</text>
-    </g>
-    <g data-vertex-id="t43">
-      <desc>N = stored_N + 1</desc>
-      <text x="205" y="427.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">N = stored_N + 1</text>
-    </g>
-    <g data-vertex-id="t44">
-      <desc>stored_S = S − 1</desc>
-      <text x="560" y="401.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">stored_S = S − 1</text>
-    </g>
-    <g data-vertex-id="t45">
-      <desc>S = stored_S + 1</desc>
-      <text x="560" y="427.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">S = stored_S + 1</text>
-    </g>
-    <g data-vertex-id="t46">
-      <desc>stored_D = D − 1</desc>
-      <text x="915" y="401.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">stored_D = D − 1</text>
-    </g>
-    <g data-vertex-id="t47">
-      <desc>D = stored_D + 1</desc>
-      <text x="915" y="427.77" text-anchor="middle" font-family="Arial" font-size="18px" fill="#ececef">D = stored_D + 1</text>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="547" viewBox="0 0 1200 547" role="img" aria-labelledby="title desc"><title id="title">Биты флагов и смещённые поля</title><desc id="desc">Десятичные числа; байты и состояния с пометкой hex — шестнадцатеричные.</desc><defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#b3afb9"/></marker></defs><rect width="100%" height="100%" fill="#1f1e24"/><text x="30" y="43" font-family="Arial" font-size="29" fill="#8bd6b0">Биты флагов и смещённые поля</text><text x="30" y="82" font-family="Arial" font-size="20" fill="#bbb6c3">Десятичные числа; байты и состояния с пометкой hex — шестнадцатеричные.</text><rect x="30" y="125" width="260" height="51" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="42" y="158" font-family="Arial, sans-serif" font-size="21" fill="#84baff" text-anchor="start">Поле</text>
+<rect x="290" y="125" width="400" height="51" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="302" y="158" font-family="Arial, sans-serif" font-size="21" fill="#84baff" text-anchor="start">Хранимая форма</text>
+<rect x="690" y="125" width="480" height="51" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="702" y="158" font-family="Arial, sans-serif" font-size="21" fill="#84baff" text-anchor="start">Обратное преобразование</text>
+<rect x="30" y="176" width="260" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="42" y="207" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">Флаги, биты 7…0</text>
+<rect x="290" y="176" width="400" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="302" y="207" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">0 0 0 0 0 RS rANS LZ77</text>
+<rect x="690" y="176" width="480" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="702" y="207" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">Биты 3…7 должны быть нулевыми</text>
+<rect x="30" y="227" width="260" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="42" y="258" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">Размер блока N</text>
+<rect x="290" y="227" width="400" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="302" y="258" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">N−1: u16 little-endian</text>
+<rect x="690" y="227" width="480" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="702" y="258" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">00 00 → 1; FF FF → 65536</text>
+<rect x="30" y="278" width="260" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="42" y="309" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">Размер данных S</text>
+<rect x="290" y="278" width="400" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="302" y="309" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">S−1: u16 little-endian</text>
+<rect x="690" y="278" width="480" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="702" y="309" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">S ≤ N; сжатие только при S &lt; N</text>
+<rect x="30" y="329" width="260" height="80" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="42" y="360" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">Число байтов</text>
+<text x="42" y="389" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">алфавита D</text>
+<rect x="290" y="329" width="400" height="80" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="302" y="360" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">D−1: u8</text>
+<rect x="690" y="329" width="480" height="80" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="702" y="360" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">00 → 1; FF → 256</text>
+<rect x="30" y="409" width="260" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="42" y="440" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">Карта rANS, байт j</text>
+<rect x="290" y="409" width="400" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="302" y="440" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">Бит k отмечает байт 8j+k</text>
+<rect x="690" y="409" width="480" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="702" y="440" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">Биты от младшего k=0 к k=7</text>
+<rect x="30" y="460" width="260" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="42" y="491" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">Байт LEB128</text>
+<rect x="290" y="460" width="400" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="302" y="491" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">c b₆ b₅ b₄ b₃ b₂ b₁ b₀</text>
+<rect x="690" y="460" width="480" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="702" y="491" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">c=1: продолжение; c=0: конец</text></svg>

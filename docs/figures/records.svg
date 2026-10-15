@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="587" viewBox="0 0 1200 587" role="img" aria-labelledby="title desc"><title id="title">Логические записи и границы блоков</title><desc id="desc"></desc><defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#b3afb9"/></marker></defs><rect width="100%" height="100%" fill="#1f1e24"/><text x="30" y="43" font-family="Arial" font-size="29" fill="#8bd6b0">Логические записи и границы блоков</text><rect x="30" y="94" width="1140" height="126" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="50" y="128" font-family="Arial, sans-serif" font-size="24" fill="#84baff" text-anchor="start">Формат записи</text>
+<text x="50" y="165" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">Файл: 01 | P:LEB128 | имя:P байт UTF-8 | F:LEB128 | содержимое:F байт.</text>
+<text x="50" y="196" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">Папка: 02 | P:LEB128 | имя:P байт UTF-8. Конец архива: 00.</text>
+<rect x="30" y="244" width="1140" height="126" rx="0" fill="#1f1e24" stroke="#f1c779" stroke-width="1.4"/>
+<text x="50" y="278" font-family="Arial, sans-serif" font-size="24" fill="#f1c779" text-anchor="start">Пример: папка d и файл d/a = A</text>
+<text x="50" y="315" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">02 01 64 | 01 03 64 2F 61 01 41 | 00. Всего 11 байт.</text>
+<text x="50" y="346" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">Папка d объявлена до d/a. Для пустого файла F=0; у папки поля F нет.</text>
+<rect x="30" y="394" width="1140" height="157" rx="0" fill="#1f1e24" stroke="#8bd6b0" stroke-width="1.4"/>
+<text x="50" y="428" font-family="Arial, sans-serif" font-size="24" fill="#8bd6b0" text-anchor="start">Разрезание</text>
+<text x="50" y="465" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">Блоки режут весь поток записей через каждые 65536 байт.</text>
+<text x="50" y="496" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">Имя, LEB128 и содержимое могут пересекать границу блока.</text>
+<text x="50" y="527" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">LZ77 и модель rANS сбрасываются на каждом блоке; файловые записи продолжаются.</text></svg>

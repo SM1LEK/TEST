@@ -1,38 +1,32 @@
-<?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="930" viewBox="0 80 1120 930" role="img">
-  <title>RS(12,10) • декодирование по обнаруженным стираниям</title>
-  <defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#b3afb9" />
-    </marker>
-  </defs>
-  <rect width="100%" height="930.0" fill="#1f1e24" y="80" />
-  <path d="M560 195 L560 243" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
-  <path d="M560 368 L560 416" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
-  <path d="M560 516 L560 564" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
-  <path d="M560 664 L560 712" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
-  <path d="M560 842 L560 890" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
-  <path d="M860 466 L900 466" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" />
-  <path d="M 284 110 H 860 L 836 195 H 260 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="560" y="152.5" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Вход: таблица CRC32 и 12 фрагментов</text>
-  <rect x="260" y="243" width="600" height="125" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="560" y="278.66" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Сравнить CRC каждого фрагмента</text>
-  <text x="560" y="305.5" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Несовпавший отметить как отсутствующий</text>
-  <text x="560" y="332.34" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">e = число таких фрагментов</text>
-  <path d="M 560.0 416 L 860 466.0 L 560.0 516 L 260 466.0 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="560" y="466" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">e ≤ 2?</text>
-  <rect x="260" y="564" width="600" height="100" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="560" y="600.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">При e &gt; 0 восстановить</text>
-  <text x="560" y="627.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">по любым 10 исправным строкам G</text>
-  <rect x="260" y="712" width="600" height="130" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="560" y="750.16" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Собрать D₀ … D₉</text>
-  <text x="560" y="777" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Прочитать S из первых 4 байтов</text>
-  <text x="560" y="803.84" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Проверить S ≤ 10q − 4; удалить заполнение</text>
-  <path d="M 284 890 H 860 L 836 990 H 260 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="560" y="926.58" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Выход: Y и число e</text>
-  <text x="560" y="953.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Далее rANS и LZ77 только при S &lt; N</text>
-  <rect x="900" y="436.0" width="175" height="60" rx="30.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" ry="30.0" />
-  <text x="987.5" y="466" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Ошибка</text>
-  <text x="880" y="448" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="18" fill="#ececef">Нет</text>
-  <text x="600" y="536" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="18" fill="#ececef">Да</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1261" viewBox="0 0 1200 1261" role="img" aria-labelledby="title desc"><title id="title">RS: декодирование одного слова</title><desc id="desc">e&gt;2, обрыв и недопустимые размеры → ошибка. CRC-таблица не входит в RS.</desc><defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#b3afb9"/></marker></defs><rect width="100%" height="100%" fill="#1f1e24"/><text x="30" y="43" font-family="Arial" font-size="29" fill="#8bd6b0">RS: декодирование одного слова</text><text x="30" y="82" font-family="Arial" font-size="20" fill="#bbb6c3">e&gt;2, обрыв и недопустимые размеры → ошибка. CRC-таблица не входит в RS.</text><rect x="240" y="125" width="660" height="72" rx="34" fill="#1f1e24" stroke="#8bd6b0" stroke-width="1.4"/>
+<text x="570.0" y="169.0" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">Начало</text>
+<rect x="240" y="250" width="660" height="92" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="570.0" y="289.5" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">Проверить длину: 48+12q, q≥1</text>
+<text x="570.0" y="318.5" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">Разделить CRC-таблицу и фрагменты</text>
+<rect x="240" y="395" width="660" height="92" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="570.0" y="434.5" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">Сравнить CRC всех 12 фрагментов</text>
+<text x="570.0" y="463.5" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">Несовпавшие → None; их число e</text>
+<polygon points="570.0,540 900,598.0 570.0,656 240,598.0" fill="#1f1e24" stroke="#f1c779" stroke-width="1.4"/>
+<text x="570.0" y="606.0" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">e ≤ 2?</text>
+<rect x="240" y="709" width="660" height="92" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="570.0" y="748.5" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">Если e&gt;0: reconstruct</text>
+<text x="570.0" y="777.5" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">Если e=0: реконструкция не вызывается</text>
+<rect x="240" y="854" width="660" height="92" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="570.0" y="893.5" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">Соединить D₀…D₉; прочитать U</text>
+<text x="570.0" y="922.5" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">Проверить U ≤ 10q−4</text>
+<polygon points="265,999 900,999 875,1071 240,1071" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="570.0" y="1043.0" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">Вернуть ровно U байт и число e</text>
+<rect x="240" y="1124" width="660" height="72" rx="34" fill="#1f1e24" stroke="#8bd6b0" stroke-width="1.4"/>
+<text x="570.0" y="1168.0" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">Конец</text>
+<rect x="950" y="563.0" width="220" height="70" rx="30" fill="#1f1e24" stroke="#e99aab" stroke-width="1.4"/>
+<text x="1060" y="606.0" font-family="Arial, sans-serif" font-size="22" fill="#e99aab" text-anchor="middle">Ошибка</text>
+<path d="M 900 598.0 H 950" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="910" y="586.0" font-family="Arial, sans-serif" font-size="19" fill="#f1c779" text-anchor="start">Нет</text>
+<path d="M 570.0 197 V 250" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M 570.0 342 V 395" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M 570.0 487 V 540" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M 570.0 656 V 709" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="585.0" y="688" font-family="Arial, sans-serif" font-size="19" fill="#f1c779" text-anchor="start">Да</text>
+<path d="M 570.0 801 V 854" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M 570.0 946 V 999" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M 570.0 1071 V 1124" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/></svg>

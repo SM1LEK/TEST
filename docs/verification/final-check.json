@@ -1,0 +1,24 @@
+{
+  "documentation": "README.md with relative linked SVG images",
+  "figures": 66,
+  "editable_flowcharts": 11,
+  "other_document_formats": false,
+  "original_source_and_tests_unchanged": true,
+  "matching_original_files": 23,
+  "readme_links": "passed",
+  "svg_xml": "passed",
+  "svg_text_bounds": "passed",
+  "markdown_viewport_widths": [
+    1100,
+    768,
+    420
+  ],
+  "new_full_cli_roundtrips": 60,
+  "all_modes_with_threads": [
+    1,
+    2,
+    4
+  ],
+  "lz_short_inputs": 9841,
+  "rs_two_erasure_pairs": 396
+}

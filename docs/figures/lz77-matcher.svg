@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1136" viewBox="0 0 1200 1136" role="img" aria-labelledby="title desc"><title id="title">LZ77: поиск совпадения в v3</title><desc id="desc">Прямоугольник — процесс; ромб — условие; параллелограмм — данные.</desc><defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#b3afb9"/></marker></defs><rect width="100%" height="100%" fill="#1f1e24"/><text x="30" y="43" font-family="Arial" font-size="29" fill="#8bd6b0">LZ77: поиск совпадения в v3</text><text x="30" y="82" font-family="Arial" font-size="20" fill="#bbb6c3">Прямоугольник — процесс; ромб — условие; параллелограмм — данные.</text><rect x="240" y="125" width="660" height="72" rx="34" fill="#1f1e24" stroke="#8bd6b0" stroke-width="1.4"/>
+<text x="570.0" y="169.0" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">find_best(X,p,limit)</text>
+<polygon points="570.0,250 900,308.0 570.0,366 240,308.0" fill="#1f1e24" stroke="#f1c779" stroke-width="1.4"/>
+<text x="570.0" y="316.0" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">limit = 0?</text>
+<rect x="240" y="419" width="660" height="92" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="570.0" y="458.5" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">Если limit ≥ 2: идти по heads[h(p)]</text>
+<text x="570.0" y="487.5" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">не далее окна и не более 512 кандидатов</text>
+<rect x="240" y="564" width="660" height="92" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="570.0" y="603.5" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">Побайтово сравнить до limit</text>
+<text x="570.0" y="632.5" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">Заменить best только при l≥2 и l&gt;best.length</text>
+<rect x="240" y="709" width="660" height="92" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="570.0" y="748.5" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">Если l=limit — немедленно вернуть best</text>
+<text x="570.0" y="777.5" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">Иначе продолжить хеш-цепочку</text>
+<rect x="240" y="854" width="660" height="92" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="570.0" y="893.5" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">Если best.length=0: проверить last_byte</text>
+<text x="570.0" y="922.5" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">В окне есть такой байт → l=1</text>
+<rect x="240" y="999" width="660" height="72" rx="34" fill="#1f1e24" stroke="#8bd6b0" stroke-width="1.4"/>
+<text x="570.0" y="1043.0" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="middle">Вернуть best; без совпадения l=d=0</text>
+<path d="M 570.0 197 V 250" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M 570.0 366 V 419" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="585.0" y="398" font-family="Arial, sans-serif" font-size="19" fill="#f1c779" text-anchor="start">Нет</text>
+<path d="M 570.0 511 V 564" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M 570.0 656 V 709" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M 570.0 801 V 854" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="585.0" y="833" font-family="Arial, sans-serif" font-size="19" fill="#f1c779" text-anchor="start">По окончании</text>
+<path d="M 570.0 946 V 999" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M 900 308.0 H 1066 V 1035.0 H 900" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="1076" y="296.0" font-family="Arial, sans-serif" font-size="19" fill="#f1c779" text-anchor="start">Да</text></svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="615" viewBox="0 0 1200 615" role="img" aria-labelledby="title desc"><title id="title">Минимальный архив: файл a с байтом A</title><desc id="desc">Десятичные числа; байты и состояния с пометкой hex — шестнадцатеричные.</desc><defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#b3afb9"/></marker></defs><rect width="100%" height="100%" fill="#1f1e24"/><text x="30" y="43" font-family="Arial" font-size="29" fill="#8bd6b0">Минимальный архив: файл a с байтом A</text><text x="30" y="82" font-family="Arial" font-size="20" fill="#bbb6c3">Десятичные числа; байты и состояния с пометкой hex — шестнадцатеричные.</text><rect x="30" y="125" width="210" height="51" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="42" y="158" font-family="Arial, sans-serif" font-size="21" fill="#84baff" text-anchor="start">Смещение dec</text>
+<rect x="240" y="125" width="510" height="51" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="252" y="158" font-family="Arial, sans-serif" font-size="21" fill="#84baff" text-anchor="start">Байты hex</text>
+<rect x="750" y="125" width="420" height="51" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="762" y="158" font-family="Arial, sans-serif" font-size="21" fill="#84baff" text-anchor="start">Смысл</text>
+<rect x="30" y="176" width="210" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="42" y="207" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">0…8</text>
+<rect x="240" y="176" width="510" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="252" y="207" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">43 4C 41 52 53 76 30 33 00</text>
+<rect x="750" y="176" width="420" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="762" y="207" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">H₀: CLARSv03; все этапы выключены</text>
+<rect x="30" y="227" width="210" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="42" y="258" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">9…17</text>
+<rect x="240" y="227" width="510" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="252" y="258" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">43 4C 41 52 53 76 30 33 00</text>
+<rect x="750" y="227" width="420" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="762" y="258" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">H₁</text>
+<rect x="30" y="278" width="210" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="42" y="309" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">18…26</text>
+<rect x="240" y="278" width="510" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="252" y="309" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">43 4C 41 52 53 76 30 33 00</text>
+<rect x="750" y="278" width="420" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="762" y="309" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">H₂</text>
+<rect x="30" y="329" width="210" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="42" y="360" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">27…30</text>
+<rect x="240" y="329" width="510" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="252" y="360" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">05 00 05 00</text>
+<rect x="750" y="329" width="420" height="51" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="762" y="360" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">N−1=5; S−1=5; N=S=6</text>
+<rect x="30" y="380" width="210" height="80" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="42" y="411" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">31…36</text>
+<rect x="240" y="380" width="510" height="80" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="252" y="411" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">01 01 61 01 41 00</text>
+<rect x="750" y="380" width="420" height="80" rx="0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.4"/>
+<text x="762" y="411" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">Файл | длина имени | a | размер | A |</text>
+<text x="762" y="440" font-family="Arial, sans-serif" font-size="21" fill="#ececef" text-anchor="start">конец</text>
+<rect x="30" y="484" width="1140" height="95" rx="0" fill="#1f1e24" stroke="#8bd6b0" stroke-width="1.4"/>
+<text x="50" y="518" font-family="Arial, sans-serif" font-size="24" fill="#8bd6b0" text-anchor="start">Проверка</text>
+<text x="50" y="555" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">Размер 27+4+6=37 байт (25 hex). Содержимое файла — только 1 байт.</text></svg>

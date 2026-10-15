@@ -1,0 +1,30 @@
+{
+  "passed": 25,
+  "checks": [
+    "CLI flags=0: exact bytes, info, extraction",
+    "CLI flags=1: exact bytes, info, extraction",
+    "CLI flags=2: exact bytes, info, extraction",
+    "CLI flags=3: exact bytes, info, extraction",
+    "CLI flags=4: exact bytes, info, extraction",
+    "CLI flags=5: exact bytes, info, extraction",
+    "CLI flags=6: exact bytes, info, extraction",
+    "CLI flags=7: exact bytes, info, extraction",
+    "Identical bytes for T=1 and T=4",
+    "RS two-header; success=True",
+    "RS two-payload; success=True",
+    "RS two-each; success=True",
+    "RS three-header; success=False",
+    "RS three-payload; success=False",
+    "Header vote one-copy",
+    "Header vote different-positions",
+    "Header vote no-majority",
+    "Trailing physical bytes rejected, extraction rolled back",
+    "Existing input preserved on invalid archive extension",
+    "Existing archive not overwritten",
+    "Invalid parent rejected and rolled back",
+    "Invalid traversal rejected and rolled back",
+    "Invalid duplicate rejected and rolled back",
+    "Invalid varint rejected and rolled back",
+    "All original Rust sources, tests and Cargo files byte-for-byte unchanged"
+  ]
+}

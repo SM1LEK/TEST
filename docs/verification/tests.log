@@ -1,0 +1,65 @@
+warn: could not canonicalize path C:\Users\NotebookLocal
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.24s
+     Running tests\all.rs (work\project\target\debug\deps\all-7e99985d1f2033c3.exe)
+
+LZ77
+  IN: ABABABA
+  OUT: 07 00 41 00 42 04 02 41
+  OK
+
+  IN: one два 3 0x4 one два 3 0x4 one два 3 0x4
+  OUT: 35 байт после LZ77
+  OK
+
+  IN: 0, 256, 4097 байт
+  OK
+
+
+rANS
+  IN: БАНАН
+  OUT: 18 байт после rANS
+  OK
+
+  IN: 4096 псевдослучайных байт
+  OUT: 4364 байт после rANS
+  OK
+
+  IN: пустой набор и все 256 значений байта
+  OK
+
+
+Reed-Solomon
+  IN: 1000 байт, повреждён 1 фрагмент
+  Исправлен 1 фрагмент
+  OK
+
+  IN: 1000 байт, повреждены 2 фрагмента
+  Исправлены 2 фрагмента
+  OK
+
+  IN: 1000 байт, повреждены 3 фрагмента
+  Восстановление отклонено
+  OK
+
+
+Троирование
+  IN: 4 байта, повреждена 1 копия
+  Восстановлено по двум копиям
+  OK
+
+  IN: 4 байта, повреждены разные места 2 копий
+  Восстановлено по двум копиям
+  OK
+
+  IN: 4 байта, один байт разный во всех 3 копиях
+  Значение выбрать невозможно
+  OK
+
+
+Архиватор
+  demo_corpus, без защиты и с RS
+  OK
+
+
+OK: 13
+ERR: 0

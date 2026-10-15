@@ -1,47 +1,16 @@
-<?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1530.0" viewBox="0 160 1120 1530" role="img">
-  <title>rANS • модель BANAN и интервалы символов</title>
-  <defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#b3afb9" />
-    </marker>
-  </defs>
-  <rect width="100%" height="1530.0" fill="#1f1e24" y="160.0" />
-  <path d="M560 210 L560 275" fill="none" stroke="#b3afb9" stroke-width="1.5" marker-end="url(#arrow)" transform="scale(1,2)" />
-  <path d="M 194 110 H 950 L 926 210 H 170 Z" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" transform="scale(1,2)" />
-  <text x="560" y="281.06" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Вход: BANAN; n=05₁₆; D=03₁₆</text>
-  <text x="560" y="308.56" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">₁₀: Вход: BANAN; n=5; D=3</text>
-  <text x="560" y="334.73999999999995" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">v(A)=02₁₆; v(B)=01₁₆; v(N)=02₁₆</text>
-  <text x="560" y="362.23999999999995" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">₁₀: v(A)=2; v(B)=1; v(N)=2</text>
-  <rect x="170" y="550.0" width="780" height="290.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="560" y="602.38" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">M=2¹²; M−D=FFD₁₆</text>
-  <text x="560" y="629.88" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">₁₀: M=4 096; M−D=4 093</text>
-  <text x="560" y="656.06" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">f⁰=(666₁₆, 333₁₆, 666₁₆); Σ=FFF₁₆</text>
-  <text x="560" y="683.56" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">₁₀: f⁰=(1 638, 819, 1 638); Σ=4 095</text>
-  <text x="560" y="709.74" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Наибольший остаток у B: добавить 01₁₆</text>
-  <text x="560" y="737.24" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">₁₀: Наибольший остаток у B: добавить 1</text>
-  <text x="560" y="763.42" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">f=(666₁₆, 334₁₆, 666₁₆)</text>
-  <text x="560" y="790.92" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">₁₀: f=(1 638, 820, 1 638)</text>
-  <rect x="40" y="1040.0" width="416" height="216.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="248" y="1094.32" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">A</text>
-  <text x="248" y="1135.9" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">[000₁₆, 666₁₆)</text>
-  <text x="248" y="1163.4" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">₁₀: [0, 1 638)</text>
-  <text x="248" y="1189.5800000000002" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">f=666₁₆</text>
-  <text x="248" y="1217.0800000000002" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">₁₀: f=1 638</text>
-  <rect x="456" y="1040.0" width="208" height="216.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="560" y="1094.32" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">B</text>
-  <text x="560" y="1135.9" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">[666₁₆, 99A₁₆)</text>
-  <text x="560" y="1163.4" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">₁₀: [1 638, 2 458)</text>
-  <text x="560" y="1189.5800000000002" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">f=334₁₆</text>
-  <text x="560" y="1217.0800000000002" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">₁₀: f=820</text>
-  <rect x="664" y="1040.0" width="416" height="216.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="872" y="1094.32" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">N</text>
-  <text x="872" y="1135.9" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">[99A₁₆, 2¹²)</text>
-  <text x="872" y="1163.4" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">₁₀: [2 458, 4 096)</text>
-  <text x="872" y="1189.5800000000002" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">f=666₁₆</text>
-  <text x="872" y="1217.0800000000002" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">₁₀: f=1 638</text>
-  <rect x="240" y="1450.0" width="640" height="190.0" fill="#1f1e24" stroke="#b3afb9" stroke-width="1.5" />
-  <text x="560" y="1506.0600000000002" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">q = x mod 2¹²</text>
-  <text x="560" y="1533.5600000000002" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="20.0" fill="#bbb6c3">₁₀: q = x mod 4 096</text>
-  <text x="560" y="1571.84" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" fill="#ececef">Выбрать s: c(s) ≤ q &lt; c(s) + f(s)</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="706" viewBox="0 0 1200 706" role="img" aria-labelledby="title desc"><title id="title">rANS: обратимые переходы состояния</title><desc id="desc"></desc><defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#b3afb9"/></marker></defs><rect width="100%" height="100%" fill="#1f1e24"/><text x="30" y="43" font-family="Arial" font-size="29" fill="#8bd6b0">rANS: обратимые переходы состояния</text><rect x="30" y="94" width="1140" height="126" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="50" y="128" font-family="Arial, sans-serif" font-size="24" fill="#84baff" text-anchor="start">Смысл величин</text>
+<text x="50" y="165" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">x — целое состояние; f — частота текущего байта; c — начало его интервала.</text>
+<text x="50" y="196" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">M=4096 — сумма частот; L=8388608 — начальное и конечное состояние.</text>
+<rect x="30" y="244" width="1140" height="126" rx="0" fill="#1f1e24" stroke="#f1c779" stroke-width="1.4"/>
+<text x="50" y="278" font-family="Arial, sans-serif" font-size="24" fill="#f1c779" text-anchor="start">Кодирование справа налево</text>
+<text x="50" y="315" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">Порог T(s)=524288·f(s). Пока x ≥ T(s): выдать x &amp; 255, затем x &gt;&gt;= 8.</text>
+<text x="50" y="346" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">C_s(x)=floor(x/f)·4096 + (x mod f) + c.</text>
+<rect x="30" y="394" width="1140" height="126" rx="0" fill="#1f1e24" stroke="#8bd6b0" stroke-width="1.4"/>
+<text x="50" y="428" font-family="Arial, sans-serif" font-size="24" fill="#8bd6b0" text-anchor="start">Декодирование слева направо</text>
+<text x="50" y="465" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">q=x &amp; 4095. Найти s, для которого c(s) ≤ q &lt; c(s)+f(s).</text>
+<text x="50" y="496" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">D_s(x)=f·floor(x/4096)+q−c. Пока x&lt;L: x ← 256x+очередной байт.</text>
+<rect x="30" y="544" width="1140" height="126" rx="0" fill="#1f1e24" stroke="#84baff" stroke-width="1.4"/>
+<text x="50" y="578" font-family="Arial, sans-serif" font-size="24" fill="#84baff" text-anchor="start">Завершение</text>
+<text x="50" y="615" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">В начале декодера L ≤ x &lt; 256L. После n байтов: x=L и поток исчерпан.</text>
+<text x="50" y="646" font-family="Arial, sans-serif" font-size="22" fill="#ececef" text-anchor="start">Состояние кодера — стек: последний закодированный байт восстанавливается первым.</text></svg>
